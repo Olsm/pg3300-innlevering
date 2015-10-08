@@ -11,7 +11,7 @@ Dokumenter redigeres på google docs og oppdateres i repository som oppgavenavn.
 
 * Prosjektet bruker git
 * En god git tutorial finnes her: https://www.atlassian.com/git/tutorials/
-* Jeg vil anbefale programmet SourceTree: http://www.sourcetreeapp.com/?utm_source=internal&utm_medium=link&utm_campaign=clone_repo_win
+* Jeg vil anbefale programmet SourceTree: https://www.sourcetreeapp.com/download
 * Åpne terminal (i sourcetree klikk actions - open in terminal)
 * Skriv inn default epost og navn/brukernavn
 * Clon repository til din pc.
