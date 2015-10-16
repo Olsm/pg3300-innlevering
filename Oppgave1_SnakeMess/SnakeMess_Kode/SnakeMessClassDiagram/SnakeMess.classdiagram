@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="893fb2a5-f8c4-4ada-8ad1-7f024c15e225" name="SnakeMess" linkedPackageId="987e6387-0fde-4de2-8c53-1a81d14c2f1f" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="83caa2ff-f2a3-4fc6-84b1-36512684da95" name="Coord" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="63cd1da7-ef50-4b1b-bb2b-c170fea94b4c" />
+        <ownedAttributesInternal>
+          <property Id="342bb016-6bfc-4526-9414-7bb4e5d1aa08" name="x" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a02cdce5-880d-4306-8d7f-843edca61ed3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f975e98b-5cd3-45fc-8964-aae211013e90" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="46f39ee6-4b5c-45cc-910f-219fb89bb99f" name="y" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7c9c6d11-6b08-4f1f-808a-bbdd7c8ed692" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="685779d9-ac4d-44a0-a10e-3f0f008067ca" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="6862b2cb-2300-48df-9295-6751032f0362" name="Coord" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b39296b4-5396-4e69-9d4b-171865030d4b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="27b8331e-01d2-4834-b841-8c3ce8539653" name="int" direction="In" isUnique="false">
+                  <elementDefinition Id="39e4b9a6-8e4b-48a0-b4d6-9e437b327b67" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5ceb71a2-7cbb-44b7-843a-ea411e7b8ea1" name="int" direction="In" isUnique="false">
+                  <elementDefinition Id="d06bfe60-cce8-4990-958a-8ec9947cf760" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b69ab428-8a42-4786-ade1-5d5d52d8de0e" name="Coord" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a91ade42-aa2c-4003-bd27-3de95fac705b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ecd0c7cc-f858-45fa-9651-c1c8cc7fa729" name="Coord" direction="In" isUnique="false">
+                  <elementDefinition Id="fb8de950-26ed-453b-b75e-5cf82828010f" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7160d0b9-5e1f-4ca9-8407-85f74cf652ea" name="SnakeMess" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f9f833ca-b6a2-4904-9581-45f1953f85ce" />
+        <ownedAttributesInternal>
+          <property Id="9f5810da-7036-4c92-9b8c-dd774686e891" name="gameOver" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="63da0f41-86c1-48d3-a398-d91c1d71bcaf" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="859dbe99-f880-43ac-9e50-ef661c786388" LastKnownName="bool" />
+            </type_NamedElement>
+          </property>
+          <property Id="6c6403f8-1015-4db2-ab43-b1d6d2ef80e5" name="pause" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7b775ce3-8f75-4e76-a5dd-2e3528870850" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="767b5134-f17d-4188-913c-7910e22e22a2" LastKnownName="bool" />
+            </type_NamedElement>
+          </property>
+          <property Id="1beb35ae-1a9e-4025-aa01-ce6ea954f0da" name="inUse" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8a3b8c91-48e3-4a20-a8ff-faf863a783a8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="17c5f82e-ead0-4597-b8a4-96a0a54f35e3" LastKnownName="bol" />
+            </type_NamedElement>
+          </property>
+          <property Id="d707b97e-9d24-494f-a83a-b6d689d5d810" name="boardWidth" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dd0ff0e0-729d-42a1-9efa-a3d289c699f2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="aa15098b-e823-41a8-9d29-e5b5a3854e12" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="154563ae-72a4-41ba-9f74-9e781371d149" name="rng" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d4af2c6f-9049-410b-b28f-07854751fe85" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8ac779a2-6b77-4d52-bc1e-7ae831dcb07f" LastKnownName="Random" />
+            </type_NamedElement>
+          </property>
+          <property Id="25358f46-dda2-4a1d-8910-d893da0f9648" name="snakePos" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a8d46602-90f6-4151-9365-541a373a8f6b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c64df987-b77a-47c9-8e13-1c9fb6293b85" LastKnownName="List&lt;Coord&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="ef26d909-07ea-4615-81bd-fa6578d46f89" name="spot" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f2f4f5c9-6db4-41fa-bd6c-dab997915c43" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="767b5134-f17d-4188-913c-7910e22e22a2" LastKnownName="bool" />
+            </type_NamedElement>
+          </property>
+          <property Id="dee92ad3-953a-409c-8e94-472a427f2557" name="timer" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1a836eaa-593f-4e0f-9623-287fbc719aaf" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="919537e5-e04d-4bde-ba15-cdd79880fba2" LastKnownName="StopWatch" />
+            </type_NamedElement>
+          </property>
+          <property Id="d8102d37-fba8-4329-81d7-55400e0bdeea" name="newH" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7679e7e5-0e52-4a3b-a162-8c6736feb40b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5e77988e-74e7-4ab2-b6b3-6eb7dd98ffbe" LastKnownName="Coord" />
+            </type_NamedElement>
+          </property>
+          <property Id="fd5b13c4-2719-41e8-ab1b-22fdd0b2149e" name="found" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="13e456df-ba7a-49ed-b54c-a6ddf6077094" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="767b5134-f17d-4188-913c-7910e22e22a2" LastKnownName="bool" />
+            </type_NamedElement>
+          </property>
+          <property Id="6129913d-ebb6-4fd9-a147-3809464d13b9" name="boardHeight" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a760a238-2d2a-471c-8c38-05e5e047f498" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f975e98b-5cd3-45fc-8964-aae211013e90" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="bdc1f6d5-4a3c-401e-821d-e6da32387603" name="Main" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="59e2dab6-3b2d-42b8-8574-cb7d69d1df06" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c9f64ecc-019b-4e7b-afab-683fe72f37f9" direction="Return" isUnique="false">
+                  <elementDefinition Id="2f83aabb-6eb4-4c57-9225-99e059c5d54e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d62f2173-0762-4c7a-a1ca-05bd9e1f7a46" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4d60763a-5d5e-4043-b3fd-6e427681c3d9" name="String[]" direction="In" isUnique="false">
+                  <elementDefinition Id="fdad1a75-4f17-4fca-8cf8-3e1c40dbd3d7" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="767b5134-f17d-4188-913c-7910e22e22a2" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="e39c3d77-19c1-4315-b8c5-692fbcee420d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="17c5f82e-ead0-4597-b8a4-96a0a54f35e3" name="bol" isAbstract="false" isLeaf="false" cachedFullName="bol">
+        <elementDefinition Id="b456d90a-8902-4132-a17b-27cfc833357e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8ac779a2-6b77-4d52-bc1e-7ae831dcb07f" name="Random" isAbstract="false" isLeaf="false" cachedFullName="Random">
+        <elementDefinition Id="e0742666-e53d-48bf-b98f-cb5c16562323" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5e77988e-74e7-4ab2-b6b3-6eb7dd98ffbe" name="Coord" isAbstract="false" isLeaf="false" cachedFullName="SnakeMessClassDiagram::Coord">
+        <elementDefinition Id="63cd1da7-ef50-4b1b-bb2b-c170fea94b4c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d62f2173-0762-4c7a-a1ca-05bd9e1f7a46" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f975e98b-5cd3-45fc-8964-aae211013e90" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="a56f4296-d67f-457e-921f-7468e53be2d9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="685779d9-ac4d-44a0-a10e-3f0f008067ca" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="a56f4296-d67f-457e-921f-7468e53be2d9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="859dbe99-f880-43ac-9e50-ef661c786388" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="e39c3d77-19c1-4315-b8c5-692fbcee420d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="aa15098b-e823-41a8-9d29-e5b5a3854e12" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="a56f4296-d67f-457e-921f-7468e53be2d9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c64df987-b77a-47c9-8e13-1c9fb6293b85" name="List&lt;Coord&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Coord&gt;">
+        <elementDefinition Id="88a4222b-4c6b-4f22-8442-a7fbd3e6d41a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="919537e5-e04d-4bde-ba15-cdd79880fba2" name="StopWatch" isAbstract="false" isLeaf="false" cachedFullName="StopWatch">
+        <elementDefinition Id="cff9f699-8910-4698-b055-64ac530ef188" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="987e6387-0fde-4de2-8c53-1a81d14c2f1f" name="SnakeMessClassDiagram">
+    <elementDefinition Id="0637e77e-3723-4760-bf13-8b7fa73426c7" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c24ff988-77b7-4d73-a359-a4f784a3821e">
+        <profileInstance Id="dbe04ec2-cb31-496f-ab19-e02449450d38" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="12545678-1f64-4578-9290-051a41bcc373">
+        <profileInstance Id="770532c8-e72e-4b0e-b58e-6d14287c0b25" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SnakeMess">
+  <logicalClassDesignerModelMoniker Id="893fb2a5-f8c4-4ada-8ad1-7f024c15e225" />
+  <nestedChildShapes>
+    <classShape Id="c80af985-b11a-4a8d-a125-5bc7b20253aa" absoluteBounds="1.5, 1.125, 1.5, 1.5429687152306237" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="83caa2ff-f2a3-4fc6-84b1-36512684da95" LastKnownName="Coord" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="149cba25-6885-4453-ad8d-5e1b195ea416" absoluteBounds="1.515, 1.5150000000000001, 1.4700000000000002, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="d13adc50-6780-499d-bd44-22903caf6e86" absoluteBounds="1.515, 2.046484357615312, 1.4700000000000002, 0.52148435761531176" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d674cb84-17d7-42a2-9633-beae47821fbf" absoluteBounds="6.25, 1.125, 1.5, 2.8242186754941936" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="7160d0b9-5e1f-4ca9-8407-85f74cf652ea" LastKnownName="SnakeMess" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="0ab1c291-2465-405a-92af-7941ca78cd53" absoluteBounds="6.265, 1.5150000000000001, 1.4700000000000002, 1.9628905629118283" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="02df760a-929c-4dd5-bdc1-1548836600d2" absoluteBounds="6.265, 3.487890562911828, 1.4700000000000002, 0.36132811258236552" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>
