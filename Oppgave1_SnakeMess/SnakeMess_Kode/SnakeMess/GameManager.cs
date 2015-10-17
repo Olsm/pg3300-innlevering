@@ -60,7 +60,7 @@ namespace SnakeMess
 
         public void endGame()
         {
-
+            Environment.Exit(0);
         }
 
         public void moveSnake()
