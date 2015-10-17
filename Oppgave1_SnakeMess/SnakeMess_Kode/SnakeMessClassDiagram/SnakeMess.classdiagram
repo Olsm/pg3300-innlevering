@@ -233,6 +233,15 @@
           </property>
           <property Id="ee751564-0ab4-4c7c-b543-0ee264d5116c" name="dollarPosition" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f023d80e-c5cb-4990-b2b6-1d47bb83d230" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="50990f59-bf23-4e79-9c05-cccdde60882c" LastKnownName="Coord" />
+            </type_NamedElement>
+          </property>
+          <property Id="2b263883-d00d-464a-97cb-d7e4dc063293" name="board" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="92126e77-f496-4ab3-9ada-c94ef4bd26fc" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="47595b8f-5e73-488a-a20a-bfce8d040488" LastKnownName="Board" />
+            </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
@@ -554,6 +563,16 @@
     <packageHasNamedElement>
       <referencedType Id="61001d3a-af38-4476-b66a-5f61da774560" name="GameManager" isAbstract="false" isLeaf="false" cachedFullName="SnakeMessClassDiagram::GameManager">
         <elementDefinition Id="f9f833ca-b6a2-4904-9581-45f1953f85ce" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="47595b8f-5e73-488a-a20a-bfce8d040488" name="Board" isAbstract="false" isLeaf="false" cachedFullName="SnakeMessClassDiagram::Board">
+        <elementDefinition Id="a651ab66-79dc-4510-8df0-f3a86434db34" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="50990f59-bf23-4e79-9c05-cccdde60882c" name="Coord" isAbstract="false" isLeaf="false" cachedFullName="SnakeMessClassDiagram::Coord">
+        <elementDefinition Id="63cd1da7-ef50-4b1b-bb2b-c170fea94b4c" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

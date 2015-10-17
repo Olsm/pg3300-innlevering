@@ -443,7 +443,33 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="63cd1da7-ef50-4b1b-bb2b-c170fea94b4c"
+                LastKnownName="Coord"
+                LastKnownLocation="SnakeMessClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="92126e77-f496-4ab3-9ada-c94ef4bd26fc"
+            name="board"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="a651ab66-79dc-4510-8df0-f3a86434db34"
+                LastKnownName="Board"
+                LastKnownLocation="SnakeMessClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
