@@ -10,6 +10,7 @@ namespace SnakeMess
 
     class GameManager
     {
+        private Board board;
         private List<Coord> snakePosition;
         private Coord dollarPosition;
         private Random randomGenerator;
@@ -37,7 +38,7 @@ namespace SnakeMess
         public void createGame()
         {
             // Setup gameboard options
-            var board = new Board();
+            board = new Board();
 
             // Create snake element positions
             for (int i = 0; i < 5; i++)
@@ -48,14 +49,9 @@ namespace SnakeMess
             Console.SetCursorPosition(10, 10);
             Console.Write("@");
            
-            // Generate a random position for dollar
-            dollarPosition.X = randomGenerator.Next(0, board.boardWidth);
-            dollarPosition.Y = randomGenerator.Next(0, board.boardHeight);
+            // Spawn a dollar at random position on screen
+            spawnDollar();
 
-            // Place green dollar at random position
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.SetCursorPosition(dollarPosition.X, dollarPosition.Y);
-            Console.Write("$");
         }
 
         public void endGame()
@@ -70,7 +66,14 @@ namespace SnakeMess
 
         public void spawnDollar()
         {
+            // Generate a random position for dollar
+            dollarPosition.X = randomGenerator.Next(0, board.boardWidth);
+            dollarPosition.Y = randomGenerator.Next(0, board.boardHeight);
 
+            // Place green dollar at random position
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.SetCursorPosition(dollarPosition.X, dollarPosition.Y);
+            Console.Write("$");
         }
     }
 }
