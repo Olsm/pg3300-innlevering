@@ -134,7 +134,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="7160d0b9-5e1f-4ca9-8407-85f74cf652ea" name="SnakeMess" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="7160d0b9-5e1f-4ca9-8407-85f74cf652ea" name="GameManager" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f9f833ca-b6a2-4904-9581-45f1953f85ce" />
         <targetEnds>
           <association Id="3a057f2f-b408-48cc-9481-e6b755b93f77" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
@@ -228,35 +228,14 @@
           <property Id="dee92ad3-953a-409c-8e94-472a427f2557" name="timer" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="1a836eaa-593f-4e0f-9623-287fbc719aaf" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="919537e5-e04d-4bde-ba15-cdd79880fba2" LastKnownName="StopWatch" />
+              <referencedTypeMoniker Id="49d722d5-52c2-4104-ad63-663a5ca13f65" LastKnownName="Stopwatch" />
             </type_NamedElement>
           </property>
-          <property Id="d8102d37-fba8-4329-81d7-55400e0bdeea" name="newHead" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="7679e7e5-0e52-4a3b-a162-8c6736feb40b" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="b9d26293-d773-4d8c-862c-1dae19e34199" LastKnownName="Coord" />
-            </type_NamedElement>
+          <property Id="ee751564-0ab4-4c7c-b543-0ee264d5116c" name="dollarPosition" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f023d80e-c5cb-4990-b2b6-1d47bb83d230" />
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="bdc1f6d5-4a3c-401e-821d-e6da32387603" name="Main" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="59e2dab6-3b2d-42b8-8574-cb7d69d1df06" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="c9f64ecc-019b-4e7b-afab-683fe72f37f9" direction="Return" isUnique="false">
-                  <elementDefinition Id="2f83aabb-6eb4-4c57-9225-99e059c5d54e" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="d62f2173-0762-4c7a-a1ca-05bd9e1f7a46" LastKnownName="void" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="4d60763a-5d5e-4043-b3fd-6e427681c3d9" name="String[]" direction="In" isUnique="false">
-                  <elementDefinition Id="fdad1a75-4f17-4fca-8cf8-3e1c40dbd3d7" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
           <operation Id="76ceb1fa-ac48-4fa4-b854-901e9cde0232" name="createGame : void" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="39a88754-7c0d-4f5e-b878-3c0ad231bda3" />
           </operation>
@@ -328,11 +307,6 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="919537e5-e04d-4bde-ba15-cdd79880fba2" name="StopWatch" isAbstract="false" isLeaf="false" cachedFullName="StopWatch">
-        <elementDefinition Id="cff9f699-8910-4698-b055-64ac530ef188" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="7fd0a975-8cef-45d8-bc52-8cfb0a439fa0" name="List&lt;Coord&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Coord&gt;">
         <elementDefinition Id="88a4222b-4c6b-4f22-8442-a7fbd3e6d41a" />
       </referencedType>
@@ -387,11 +361,6 @@
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
-    <packageHasNamedElement>
-      <referencedType Id="b9d26293-d773-4d8c-862c-1dae19e34199" name="Coord" isAbstract="false" isLeaf="false" cachedFullName="SnakeMessClassDiagram::Coord">
-        <elementDefinition Id="63cd1da7-ef50-4b1b-bb2b-c170fea94b4c" />
-      </referencedType>
-    </packageHasNamedElement>
     <packageHasNamedElement>
       <referencedType Id="8d56add4-2650-48f6-8a2f-16c87e2a5bb9" name="Random" isAbstract="false" isLeaf="false" cachedFullName="Random">
         <elementDefinition Id="e0742666-e53d-48bf-b98f-cb5c16562323" />
@@ -526,6 +495,67 @@
         </ownedLiterals>
       </enumeration>
     </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="49d722d5-52c2-4104-ad63-663a5ca13f65" name="Stopwatch" isAbstract="false" isLeaf="false" cachedFullName="Stopwatch">
+        <elementDefinition Id="663daaef-32be-4ebc-925a-1943c8dbe006" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b7a9712f-8da2-482f-b5c1-219acec05e6e" name="SnakeMess" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="55b0edfb-c8d7-4d11-8030-4aa06ce0245e" />
+        <targetEnds>
+          <association Id="1719bd80-a829-4823-b03d-375a89daaefe" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7160d0b9-5e1f-4ca9-8407-85f74cf652ea" LastKnownName="GameManager" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5fe6fc7a-63b4-46a5-91b5-9cbc2cd5c42a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c57783d1-ea85-40d5-bb62-7f3011ed532d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f84c8544-2746-4af9-bfdf-487b1f0932ba" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6ba5e1e8-6c55-4286-a8e4-eb4c09aabdc2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aecdb4c6-2748-443a-8f09-721e6448eeea" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="9a198fb9-7267-4944-8926-0d20fbefb061" name="g" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5afea2f7-537c-42e2-a083-88a9ac97ec73" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="61001d3a-af38-4476-b66a-5f61da774560" LastKnownName="GameManager" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="fd0e5038-b5fa-4c7e-ab29-3e346262f10a" name="Main" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a79f6969-2315-4a7a-bf68-d668b4ef9b15" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="75ceabdc-f0d8-4c75-9712-5f3fc82d2a3a" name="String[]" direction="In" isUnique="false">
+                  <elementDefinition Id="5178ad3f-76ef-43ad-b97c-42223602d665" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f43e7241-be38-4fd1-97e8-bb12aba38806" direction="Return" isUnique="false">
+                  <elementDefinition Id="c83ee976-3be5-417a-8003-8bddbdb2a1a0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d62f2173-0762-4c7a-a1ca-05bd9e1f7a46" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="61001d3a-af38-4476-b66a-5f61da774560" name="GameManager" isAbstract="false" isLeaf="false" cachedFullName="SnakeMessClassDiagram::GameManager">
+        <elementDefinition Id="f9f833ca-b6a2-4904-9581-45f1953f85ce" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="987e6387-0fde-4de2-8c53-1a81d14c2f1f" name="SnakeMessClassDiagram">
     <elementDefinition Id="0637e77e-3723-4760-bf13-8b7fa73426c7" />
