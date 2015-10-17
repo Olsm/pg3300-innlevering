@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="0637e77e-3723-4760-bf13-8b7fa73426c7"
   name="SnakeMessClassDiagram" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -117,86 +117,173 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="9f0243d5-823d-4e2d-b328-307595ded24b"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="63cd1da7-ef50-4b1b-bb2b-c170fea94b4c"
+              LastKnownName="Coord"
+              LastKnownLocation="SnakeMessClassDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e5217ef1-a942-4cc3-8e2e-958140a41d94"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="614709bc-73dc-49f0-97f6-f83a5c51fe7d"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="249cd35b-7197-4691-801e-6bd672e29419"
+                      name="Lower"
+                      value="4" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="46b871eb-bde2-45d1-9b64-f870e59e745a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c8d74be2-b1df-41ba-8285-0bf1f359eafe"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9827d38f-055a-466f-a532-7b1fc4c7ac8f"
+              LastKnownName="GameStates"
+              LastKnownLocation="SnakeMessClassDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5e38b336-48f9-4f05-bf80-a363d8bdcb4b"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="88173722-c051-4cdb-9338-2814eb128749"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0714bef5-c42f-4013-9530-0dd5bf118595"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a651ab66-79dc-4510-8df0-f3a86434db34"
+              LastKnownName="Board"
+              LastKnownLocation="SnakeMessClassDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8b80d807-127d-467f-8504-451ac08e72ef"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2ab55cf5-1a82-41b8-9e6d-aae8484f7b0d"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="87c9fc23-7082-40f0-b5e8-71d326e3594e"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="5f558a2b-7fab-4416-92aa-8c4b8904be5c"
+              LastKnownName="Direction"
+              LastKnownLocation="SnakeMessClassDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ef5bd901-1f91-4417-b63e-901a69bc7e39"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3994f387-c93d-4b35-bb4d-d15cc4f16b39"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
-            Id="63da0f41-86c1-48d3-a398-d91c1d71bcaf"
-            name="gameOver"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="e39c3d77-19c1-4315-b8c5-692fbcee420d"
-                LastKnownName="bool"
-                LastKnownLocation="SnakeMessClassDiagram.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="7b775ce3-8f75-4e76-a5dd-2e3528870850"
-            name="pause"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="e39c3d77-19c1-4315-b8c5-692fbcee420d"
-                LastKnownName="bool"
-                LastKnownLocation="SnakeMessClassDiagram.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="8a3b8c91-48e3-4a20-a8ff-faf863a783a8"
-            name="inUse"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="b456d90a-8902-4132-a17b-27cfc833357e"
-                LastKnownName="bol"
-                LastKnownLocation="SnakeMessClassDiagram.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="dd0ff0e0-729d-42a1-9efa-a3d289c699f2"
-            name="boardWidth"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="a56f4296-d67f-457e-921f-7468e53be2d9"
-                LastKnownName="int"
-                LastKnownLocation="SnakeMessClassDiagram.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="d4af2c6f-9049-410b-b28f-07854751fe85"
-            name="rng"
+            name="randomGenerator"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -215,7 +302,7 @@
           </property>
           <property
             Id="a8d46602-90f6-4151-9365-541a373a8f6b"
-            name="snakePos"
+            name="snakePosition"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -229,25 +316,6 @@
               <undefinedTypeMoniker
                 Id="88a4222b-4c6b-4f22-8442-a7fbd3e6d41a"
                 LastKnownName="List&lt;Coord&gt;"
-                LastKnownLocation="SnakeMessClassDiagram.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="f2f4f5c9-6db4-41fa-bd6c-dab997915c43"
-            name="spot"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="e39c3d77-19c1-4315-b8c5-692fbcee420d"
-                LastKnownName="bool"
                 LastKnownLocation="SnakeMessClassDiagram.uml" />
             </type_NamedElement>
           </property>
@@ -272,7 +340,7 @@
           </property>
           <property
             Id="7679e7e5-0e52-4a3b-a162-8c6736feb40b"
-            name="newH"
+            name="newHead"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -286,44 +354,6 @@
               <classMoniker
                 Id="63cd1da7-ef50-4b1b-bb2b-c170fea94b4c"
                 LastKnownName="Coord"
-                LastKnownLocation="SnakeMessClassDiagram.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="13e456df-ba7a-49ed-b54c-a6ddf6077094"
-            name="found"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="e39c3d77-19c1-4315-b8c5-692fbcee420d"
-                LastKnownName="bool"
-                LastKnownLocation="SnakeMessClassDiagram.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="a760a238-2d2a-471c-8c38-05e5e047f498"
-            name="boardHeight"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="a56f4296-d67f-457e-921f-7468e53be2d9"
-                LastKnownName="int"
                 LastKnownLocation="SnakeMessClassDiagram.uml" />
             </type_NamedElement>
           </property>
@@ -357,6 +387,93 @@
                   name="String[]"
                   direction="In"
                   isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="39a88754-7c0d-4f5e-b878-3c0ad231bda3"
+            name="createGame : void"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d9d43868-e4bb-4d7d-abe5-6fe690ab3dd7"
+            name="spawnDollar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="71667479-3cc5-48f0-9b0d-c8be9db7cfb3"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd"
+                      LastKnownName="void"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="520611bd-7a4e-447c-8d17-10eb54d66de7"
+            name="moveSnake"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2cf74a03-70d3-427b-937f-0e041180fbd1"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd"
+                      LastKnownName="void"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f339b20e-e945-48f4-8732-0b4ddedcf28b"
+                  name="Direction"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="deb30d45-6e37-4fe9-b5e0-fc9402582246"
+            name="endGame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c84983a2-e3cb-4c05-86de-ab449e3f5cea"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd"
+                      LastKnownName="void"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -397,6 +514,354 @@
       <undefinedType
         Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd"
         name="void" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a651ab66-79dc-4510-8df0-f3a86434db34"
+        name="Board"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="9c37b31e-fa8d-46c5-a220-6a3e7c874fc1"
+            name="boardHeight"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a56f4296-d67f-457e-921f-7468e53be2d9"
+                LastKnownName="int"
+                LastKnownLocation="SnakeMessClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7f0fddae-2cde-4e6c-8b5b-d5018a668f88"
+            name="boardWidth"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a56f4296-d67f-457e-921f-7468e53be2d9"
+                LastKnownName="int"
+                LastKnownLocation="SnakeMessClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="717a805a-47d3-469c-a531-b354b1609bef"
+            name="Board"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5adda201-b090-43d9-b684-896fe81f41eb"
+            name="getBoardHeight"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fca76aa7-477c-4b7f-9fe3-45b505fc0f1a"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a56f4296-d67f-457e-921f-7468e53be2d9"
+                      LastKnownName="int"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8bc289c0-6e2b-4a6f-a9dc-776c22360394"
+            name="getBoardWidth"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c30c1c0c-78fa-4e73-8b38-8b6452570ff5"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a56f4296-d67f-457e-921f-7468e53be2d9"
+                      LastKnownName="int"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9827d38f-055a-466f-a532-7b1fc4c7ac8f"
+        name="GameStates"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="39bcbb5f-8bfe-465d-925e-1916ebc05bac"
+            name="dollarFound"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e39c3d77-19c1-4315-b8c5-692fbcee420d"
+                LastKnownName="bool"
+                LastKnownLocation="SnakeMessClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b4917651-f4a1-4315-a61c-5fd5a76fa2d6"
+            name="pause"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e39c3d77-19c1-4315-b8c5-692fbcee420d"
+                LastKnownName="bool"
+                LastKnownLocation="SnakeMessClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3fdd6bfa-7186-4a37-9c81-f420ce714f5e"
+            name="spawnDollar"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e39c3d77-19c1-4315-b8c5-692fbcee420d"
+                LastKnownName="bool"
+                LastKnownLocation="SnakeMessClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2eea84bb-cce3-49a5-8269-7876e96ece5c"
+            name="getDollarFound"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5544c964-55a4-4db0-9f97-b12a840d1ac8"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e39c3d77-19c1-4315-b8c5-692fbcee420d"
+                      LastKnownName="bool"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="86800dba-2cba-470c-a501-55cec1b7b998"
+            name="getPause"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d019356d-2056-418c-9fb7-46297a186b27"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e39c3d77-19c1-4315-b8c5-692fbcee420d"
+                      LastKnownName="bool"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6f8a10b0-cebd-4745-b889-bb43d46e448c"
+            name="getSpawnDollar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a7481e78-4978-4eee-a58d-d8e3864bb299"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e39c3d77-19c1-4315-b8c5-692fbcee420d"
+                      LastKnownName="bool"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="36dd8787-ab7f-4a86-970d-4420b3ec773a"
+            name="setDollarFound"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c4bac39f-93d6-40a4-bf2a-9d01193f0687"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd"
+                      LastKnownName="void"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a60314ae-e144-4184-82a8-9359de86d0e9"
+            name="setPause"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8f1b0d29-4540-4db1-94bb-a8172eb06a8a"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd"
+                      LastKnownName="void"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="60609169-b746-439d-8fea-2f5d08f8a71d"
+            name="setSpawnDollar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="68e666b7-45d3-496e-aa26-c84078a37481"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd"
+                      LastKnownName="void"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a4297bc5-8235-4e47-93b6-a3a5551900b5"
+        name="enum" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="5f558a2b-7fab-4416-92aa-8c4b8904be5c"
+        name="Direction"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="c1f512f6-240f-4baf-a8fa-423258d67a01"
+            name="Up" />
+          <enumerationLiteral
+            Id="4921565d-7d41-4f8b-9285-05e7b98cb703"
+            name="Down" />
+          <enumerationLiteral
+            Id="754c3b44-46d1-4fee-9cfd-32b83802ea37"
+            name="Left" />
+          <enumerationLiteral
+            Id="7a4d4f73-a52f-401b-81f8-8111443a4e16"
+            name="Right" />
+        </ownedLiterals>
+      </enumeration>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
