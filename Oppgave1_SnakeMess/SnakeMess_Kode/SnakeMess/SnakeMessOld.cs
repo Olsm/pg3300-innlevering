@@ -14,11 +14,12 @@ namespace SnakeMessOld
 
     class SnakeMessOld
     {
-        public static void Main(string[] arguments)
+        public static void Main1(string[] arguments)
         {
             bool gameOver = false, pause = false, spawnDollar = false;
             short newDir = 2; // 0 = up, 1 = right, 2 = down, 3 = left
             short last = newDir;
+            int boardWidth = Console.WindowWidth, boardHeigt = Console.WindowHeight;
             Random rng = new Random();
             Coord dollarPosition = new Coord();
             List<Coord> snake = new List<Coord>();
