@@ -20,14 +20,17 @@ namespace SnakeMess
         public static void Main(string[] arguments)
 		{
             g.createGame();
-            g.startTimer();
-            g.snakeDirection = Up;
+            g.snakeDirection = Down;
 
             while (true)
             {
                 System.Threading.Thread.Sleep(1000);
 
-                // Do stuff when buttons are clicked
+                // Restart loop if pause game is true
+                if (g.state.pause)
+                    continue;
+
+                // Change direction when arrow keys are clicked
                 if (Console.KeyAvailable)
                 {
                     ConsoleKeyInfo cki = Console.ReadKey(true);
@@ -46,23 +49,25 @@ namespace SnakeMess
                         g.moveSnake(Left);
                     else if (cki.Key == ConsoleKey.RightArrow && g.snakeDirection != Left)
                         g.moveSnake(Right);
-                }
+                
+                // Continue moving if direction is not changed
+                } else
+                    g.moveSnake(g.snakeDirection);
 
-                // Restart loop if pause game is true
-                if (g.state.pause)
-                    continue;
-
+                // Game over if head hits border
                 if (g.snakePosition.ElementAt(0).X == 1
                         || g.snakePosition.ElementAt(0).Y == 1
                         || g.snakePosition.ElementAt(0).X == g.board.boardWidth - 1
                         || g.snakePosition.ElementAt(0).Y == g.board.boardHeight - 1)
                     g.endGame();
 
+                
+
+                // Make snake larger if dollar hit
                 if (g.snakePosition.ElementAt(0).X == g.dollarPosition.X &&
                         g.snakePosition.ElementAt(0).Y == g.dollarPosition.Y)
                     g.dollarHit();
-
-                g.moveSnake(g.snakeDirection);
+                
             }
         }
 	}
