@@ -414,25 +414,6 @@
             </type_NamedElement>
           </property>
           <property
-            Id="1a836eaa-593f-4e0f-9623-287fbc719aaf"
-            name="timer"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="663daaef-32be-4ebc-925a-1943c8dbe006"
-                LastKnownName="Stopwatch"
-                LastKnownLocation="SnakeMessClassDiagram.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="f023d80e-c5cb-4990-b2b6-1d47bb83d230"
             name="dollarPosition"
             visibility="Private"

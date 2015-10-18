@@ -225,12 +225,6 @@
               <referencedTypeMoniker Id="7fd0a975-8cef-45d8-bc52-8cfb0a439fa0" LastKnownName="List&lt;Coord&gt;" />
             </type_NamedElement>
           </property>
-          <property Id="dee92ad3-953a-409c-8e94-472a427f2557" name="timer" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="1a836eaa-593f-4e0f-9623-287fbc719aaf" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="49d722d5-52c2-4104-ad63-663a5ca13f65" LastKnownName="Stopwatch" />
-            </type_NamedElement>
-          </property>
           <property Id="ee751564-0ab4-4c7c-b543-0ee264d5116c" name="dollarPosition" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f023d80e-c5cb-4990-b2b6-1d47bb83d230" />
             <type_NamedElement>
@@ -504,11 +498,6 @@
         </ownedLiterals>
       </enumeration>
     </logicalClassDesignerModelHasTypes>
-    <packageHasNamedElement>
-      <referencedType Id="49d722d5-52c2-4104-ad63-663a5ca13f65" name="Stopwatch" isAbstract="false" isLeaf="false" cachedFullName="Stopwatch">
-        <elementDefinition Id="663daaef-32be-4ebc-925a-1943c8dbe006" />
-      </referencedType>
-    </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
       <class Id="b7a9712f-8da2-482f-b5c1-219acec05e6e" name="SnakeMess" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="55b0edfb-c8d7-4d11-8030-4aa06ce0245e" />
