@@ -39,16 +39,12 @@ namespace SnakeMess
 
             // Create snake element positions
             for (int i = 0; i < 5; i++)
-                snakePosition.Add(new Coord(10, 10 + i));
+                snakePosition.Add(new Coord(10, 10 - i));
 
-            // Add yellow snake elements
+            // Add yellow snake head
             Console.ForegroundColor = ConsoleColor.Yellow;
-            for (int i = 0; i < 5; i++)
-            {
-                Console.SetCursorPosition(10, 10 + i);
-                if (i > 0) Console.Write("0");
-                else Console.Write("X");
-            }
+            Console.SetCursorPosition(10, 10);
+            Console.Write("X");
 
             // Spawn a dollar at random position on screen
             spawnDollar();
@@ -63,6 +59,9 @@ namespace SnakeMess
 
         public void moveSnake(Direction direction)
         {
+            if (snakePosition.Count < 4)
+                addHead();
+
             snakeDirection = direction;
             int addX = 0;
             int addY = 0;
@@ -117,6 +116,13 @@ namespace SnakeMess
 
         public void dollarHit()
         {
+            // Add the new head element and spawn a dollar
+            addHead();
+            spawnDollar();
+        }
+
+        private void addHead()
+        {
             int addX = 0;
             int addY = 0;
 
@@ -133,12 +139,10 @@ namespace SnakeMess
             int newX = snakePosition.ElementAt(snakePosition.Count - 1).X + addX;
             int newY = snakePosition.ElementAt(snakePosition.Count - 1).Y + addY;
 
-            // Add the new head element
             snakePosition.Add(new Coord(newX, newY));
             Console.SetCursorPosition(newX, newY);
             Console.Write("@");
 
-            spawnDollar();
         }
     }
 }
