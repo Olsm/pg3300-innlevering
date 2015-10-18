@@ -61,7 +61,25 @@ namespace SnakeMess
                         || g.snakePosition.ElementAt(0).Y == g.board.boardHeight - 1)
                     g.endGame();
 
-                
+                /* Complete cannibalism code
+                // Game over if snake head hits body (cannibalism)
+                for (int i = 0; i < g.snakePosition.Count; i++)
+                {
+                    Coord snakeElement = g.snakePosition.ElementAt(i);
+                    if ( i != 0)
+                    {
+                        if (snakeElement.X == g.snakePosition.ElementAt(0).X &&
+                        snakeElement.Y == g.snakePosition.ElementAt(0).Y)
+                        {
+                            g.endGame();
+                        }
+                    }
+                    else
+                    {
+                        g.state.pause = true;
+                    }
+                }
+                */
 
                 // Make snake larger if dollar hit
                 if (g.snakePosition.ElementAt(0).X == g.dollarPosition.X &&
