@@ -21,10 +21,11 @@ namespace SnakeMess
 		{
             g.createGame();
             g.startTimer();
+            g.snakeDirection = Up;
 
             while (true)
             {
-                System.Threading.Thread.Sleep(100);
+                System.Threading.Thread.Sleep(1000);
 
                 // Do stuff when buttons are clicked
                 if (Console.KeyAvailable)
@@ -51,8 +52,15 @@ namespace SnakeMess
                 if (g.state.pause)
                     continue;
 
-                if (g.snakePosition.ElementAt(0).X == 0 || g.snakePosition.ElementAt(0).Y == 0)
+                if (g.snakePosition.ElementAt(0).X == 1
+                        || g.snakePosition.ElementAt(0).Y == 1
+                        || g.snakePosition.ElementAt(0).X == g.board.boardWidth - 1
+                        || g.snakePosition.ElementAt(0).Y == g.board.boardHeight - 1)
                     g.endGame();
+
+                if (g.snakePosition.ElementAt(0).X == g.dollarPosition.X &&
+                        g.snakePosition.ElementAt(0).Y == g.dollarPosition.Y)
+                    g.dollarHit();
 
                 g.moveSnake(g.snakeDirection);
             }
