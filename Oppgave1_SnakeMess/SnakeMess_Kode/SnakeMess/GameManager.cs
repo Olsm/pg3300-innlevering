@@ -10,20 +10,24 @@ namespace SnakeMess
 
     class GameManager
     {
+        public GameState state;
+        public Direction snakeDirection { get; set; }
         private Board board;
-        private List<Coord> snakePosition;
+        public List<Coord> snakePosition;
         private Coord dollarPosition;
         private Random randomGenerator;
-        private Stopwatch timer { get; set; }
+        private Stopwatch timer;
 
-        private enum Direction
+        internal enum Direction
         {
             Up, Down, Left, Right
         };
 
         public GameManager()
         {
+            state = new GameState();
             snakePosition = new List<Coord>();
+            snakeDirection = new Direction();
             dollarPosition = new Coord();
             randomGenerator = new Random();
             timer = new Stopwatch();
@@ -59,8 +63,34 @@ namespace SnakeMess
             Environment.Exit(0);
         }
 
-        public void moveSnake()
+        public void moveSnake(Direction direction)
         {
+            snakeDirection = direction;
+
+            int addX = 0;
+            int addY = 0;
+
+            if (direction == Direction.Down)
+                addY = 1;
+            else if (direction == Direction.Up)
+                addY = -1;
+            else if (direction == Direction.Left)
+                addX = -1;
+            else if (direction == Direction.Right)
+                addX = 1;
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            for (int i = 0; i < snakePosition.Count; i++)
+            {
+                snakePosition.Insert(i, new Coord(snakePosition.ElementAt(i).X + addX, snakePosition.ElementAt(i).Y + addY));
+                snakePosition.RemoveAt(i + 1);
+                Console.SetCursorPosition(snakePosition.ElementAt(i).X, snakePosition.ElementAt(i).Y);
+                Console.Write("@");
+
+                Console.SetCursorPosition(snakePosition.ElementAt(snakePosition.Count - 1).X, snakePosition.ElementAt(snakePosition.Count - 1).X);
+                Console.Write(" ");
+            }
 
         }
 
