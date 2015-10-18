@@ -37,9 +37,8 @@ namespace SnakeMess
             // Setup gameboard options
             board = new Board();
 
-            // Create snake element positions
-            for (int i = 0; i < 5; i++)
-                snakePosition.Add(new Coord(10, 10 - i));
+            // Add snake element position for head
+            snakePosition.Add(new Coord(10, 10));
 
             // Add yellow snake head
             Console.ForegroundColor = ConsoleColor.Yellow;
@@ -143,6 +142,7 @@ namespace SnakeMess
             Console.SetCursorPosition(newX, newY);
             Console.Write("@");
 
+            snakePosition.Insert(0, new Coord(newX, newY));
         }
     }
 }
