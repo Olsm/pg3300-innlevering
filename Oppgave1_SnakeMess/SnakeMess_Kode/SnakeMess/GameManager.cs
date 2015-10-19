@@ -39,7 +39,7 @@ namespace SnakeMess
             // Add snake element position for head
             snakePosition.Add(new Coord(10, 10));
 
-            // Add yellow snake head
+            // Add Yellow snake head
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.SetCursorPosition(10, 10);
             Console.Write("@");
@@ -73,25 +73,31 @@ namespace SnakeMess
                 addX = -1;
             else if (direction == Direction.Right)
                 addX = 1;
+
+            // Get position of head and tail
+            Coord headPosition = snakePosition.ElementAt (0);
+            Coord tailPosition = snakePosition.ElementAt (snakePosition.Count - 1);
+
+            // Add x or y pixel to head
+            int newX = headPosition.x + addX;
+            int newY = headPosition.y + addY;
+
+            // Set first body element position
+            int bodyX = headPosition.x;
+            int bodyY = headPosition.y;
             
-            // Get position of head and add x or y pixel
-            int newX = snakePosition.ElementAt(0).X + addX;
-            int newY = snakePosition.ElementAt(0).Y + addY;
-
-            // Get position of head to set first body element
-            int bodyX = snakePosition.ElementAt(0).X;
-            int bodyY = snakePosition.ElementAt(0).Y;
-
-            // Get position of last element (tail) and remove it
-            int tailX = snakePosition.ElementAt(snakePosition.Count - 1).X;
-            int tailY = snakePosition.ElementAt(snakePosition.Count - 1).Y;
+            // Remove last element (tail)
+            int tailX = tailPosition.x;
+            int tailY = tailPosition.y;
             Console.SetCursorPosition(tailX, tailY);
             Console.Write(" ");
             snakePosition.RemoveAt(snakePosition.Count - 1);
 
             // Add the new head to first element
             snakePosition.Insert(0, new Coord(newX, newY));
-            if (newX >= 0 && newY >= 0 && newX < board.boardWidth && newY < board.boardHeight) {
+            if (newX >= 0 && newY >= 0 
+                    && newX < board.boardWidth 
+                    && newY < board.boardHeight) {
                 Console.SetCursorPosition (newX, newY);
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.Write ("@");
@@ -104,8 +110,8 @@ namespace SnakeMess
         public void spawnDollar()
         {
             // Generate a random position for dollar
-            dollarPosition.X = randomGenerator.Next(0, board.boardWidth);
-            dollarPosition.Y = randomGenerator.Next(0, board.boardHeight);
+            dollarPosition.x = randomGenerator.Next(0, board.boardWidth);
+            dollarPosition.y = randomGenerator.Next(0, board.boardHeight);
             
             // Spawn new dollar if spawned on snake body
             foreach (Coord snakeElement in snakePosition) {
@@ -115,7 +121,7 @@ namespace SnakeMess
 
             // Place green dollar at random position
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.SetCursorPosition(dollarPosition.X, dollarPosition.Y);
+            Console.SetCursorPosition(dollarPosition.x, dollarPosition.y);
             Console.Write("$");
         }
 
