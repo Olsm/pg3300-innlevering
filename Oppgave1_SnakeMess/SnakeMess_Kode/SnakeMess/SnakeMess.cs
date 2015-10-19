@@ -26,25 +26,29 @@ namespace SnakeMess
             {
                 System.Threading.Thread.Sleep(100);
 
-                // Change direction when arrow keys are clicked and game not paused
+                // Do stuff when key has been clicked
                 if (Console.KeyAvailable)
                 {
                     ConsoleKeyInfo cki = Console.ReadKey(true);
 
+                    // End or pause game if escape / space clicked
                     if (cki.Key == ConsoleKey.Escape)
                         g.endGame();
                     else if (cki.Key == ConsoleKey.Spacebar)
                         g.state.pause = !g.state.pause;
-                    
-                    // Only allow going up if not going down, and left if not going right etc...
-                    else if (cki.Key == ConsoleKey.UpArrow && g.snakeDirection != Down)
-                        g.moveSnake(Up);
-                    else if (cki.Key == ConsoleKey.DownArrow && g.snakeDirection != Up)
-                        g.moveSnake(Down);
-                    else if (cki.Key == ConsoleKey.LeftArrow && g.snakeDirection != Right)
-                        g.moveSnake(Left);
-                    else if (cki.Key == ConsoleKey.RightArrow && g.snakeDirection != Left)
-                        g.moveSnake(Right);
+
+                    // Only change direction if game is not paused
+                    if (!g.state.pause) {
+                        // Only allow going up if not going down, and left if not going right etc...
+                        if (cki.Key == ConsoleKey.UpArrow && g.snakeDirection != Down)
+                            g.moveSnake(Up);
+                        else if (cki.Key == ConsoleKey.DownArrow && g.snakeDirection != Up)
+                            g.moveSnake(Down);
+                        else if (cki.Key == ConsoleKey.LeftArrow && g.snakeDirection != Right)
+                            g.moveSnake(Left);
+                        else if (cki.Key == ConsoleKey.RightArrow && g.snakeDirection != Left)
+                            g.moveSnake(Right);
+                    }
                 }
 
                 // pause game or move snake if no button was clicked
