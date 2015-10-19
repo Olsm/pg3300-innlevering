@@ -2,25 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
-using System.Security.Cryptography;
-using System.Threading;
 
 namespace SnakeMess
 {
+    public enum Direction
+    {
+        Up, Down, Left, Right
+    };
 
     class GameManager
     {
-        public GameState state;
+        public GameState state { get; }
         public Direction snakeDirection { get; set; }
-        public Board board;
-        public List<Coord> snakePosition;
-        public Coord dollarPosition;
+        public Board board { get; set; }
+        public List<Coord> snakePosition { get; }
+        public Coord dollarPosition {get; }
+        public Stopwatch timer { get; }
         private Random randomGenerator;
-
-        internal enum Direction
-        {
-            Up, Down, Left, Right
-        };
 
         public GameManager()
         {
@@ -29,6 +27,7 @@ namespace SnakeMess
             snakeDirection = new Direction();
             dollarPosition = new Coord();
             randomGenerator = new Random();
+            timer = new Stopwatch ();
         }
 
         // Add the game elements to console
@@ -43,7 +42,7 @@ namespace SnakeMess
             // Add yellow snake head
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.SetCursorPosition(10, 10);
-            Console.Write("X");
+            Console.Write("@");
 
             // Spawn a dollar at random position on screen
             spawnDollar();
@@ -95,7 +94,7 @@ namespace SnakeMess
             if (newX >= 0 && newY >= 0 && newX < board.boardWidth && newY < board.boardHeight) {
                 Console.SetCursorPosition (newX, newY);
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write ("X");
+                Console.Write ("@");
                 // Overwrite character of second element to body character
                 Console.SetCursorPosition (bodyX, bodyY);
                 Console.Write ("0");
@@ -107,6 +106,12 @@ namespace SnakeMess
             // Generate a random position for dollar
             dollarPosition.X = randomGenerator.Next(0, board.boardWidth);
             dollarPosition.Y = randomGenerator.Next(0, board.boardHeight);
+            
+            // Spawn new dollar if spawned on snake body
+            foreach (Coord snakeElement in snakePosition) {
+                if (dollarPosition == snakeElement)
+                    spawnDollar ();
+            }
 
             // Place green dollar at random position
             Console.ForegroundColor = ConsoleColor.Green;
