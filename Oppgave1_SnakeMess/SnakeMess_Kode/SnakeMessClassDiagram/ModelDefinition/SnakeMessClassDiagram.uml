@@ -342,7 +342,7 @@
                     <literalString
                       Id="249cd35b-7197-4691-801e-6bd672e29419"
                       name="Lower"
-                      value="4" />
+                      value="0" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
@@ -1256,6 +1256,56 @@
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c7f584df-9893-46fb-95e1-04b1dab4bcd3"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="63cd1da7-ef50-4b1b-bb2b-c170fea94b4c"
+              LastKnownName="Coord"
+              LastKnownLocation="SnakeMessClassDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9b14761a-ab18-4e1e-8253-b287ed3ccde0"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="706f5d60-4ca2-4725-bce5-ba62554451d2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="920bddcf-6153-4f15-ac05-4387baceb42c"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="783aafdc-4964-4963-b1c4-271e280524c3"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
