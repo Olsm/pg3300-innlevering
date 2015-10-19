@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Threading;
+using static SnakeMess.GameManager;
 
 namespace SnakeMess
 {
@@ -14,7 +15,6 @@ namespace SnakeMess
 		{
             g.CreateGame();
             g.SnakeDirection = Direction.Down;
-            g.Timer.Start ();
 
             while (true)
             {
@@ -30,10 +30,10 @@ namespace SnakeMess
                     if (cki.Key == ConsoleKey.Escape)
                         g.EndGame();
                     else if (cki.Key == ConsoleKey.Spacebar)
-                        g.State.pause = !g.State.pause;
+                        g.State.Pause = !g.State.Pause;
 
                     // Only change direction if game is not paused
-                    if (!g.State.pause) {
+                    if (!g.State.Pause) {
                         // Only allow going up if not going down, and left if not going right etc...
                         if (cki.Key == ConsoleKey.UpArrow && g.SnakeDirection != Direction.Down)
                             g.MoveSnake(Direction.Up);
@@ -50,7 +50,7 @@ namespace SnakeMess
                 else {
 
                     // Restart loop if pause game is true
-                    if (g.State.pause)
+                    if (g.State.Pause)
                         continue;
 
                     // Continue moving in same direction

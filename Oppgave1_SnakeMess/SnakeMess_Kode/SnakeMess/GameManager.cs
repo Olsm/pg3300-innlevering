@@ -1,15 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Diagnostics;
 
 namespace SnakeMess
 {
-    internal enum Direction
-    {
-        Up, Down, Left, Right
-    };
-
     class GameManager
     {
         public GameState State { get; private set; }
@@ -17,8 +11,12 @@ namespace SnakeMess
         public Board Board { get; private set; }
         public List<Coord> SnakePosition { get; private set; }
         public Coord DollarPosition {get; private set; }
-        public Stopwatch Timer { get; private set; }
         private readonly Random randomGenerator;
+
+        internal enum Direction
+        {
+            Up, Down, Left, Right
+        };
 
         public GameManager()
         {
@@ -27,7 +25,6 @@ namespace SnakeMess
             SnakeDirection = new Direction();
             DollarPosition = new Coord();
             randomGenerator = new Random();
-            Timer = new Stopwatch ();
         }
 
         // Add the game elements to console
