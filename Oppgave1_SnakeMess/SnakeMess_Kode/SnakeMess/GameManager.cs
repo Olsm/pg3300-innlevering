@@ -59,7 +59,7 @@ namespace SnakeMess
         public void moveSnake(Direction direction)
         {
             if (snakePosition.Count < 4)
-                addHead();
+                addSnakeElement();
 
             snakeDirection = direction;
             int addX = 0;
@@ -116,33 +116,15 @@ namespace SnakeMess
         public void dollarHit()
         {
             // Add the new head element and spawn a dollar
-            addHead();
+            addSnakeElement();
             spawnDollar();
         }
 
-        private void addHead()
+        private void addSnakeElement()
         {
-            int addX = 0;
-            int addY = 0;
-
-            // Figure out where to add the head element according to movement
-            if (snakeDirection == Direction.Up)
-                addY = 1;
-            else if (snakeDirection == Direction.Down)
-                addY = -1;
-            else if (snakeDirection == Direction.Left)
-                addX = 1;
-            else if (snakeDirection == Direction.Right)
-                addX = -1;
-
-            int newX = snakePosition.ElementAt(snakePosition.Count - 1).X + addX;
-            int newY = snakePosition.ElementAt(snakePosition.Count - 1).Y + addY;
-
-            snakePosition.Add(new Coord(newX, newY));
-            Console.SetCursorPosition(newX, newY);
-            Console.Write("@");
-
-            snakePosition.Insert(0, new Coord(newX, newY));
+            // Add snake element to last position
+            Coord snake = snakePosition.ElementAt(snakePosition.Count -1);
+            snakePosition.Add(snake);
         }
     }
 }
