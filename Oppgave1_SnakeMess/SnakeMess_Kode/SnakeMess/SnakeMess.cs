@@ -24,7 +24,7 @@ namespace SnakeMess
 
             while (true)
             {
-                System.Threading.Thread.Sleep(1000);
+                System.Threading.Thread.Sleep(100);
 
                 // Restart loop if pause game is true
                 if (g.state.pause)
@@ -55,8 +55,8 @@ namespace SnakeMess
                     g.moveSnake(g.snakeDirection);
 
                 // Game over if head hits border
-                if (g.snakePosition.ElementAt(0).X == 1
-                        || g.snakePosition.ElementAt(0).Y == 1
+                if (g.snakePosition.ElementAt(0).X == 0
+                        || g.snakePosition.ElementAt(0).Y == 0
                         || g.snakePosition.ElementAt(0).X == g.board.boardWidth - 1
                         || g.snakePosition.ElementAt(0).Y == g.board.boardHeight - 1)
                     g.endGame();
