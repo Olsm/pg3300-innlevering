@@ -47,7 +47,7 @@ namespace SnakeMess
                         g.moveSnake(Right);
                 }
 
-                // contiunue if game paused, or continue moving if direction is not changed
+                // pause game or move snake if no button was clicked
                 else {
 
                     // Restart loop if pause game is true
@@ -64,27 +64,19 @@ namespace SnakeMess
                         || g.snakePosition.ElementAt(0).X == g.board.boardWidth - 1
                         || g.snakePosition.ElementAt(0).Y == g.board.boardHeight - 1)
                     g.endGame();
-                
+
                 // Game over if snake head hits body (cannibalism)
-                for (int i = 0; i < g.snakePosition.Count; i++)
-                {
-                    Coord snakeElement = g.snakePosition.ElementAt(i);
-                    if ( i != 0)
-                    {
-                        if (snakeElement.X == g.snakePosition.ElementAt(0).X &&
-                        snakeElement.Y == g.snakePosition.ElementAt(0).Y)
-                        {
+                Coord headPosition = g.snakePosition.ElementAt (0);
+                foreach (Coord snakeElement in g.snakePosition) {
+                    if ( snakeElement != headPosition
+                        && snakeElement.X == headPosition.X
+                        && snakeElement.Y == headPosition.Y)
                             g.endGame();
-                        }
-                    }
-                }
 
                 // Make snake larger if dollar hit
                 if (g.snakePosition.ElementAt(0).X == g.dollarPosition.X &&
-                        g.snakePosition.ElementAt(0).Y == g.dollarPosition.Y)
-                    g.dollarHit();
-
-                
+                    g.snakePosition.ElementAt(0).Y == g.dollarPosition.Y)
+                        g.dollarHit();
             }
         }
 	}
