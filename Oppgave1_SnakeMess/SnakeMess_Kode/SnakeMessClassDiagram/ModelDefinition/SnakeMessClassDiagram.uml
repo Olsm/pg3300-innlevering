@@ -184,8 +184,8 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="a91ade42-aa2c-4003-bd27-3de95fac705b"
-            name="Coord"
+            Id="0cb90f8d-362c-459a-b9c9-412f8a138967"
+            name="GetX"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -194,10 +194,102 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="fb8de950-26ed-453b-b75e-5cf82828010f"
-                  name="Coord"
+                  Id="e03c6a6d-c149-41be-9d67-f3ef11a6af8f"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a56f4296-d67f-457e-921f-7468e53be2d9"
+                      LastKnownName="int"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2bbc3b3d-125b-4343-bf07-f06faf6cae1f"
+            name="Gety"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="465c46cb-605e-4e98-a509-f738b17d58b1"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a56f4296-d67f-457e-921f-7468e53be2d9"
+                      LastKnownName="int"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="daa4d1f8-db47-4da8-b010-2e715317c138"
+            name="SetX"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a9b483d0-197b-4f74-b7cd-cd62fd503022"
+                  name="int"
                   direction="In"
                   isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5c2188fb-58cd-47fa-a9ab-68e829a75fa3"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd"
+                      LastKnownName="void"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="24d7a94e-19d9-45b8-819b-e34fa803266c"
+            name="SetY"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d5c607ec-749b-46f7-8140-3c2d1f9a3718"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="234be3f5-bb15-4b83-a0c8-deced131496b"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd"
+                      LastKnownName="void"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -377,7 +469,7 @@
         <ownedAttributesInternal>
           <property
             Id="d4af2c6f-9049-410b-b28f-07854751fe85"
-            name="randomGenerator"
+            name="RandomGenerator"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -396,7 +488,7 @@
           </property>
           <property
             Id="a8d46602-90f6-4151-9365-541a373a8f6b"
-            name="snakePosition"
+            name="SnakePosition"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -415,7 +507,7 @@
           </property>
           <property
             Id="f023d80e-c5cb-4990-b2b6-1d47bb83d230"
-            name="dollarPosition"
+            name="DollarPosition"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -434,7 +526,7 @@
           </property>
           <property
             Id="92126e77-f496-4ab3-9ada-c94ef4bd26fc"
-            name="board"
+            name="Board"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -451,11 +543,49 @@
                 LastKnownLocation="SnakeMessClassDiagram.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="cb826587-4381-4832-8d66-d92517e73276"
+            name="State"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="afe832d6-5b34-4325-85cb-b951bc5658fd"
+                LastKnownName="GameState"
+                LastKnownLocation="SnakeMessClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6791af43-8cd1-438a-bb10-7c92dd08f477"
+            name="SnakeDirection"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="5f558a2b-7fab-4416-92aa-8c4b8904be5c"
+                LastKnownName="Direction"
+                LastKnownLocation="SnakeMessClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="39a88754-7c0d-4f5e-b878-3c0ad231bda3"
-            name="createGame : void"
+            name="CreateGame : void"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -463,7 +593,7 @@
             isQuery="false" />
           <operation
             Id="d9d43868-e4bb-4d7d-abe5-6fe690ab3dd7"
-            name="spawnDollar"
+            name="SpawnDollar"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -487,7 +617,7 @@
           </operation>
           <operation
             Id="520611bd-7a4e-447c-8d17-10eb54d66de7"
-            name="moveSnake"
+            name="MoveSnake"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -509,7 +639,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="f339b20e-e945-48f4-8732-0b4ddedcf28b"
+                  Id="dd717dbe-02ef-406c-a9f6-ffd151634f87"
                   name="Direction"
                   direction="In"
                   isUnique="false" />
@@ -518,7 +648,7 @@
           </operation>
           <operation
             Id="deb30d45-6e37-4fe9-b5e0-fc9402582246"
-            name="endGame"
+            name="EndGame"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -528,6 +658,229 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="c84983a2-e3cb-4c05-86de-ab449e3f5cea"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd"
+                      LastKnownName="void"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6a7e1f76-e9d6-4361-93be-5c41cc8cde68"
+            name="getBoard"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bccff27b-c374-4aef-9991-2f8d77c149c5"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a651ab66-79dc-4510-8df0-f3a86434db34"
+                      LastKnownName="Board"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="17e57381-3a67-4c79-a4cc-9555ee273c30"
+            name="SetBoard"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b73c536a-aea0-4bde-afde-2d6de21c4d08"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd"
+                      LastKnownName="void"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9a26f451-36ab-4ef3-b1fd-a149f1fe4987"
+                  name="Board"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f5e60110-ab6c-4276-b1b7-c343a100e2bc"
+            name="GetSnakeDirection"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ed736852-39de-4272-8740-09f8cabb3641"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="5f558a2b-7fab-4416-92aa-8c4b8904be5c"
+                      LastKnownName="Direction"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fb916b66-b7aa-41f8-8038-6cd2ce90e109"
+            name="SetSnakeDirection"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f90fa43c-3a3d-4393-8e24-1030e1150bab"
+                  name="Direction"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d4b16e12-835b-49d8-b123-4b71a91ca99f"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd"
+                      LastKnownName="void"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4f6efb69-1ee4-4978-ac4a-125622877060"
+            name="GetSnakePosition"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3a8d2be0-f5b7-4179-be4c-3497f7205413"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="63cd1da7-ef50-4b1b-bb2b-c170fea94b4c"
+                      LastKnownName="Coord"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="392e4acb-e6fa-438e-97db-ce62b3fdd4a3"
+            name="SetSnakePosition"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3d69b66f-90c1-47ee-af94-cec40f9d4f80"
+                  name="Coord"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c45a8617-5fba-470f-a0af-7986b4ef413c"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd"
+                      LastKnownName="void"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="145cefc0-c476-4310-873a-954915cac21d"
+            name="GetDollarPosition"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cf46a1ca-27af-47e4-b373-bd4d7ce417ce"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="63cd1da7-ef50-4b1b-bb2b-c170fea94b4c"
+                      LastKnownName="Coord"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b8cad7f1-2773-48e1-8096-cddf7167ba79"
+            name="SetDollarPosition"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e866b35d-e0e0-4319-b29a-7ee6216c87cf"
+                  name="Coord"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e3767809-8728-4b23-89a0-8b0215b68016"
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
@@ -682,6 +1035,70 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="bc33935f-337c-4a13-8911-ce32fbf7fbc6"
+            name="SetBoardWidth"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="db88c27c-19c4-4573-ab60-a172888d5b67"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="441651fc-9cf7-4d9b-b3ac-85718a83ca68"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd"
+                      LastKnownName="void"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8229df8e-c5a7-45da-ab3d-b92806868718"
+            name="SetBoardHeight"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2ede3d95-7f8a-4232-b2e2-369000e40ffe"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f3880407-7e07-47cb-ba81-4b84fb83d0b9"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd"
+                      LastKnownName="void"
+                      LastKnownLocation="SnakeMessClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -694,46 +1111,8 @@
         isActiveClass="false">
         <ownedAttributesInternal>
           <property
-            Id="39bcbb5f-8bfe-465d-925e-1916ebc05bac"
-            name="dollarFound"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="e39c3d77-19c1-4315-b8c5-692fbcee420d"
-                LastKnownName="bool"
-                LastKnownLocation="SnakeMessClassDiagram.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="b4917651-f4a1-4315-a61c-5fd5a76fa2d6"
-            name="pause"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="e39c3d77-19c1-4315-b8c5-692fbcee420d"
-                LastKnownName="bool"
-                LastKnownLocation="SnakeMessClassDiagram.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="3fdd6bfa-7186-4a37-9c81-f420ce714f5e"
-            name="spawnDollar"
+            name="Pause"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -753,32 +1132,8 @@
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="2eea84bb-cce3-49a5-8269-7876e96ece5c"
-            name="getDollarFound"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="5544c964-55a4-4db0-9f97-b12a840d1ac8"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="e39c3d77-19c1-4315-b8c5-692fbcee420d"
-                      LastKnownName="bool"
-                      LastKnownLocation="SnakeMessClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
             Id="86800dba-2cba-470c-a501-55cec1b7b998"
-            name="getPause"
+            name="GetPause"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -801,56 +1156,8 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="6f8a10b0-cebd-4745-b889-bb43d46e448c"
-            name="getSpawnDollar"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="a7481e78-4978-4eee-a58d-d8e3864bb299"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="e39c3d77-19c1-4315-b8c5-692fbcee420d"
-                      LastKnownName="bool"
-                      LastKnownLocation="SnakeMessClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="36dd8787-ab7f-4a86-970d-4420b3ec773a"
-            name="setDollarFound"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="c4bac39f-93d6-40a4-bf2a-9d01193f0687"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd"
-                      LastKnownName="void"
-                      LastKnownLocation="SnakeMessClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
             Id="a60314ae-e144-4184-82a8-9359de86d0e9"
-            name="setPause"
+            name="SetPause"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -860,30 +1167,6 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="8f1b0d29-4540-4db1-94bb-a8172eb06a8a"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="b5f32f3c-2fdf-4663-9024-e6134412a2cd"
-                      LastKnownName="void"
-                      LastKnownLocation="SnakeMessClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="60609169-b746-439d-8fea-2f5d08f8a71d"
-            name="setSpawnDollar"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="68e666b7-45d3-496e-aa26-c84078a37481"
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
@@ -1032,6 +1315,16 @@
           </operation>
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="afe832d6-5b34-4325-85cb-b951bc5658fd"
+        name="GameState" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="44fc0a6e-78ff-4f8f-bb26-016134a5f499"
+        name="VOID" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
