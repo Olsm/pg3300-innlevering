@@ -26,10 +26,6 @@ namespace SnakeMess
             {
                 System.Threading.Thread.Sleep(100);
 
-                // Restart loop if pause game is true
-                if (g.state.pause)
-                    continue;
-
                 // Change direction when arrow keys are clicked
                 if (Console.KeyAvailable)
                 {
@@ -39,7 +35,7 @@ namespace SnakeMess
                         g.endGame();
                     else if (cki.Key == ConsoleKey.Spacebar)
                         g.state.pause = !g.state.pause;
-
+                    
                     // Only allow going up if not going down, and left if not going right etc...
                     else if (cki.Key == ConsoleKey.UpArrow && g.snakeDirection != Down)
                         g.moveSnake(Up);
@@ -49,10 +45,18 @@ namespace SnakeMess
                         g.moveSnake(Left);
                     else if (cki.Key == ConsoleKey.RightArrow && g.snakeDirection != Left)
                         g.moveSnake(Right);
-                
-                // Continue moving if direction is not changed
-                } else
-                    g.moveSnake(g.snakeDirection);
+                }
+
+                // contiunue if game paused, or continue moving if direction is not changed
+                else {
+
+                    // Restart loop if pause game is true
+                    if (g.state.pause)
+                        continue;
+
+                    // Continue moving in same direction
+                    g.moveSnake (g.snakeDirection);
+                }
 
                 // Game over if head hits border
                 if (g.snakePosition.ElementAt(0).X == 0
@@ -60,8 +64,7 @@ namespace SnakeMess
                         || g.snakePosition.ElementAt(0).X == g.board.boardWidth - 1
                         || g.snakePosition.ElementAt(0).Y == g.board.boardHeight - 1)
                     g.endGame();
-
-                /* Complete cannibalism code
+                
                 // Game over if snake head hits body (cannibalism)
                 for (int i = 0; i < g.snakePosition.Count; i++)
                 {
@@ -74,17 +77,13 @@ namespace SnakeMess
                             g.endGame();
                         }
                     }
-                    else
-                    {
-                        g.state.pause = true;
-                    }
                 }
-                */
 
                 // Make snake larger if dollar hit
                 if (g.snakePosition.ElementAt(0).X == g.dollarPosition.X &&
                         g.snakePosition.ElementAt(0).Y == g.dollarPosition.Y)
                     g.dollarHit();
+
                 
             }
         }
