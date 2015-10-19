@@ -92,13 +92,14 @@ namespace SnakeMess
 
             // Add the new head to first element
             snakePosition.Insert(0, new Coord(newX, newY));
-            Console.SetCursorPosition(newX, newY);
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("X");
-            
-            // Overwrite character of second element to body character
-            Console.SetCursorPosition(bodyX, bodyY);
-            Console.Write("0");
+            if (newX >= 0 && newY >= 0 && newX < board.boardWidth && newY < board.boardHeight) {
+                Console.SetCursorPosition (newX, newY);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write ("X");
+                // Overwrite character of second element to body character
+                Console.SetCursorPosition (bodyX, bodyY);
+                Console.Write ("0");
+            }
         }
 
         public void spawnDollar()

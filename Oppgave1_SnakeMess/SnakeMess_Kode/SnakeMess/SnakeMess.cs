@@ -63,10 +63,10 @@ namespace SnakeMess
                 }
 
                 // Game over if head hits border
-                if (g.snakePosition.ElementAt(0).X == 0
-                        || g.snakePosition.ElementAt(0).Y == 0
-                        || g.snakePosition.ElementAt(0).X == g.board.boardWidth - 1
-                        || g.snakePosition.ElementAt(0).Y == g.board.boardHeight - 1)
+                if (g.snakePosition.ElementAt(0).X == -1
+                        || g.snakePosition.ElementAt(0).Y == -1  
+                        || g.snakePosition.ElementAt(0).X == g.board.boardWidth
+                        || g.snakePosition.ElementAt(0).Y == g.board.boardHeight)
                     g.endGame();
 
                 // Game over if snake head hits body (cannibalism)
