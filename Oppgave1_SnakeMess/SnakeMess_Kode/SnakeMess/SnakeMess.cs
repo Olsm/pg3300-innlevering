@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Diagnostics;
-using System.Security.Cryptography;
 using System.Threading;
 
 namespace SnakeMess
@@ -17,7 +14,7 @@ namespace SnakeMess
 		{
             g.createGame();
             g.snakeDirection = Direction.Down;
-            g.timer.Start (); 
+            g.timer.Start ();
 
             while (true)
             {
@@ -66,25 +63,26 @@ namespace SnakeMess
                     g.moveSnake (g.snakeDirection);
                 }
 
+                Coord headPosition = g.snakePosition.ElementAt (0);
+
                 // Game over if head hits border
-                if (g.snakePosition.ElementAt(0).X == -1
-                        || g.snakePosition.ElementAt(0).Y == -1  
-                        || g.snakePosition.ElementAt(0).X == g.board.boardWidth
-                        || g.snakePosition.ElementAt(0).Y == g.board.boardHeight)
-                    g.endGame();
+                if (headPosition.x == -1
+                    || headPosition.y == -1  
+                    || headPosition.x == g.board.boardWidth
+                    || headPosition.y == g.board.boardHeight)
+                        g.endGame();
 
                 // Game over if snake head hits body (cannibalism)
-                Coord headPosition = g.snakePosition.ElementAt (0);
                 foreach (Coord snakeElement in g.snakePosition) {
                     if (snakeElement != headPosition
-                        && snakeElement.X == headPosition.X
-                        && snakeElement.Y == headPosition.Y)
-                         g.endGame ();
+                        && snakeElement.x == headPosition.x
+                        && snakeElement.y == headPosition.y)
+                            g.endGame ();
                 }
 
                 // Make snake larger if dollar hit
-                if (g.snakePosition.ElementAt(0).X == g.dollarPosition.X &&
-                    g.snakePosition.ElementAt(0).Y == g.dollarPosition.Y)
+                if (headPosition.x == g.dollarPosition.x &&
+                    headPosition.y == g.dollarPosition.y)
                         g.dollarHit();
             }
         }
