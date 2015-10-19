@@ -26,7 +26,7 @@ namespace SnakeMess
             {
                 System.Threading.Thread.Sleep(100);
 
-                // Change direction when arrow keys are clicked
+                // Change direction when arrow keys are clicked and game not paused
                 if (Console.KeyAvailable)
                 {
                     ConsoleKeyInfo cki = Console.ReadKey(true);
@@ -68,10 +68,11 @@ namespace SnakeMess
                 // Game over if snake head hits body (cannibalism)
                 Coord headPosition = g.snakePosition.ElementAt (0);
                 foreach (Coord snakeElement in g.snakePosition) {
-                    if ( snakeElement != headPosition
+                    if (snakeElement != headPosition
                         && snakeElement.X == headPosition.X
                         && snakeElement.Y == headPosition.Y)
-                            g.endGame();
+                        g.endGame ();
+                }
 
                 // Make snake larger if dollar hit
                 if (g.snakePosition.ElementAt(0).X == g.dollarPosition.X &&
