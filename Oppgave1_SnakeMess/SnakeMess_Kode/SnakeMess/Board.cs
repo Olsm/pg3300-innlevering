@@ -8,14 +8,14 @@ namespace SnakeMess
     class Board
     {
         // Create properties for console height and width
-        public int boardHeight { get; private set; }
-        public int boardWidth { get; private set; }
+        public int BoardHeight { get; private set; }
+        public int BoardWidth { get; private set; }
 
         // Construct board options
         public Board()
         {
-            boardWidth = Console.WindowWidth;
-            boardHeight = Console.WindowHeight;
+            BoardWidth = Console.WindowWidth;
+            BoardHeight = Console.WindowHeight;
             Console.CursorVisible = false;
             Console.Title = "Westerdals Oslo ACT - SNAKE";
         }

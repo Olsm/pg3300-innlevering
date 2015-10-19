@@ -5,39 +5,39 @@ using System.Diagnostics;
 
 namespace SnakeMess
 {
-    public enum Direction
+    internal enum Direction
     {
         Up, Down, Left, Right
     };
 
     class GameManager
     {
-        public GameState state { get; }
-        public Direction snakeDirection { get; set; }
-        public Board board { get; set; }
-        public List<Coord> snakePosition { get; }
-        public Coord dollarPosition {get; }
-        public Stopwatch timer { get; }
-        private Random randomGenerator;
+        public GameState State { get; private set; }
+        public Direction SnakeDirection { get; set; }
+        public Board Board { get; private set; }
+        public List<Coord> SnakePosition { get; private set; }
+        public Coord DollarPosition {get; private set; }
+        public Stopwatch Timer { get; private set; }
+        private readonly Random randomGenerator;
 
         public GameManager()
         {
-            state = new GameState();
-            snakePosition = new List<Coord>();
-            snakeDirection = new Direction();
-            dollarPosition = new Coord();
+            State = new GameState();
+            SnakePosition = new List<Coord>();
+            SnakeDirection = new Direction();
+            DollarPosition = new Coord();
             randomGenerator = new Random();
-            timer = new Stopwatch ();
+            Timer = new Stopwatch ();
         }
 
         // Add the game elements to console
-        public void createGame()
+        public void CreateGame()
         {
             // Setup gameboard options
-            board = new Board();
+            Board = new Board();
 
             // Add snake element position for head
-            snakePosition.Add(new Coord(10, 10));
+            SnakePosition.Add(new Coord(10, 10));
 
             // Add Yellow snake head
             Console.ForegroundColor = ConsoleColor.Yellow;
@@ -45,22 +45,24 @@ namespace SnakeMess
             Console.Write("@");
 
             // Spawn a dollar at random position on screen
-            spawnDollar();
+            SpawnDollar();
 
         }
 
         // End gaming using Environment.exit for closing console app
-        public void endGame()
+        public void EndGame()
         {
             Environment.Exit(0);
         }
 
-        public void moveSnake(Direction direction)
+        // Move snake 1 step on x or y axis
+        public void MoveSnake(Direction direction)
         {
-            if (snakePosition.Count < 4)
-                addSnakeElement();
+            // Add 4 snake elements when game has been started
+            if (SnakePosition.Count < 4)
+                AddSnakeElement();
 
-            snakeDirection = direction;
+            SnakeDirection = direction;
             int addX = 0;
             int addY = 0;
 
@@ -75,8 +77,8 @@ namespace SnakeMess
                 addX = 1;
 
             // Get position of head and tail
-            Coord headPosition = snakePosition.ElementAt (0);
-            Coord tailPosition = snakePosition.ElementAt (snakePosition.Count - 1);
+            Coord headPosition = SnakePosition.ElementAt (0);
+            Coord tailPosition = SnakePosition.ElementAt (SnakePosition.Count - 1);
 
             // Add x or y pixel to head
             int newX = headPosition.x + addX;
@@ -91,13 +93,13 @@ namespace SnakeMess
             int tailY = tailPosition.y;
             Console.SetCursorPosition(tailX, tailY);
             Console.Write(" ");
-            snakePosition.RemoveAt(snakePosition.Count - 1);
+            SnakePosition.RemoveAt(SnakePosition.Count - 1);
 
             // Add the new head to first element
-            snakePosition.Insert(0, new Coord(newX, newY));
+            SnakePosition.Insert(0, new Coord(newX, newY));
             if (newX >= 0 && newY >= 0 
-                    && newX < board.boardWidth 
-                    && newY < board.boardHeight) {
+                    && newX < Board.BoardWidth 
+                    && newY < Board.BoardHeight) {
                 Console.SetCursorPosition (newX, newY);
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.Write ("@");
@@ -107,36 +109,36 @@ namespace SnakeMess
             }
         }
 
-        public void spawnDollar()
+        public void SpawnDollar()
         {
             // Generate a random position for dollar
-            dollarPosition.x = randomGenerator.Next(0, board.boardWidth);
-            dollarPosition.y = randomGenerator.Next(0, board.boardHeight);
+            DollarPosition.x = randomGenerator.Next(0, Board.BoardWidth);
+            DollarPosition.y = randomGenerator.Next(0, Board.BoardHeight);
             
             // Spawn new dollar if spawned on snake body
-            foreach (Coord snakeElement in snakePosition) {
-                if (dollarPosition == snakeElement)
-                    spawnDollar ();
+            foreach (Coord snakeElement in SnakePosition) {
+                if (DollarPosition == snakeElement)
+                    SpawnDollar ();
             }
 
             // Place green dollar at random position
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.SetCursorPosition(dollarPosition.x, dollarPosition.y);
+            Console.SetCursorPosition(DollarPosition.x, DollarPosition.y);
             Console.Write("$");
         }
 
-        public void dollarHit()
+        public void DollarHit()
         {
             // Add the new head element and spawn a dollar
-            addSnakeElement();
-            spawnDollar();
+            AddSnakeElement();
+            SpawnDollar();
         }
 
-        private void addSnakeElement()
+        private void AddSnakeElement()
         {
             // Add snake element to last position
-            Coord snake = snakePosition.ElementAt(snakePosition.Count -1);
-            snakePosition.Add(snake);
+            Coord snake = SnakePosition.ElementAt(SnakePosition.Count -1);
+            SnakePosition.Add(snake);
         }
     }
 }
