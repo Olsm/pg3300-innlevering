@@ -11,21 +11,25 @@ namespace SnakeMess
 	class SnakeMess
 	{
         private static GameManager g = new GameManager();
-        private static GameManager.Direction Up = GameManager.Direction.Up ;
-        private static GameManager.Direction Down = GameManager.Direction.Down;
-        private static GameManager.Direction Left = GameManager.Direction.Left;
-        private static GameManager.Direction Right = GameManager.Direction.Right;
 
         // Main method for game
         public static void Main(string[] arguments)
 		{
             g.createGame();
-            g.snakeDirection = Down;
+            g.snakeDirection = Direction.Down;
+            g.timer.Start (); 
 
             while (true)
             {
-                System.Threading.Thread.Sleep(100);
+                if (g.timer.ElapsedMilliseconds < 100)
+                    continue;
+                else
+                    g.timer.Restart ();
 
+                /* or use sleep
+                System.Threading.Thread.Sleep (100);
+                */
+                
                 // Do stuff when key has been clicked
                 if (Console.KeyAvailable)
                 {
@@ -40,14 +44,14 @@ namespace SnakeMess
                     // Only change direction if game is not paused
                     if (!g.state.pause) {
                         // Only allow going up if not going down, and left if not going right etc...
-                        if (cki.Key == ConsoleKey.UpArrow && g.snakeDirection != Down)
-                            g.moveSnake(Up);
-                        else if (cki.Key == ConsoleKey.DownArrow && g.snakeDirection != Up)
-                            g.moveSnake(Down);
-                        else if (cki.Key == ConsoleKey.LeftArrow && g.snakeDirection != Right)
-                            g.moveSnake(Left);
-                        else if (cki.Key == ConsoleKey.RightArrow && g.snakeDirection != Left)
-                            g.moveSnake(Right);
+                        if (cki.Key == ConsoleKey.UpArrow && g.snakeDirection != Direction.Down)
+                            g.moveSnake(Direction.Up);
+                        else if (cki.Key == ConsoleKey.DownArrow && g.snakeDirection != Direction.Up)
+                            g.moveSnake(Direction.Down);
+                        else if (cki.Key == ConsoleKey.LeftArrow && g.snakeDirection != Direction.Right)
+                            g.moveSnake(Direction.Left);
+                        else if (cki.Key == ConsoleKey.RightArrow && g.snakeDirection != Direction.Left)
+                            g.moveSnake(Direction.Right);
                     }
                 }
 
@@ -75,7 +79,7 @@ namespace SnakeMess
                     if (snakeElement != headPosition
                         && snakeElement.X == headPosition.X
                         && snakeElement.Y == headPosition.Y)
-                        g.endGame ();
+                         g.endGame ();
                 }
 
                 // Make snake larger if dollar hit
@@ -86,3 +90,5 @@ namespace SnakeMess
         }
 	}
 }
+ 
+ 
