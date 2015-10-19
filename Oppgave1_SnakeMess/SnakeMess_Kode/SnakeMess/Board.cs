@@ -8,8 +8,8 @@ namespace SnakeMess
     class Board
     {
         // Create properties for console height and width
-        public int boardHeight { get; }
-        public int boardWidth { get; }
+        public int boardHeight { get; private set; }
+        public int boardWidth { get; private set; }
 
         // Construct board options
         public Board()
