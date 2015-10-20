@@ -9,8 +9,7 @@ namespace SnakeMess
         // Make class singleton using System.Lazy<T>
         private static readonly Lazy<GameManager> instance =
             new Lazy<GameManager>(() => new GameManager());
-
-        public static GameManager Instance => instance.Value;
+        public static GameManager Instance {get { return instance.Value; } } 
 
         public GameState State { get; private set; }
         public Direction SnakeDirection { get; set; }
