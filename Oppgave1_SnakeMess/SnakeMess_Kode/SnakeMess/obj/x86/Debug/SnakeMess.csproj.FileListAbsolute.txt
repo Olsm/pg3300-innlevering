@@ -3,3 +3,8 @@ C:\Users\Valmir\Documents\pg3300-innlevering\Oppgave1_SnakeMess\SnakeMess_Kode\S
 C:\Users\Valmir\Documents\pg3300-innlevering\Oppgave1_SnakeMess\SnakeMess_Kode\SnakeMess\obj\x86\Debug\SnakeMess.csprojResolveAssemblyReference.cache
 C:\Users\Valmir\Documents\pg3300-innlevering\Oppgave1_SnakeMess\SnakeMess_Kode\SnakeMess\bin\Debug\SnakeMess.exe
 C:\Users\Valmir\Documents\pg3300-innlevering\Oppgave1_SnakeMess\SnakeMess_Kode\SnakeMess\bin\Debug\SnakeMess.pdb
+C:\Users\olsm\Dropbox\Git Projects\pg3300-innlevering\Oppgave1_SnakeMess\SnakeMess_Kode\SnakeMess\obj\x86\Debug\SnakeMess.exe
+C:\Users\olsm\Dropbox\Git Projects\pg3300-innlevering\Oppgave1_SnakeMess\SnakeMess_Kode\SnakeMess\obj\x86\Debug\SnakeMess.pdb
+C:\Users\olsm\Dropbox\Git Projects\pg3300-innlevering\Oppgave1_SnakeMess\SnakeMess_Kode\SnakeMess\bin\Debug\SnakeMess.exe
+C:\Users\olsm\Dropbox\Git Projects\pg3300-innlevering\Oppgave1_SnakeMess\SnakeMess_Kode\SnakeMess\bin\Debug\SnakeMess.pdb
+C:\Users\olsm\Dropbox\Git Projects\pg3300-innlevering\Oppgave1_SnakeMess\SnakeMess_Kode\SnakeMess\obj\x86\Debug\SnakeMess.csprojResolveAssemblyReference.cache

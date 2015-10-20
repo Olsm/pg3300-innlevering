@@ -7,6 +7,11 @@ namespace SnakeMess
 {
     class GameManager
     {
+        // Make class singleton using System.Lazy<T>
+        private static readonly Lazy<GameManager> instance =
+            new Lazy<GameManager>(() => new GameManager());
+        public static GameManager Instance => instance.Value;
+
         public GameState State { get; private set; }
         public Direction SnakeDirection { get; set; }
         public Board Board { get; private set; }
@@ -19,7 +24,8 @@ namespace SnakeMess
             Up, Down, Left, Right
         };
 
-        public GameManager()
+        // Private to prevent user from creating instance (singleton)
+        private GameManager()
         {
             State = new GameState();
             SnakePosition = new List<Coord>();
@@ -47,7 +53,7 @@ namespace SnakeMess
 
         }
 
-        // End gaming using Environment.exit for closing console app
+        // End game using Environment.exit for closing console app
         public void EndGame()
         {
             Environment.Exit(0);
