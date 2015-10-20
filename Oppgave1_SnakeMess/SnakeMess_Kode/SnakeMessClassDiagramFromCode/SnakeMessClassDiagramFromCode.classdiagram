@@ -939,6 +939,9 @@
             </appliedStereotypesInternal>
             <elementDefinition Id="ebd2140f-511c-4fd2-b820-6e1be8aff9f7" />
           </operation>
+          <operation Id="98ed7e1a-8174-4d8f-907d-8974a6e879be" name="PlayGame" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9815749c-5bdc-40cd-9c5c-dc64843cc181" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -1140,7 +1143,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="51c43ff7-e62d-472f-b58d-2c0a834d5696" name="SnakeMess" visibility="Package" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="51c43ff7-e62d-472f-b58d-2c0a834d5696" name="MainSnakeMess" visibility="Package" isAbstract="false" isLeaf="false" isActiveClass="false">
         <referencesInternal>
           <reference Id="793e9720-31d6-4d8d-94a4-41e671368069" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DSnakeMess" tag="ViewCode">
             <elementDefinition Id="f4c8cb51-ca6f-4a3f-ad35-c8f277cc69f7" />
@@ -1235,57 +1238,6 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="2fa885ae-7c4a-41fd-8233-c3366a7db948" name="SnakeMess" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <referencesInternal>
-              <reference Id="86ff1dd7-0782-4d8f-94c2-44b7d58c7674" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DSnakeMess Member%3D.ctor" tag="ViewCode">
-                <elementDefinition Id="a9840841-80d5-42b8-b0a0-bcf4190afdba" />
-              </reference>
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance Id="34ebe219-beff-4893-9265-59dc02ffa490" name="method" profile="CSharpProfile">
-                <elementDefinition Id="e35da1ea-4aa8-4950-b547-9d019b7d30f2" />
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="62ce8de8-a266-485d-b54a-93cf8b3fe119">
-                    <propertyInstance Id="5aac8525-b9c2-49a6-852d-015af43f38f1" name="ClrAttributes">
-                      <elementDefinition Id="a6e720a1-ae54-4e68-8c45-0300cd4ba252" />
-                    </propertyInstance>
-                    <elementDefinition Id="5a00dfb9-bb35-4ac4-8e28-60a7e12907f9" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="9e3b8952-7cd6-4dc8-97bf-4069c72a89c1">
-                    <propertyInstance Id="7d8d158a-7c83-47dd-a7f3-d91a9d692530" name="IsPartial" value="false">
-                      <elementDefinition Id="4a83d3dd-5969-457d-8470-1a9e070ea6e8" />
-                    </propertyInstance>
-                    <elementDefinition Id="c9dfc32f-dc9a-42fe-a0cb-1abbd6baceeb" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="b781bf57-fc8e-439e-801b-fbc9abb424cf">
-                    <propertyInstance Id="cb5c6f37-d2e7-4aab-a68a-45f451ab4703" name="IsUnsafe" value="false">
-                      <elementDefinition Id="3f896be8-134b-4ca4-8ca9-e06935b00beb" />
-                    </propertyInstance>
-                    <elementDefinition Id="a5e2c1e6-4934-4c06-b570-6f7aad5747e5" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="3fa9296e-5969-4e36-9b32-a5706164d67d">
-                    <propertyInstance Id="174cfff1-7f77-49c3-bd13-87b64752847e" name="Inheritance" value="none">
-                      <elementDefinition Id="764e1856-f23f-4ae0-b831-fa85eae9fad5" />
-                    </propertyInstance>
-                    <elementDefinition Id="e86b33d3-8a19-450e-8beb-4b687daa3a99" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="28ebd972-2d73-4f40-9ebc-b7db619b2513">
-                    <propertyInstance Id="b9809843-7e38-4f17-afa2-8c6088aeb1d5" name="PackageVisibility" value="internal">
-                      <elementDefinition Id="888f360e-9420-447f-bcdc-fb4fcbea7770" />
-                    </propertyInstance>
-                    <elementDefinition Id="d833055f-00c1-453b-805c-48ce6a58c312" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="c9132474-fd80-4495-b0d6-5f5bb9b3d1cf">
-                    <propertyInstance Id="f9ae5491-3a32-486c-8b93-5be3d0d8e12a" name="params" value="false">
-                      <elementDefinition Id="a8fd2df9-176e-43d0-98ba-bde079a71c68" />
-                    </propertyInstance>
-                    <elementDefinition Id="73597a03-d7ea-4558-9a68-709e95c95b7b" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <elementDefinition Id="6449c3c9-3ae6-44fa-88cf-2aac37eca799" />
-          </operation>
           <operation Id="0014c0fc-1a25-4a33-86ef-aacdc271ac3a" name="Main" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
             <referencesInternal>
               <reference Id="c7ea05a1-6fba-4abc-9d7a-85162fdabd2d" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DSnakeMess Member%3D(Name%3DMain OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))])" tag="ViewCode">

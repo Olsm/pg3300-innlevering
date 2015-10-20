@@ -36,6 +36,11 @@
         LastKnownName="System"
         LastKnownLocation="Package1_1204.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="935764f1-0c2d-498e-9f65-ba00a0896901"
+        name="void" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

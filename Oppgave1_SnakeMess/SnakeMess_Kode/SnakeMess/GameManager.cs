@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 
 namespace SnakeMess
 {
@@ -136,6 +137,76 @@ namespace SnakeMess
             // Add snake element to last position
             Coord snake = SnakePosition.ElementAt(SnakePosition.Count -1);
             SnakePosition.Add(snake);
+        }
+
+        public void PlayGame()
+        {
+            while (true)
+            {
+                // Each round should take minimum 100 ms
+                Thread.Sleep(100);
+
+                // Do stuff when key has been clicked
+                if (Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo cki = Console.ReadKey(true);
+
+                    // End or pause game if escape / space clicked
+                    if (cki.Key == ConsoleKey.Escape)
+                        EndGame();
+                    else if (cki.Key == ConsoleKey.Spacebar)
+                        State.Pause = !State.Pause;
+
+                    // Only change direction if game is not paused
+                    if (!State.Pause)
+                    {
+                        // Only allow going up if not going down, and left if not going right etc...
+                        if (cki.Key == ConsoleKey.UpArrow && SnakeDirection != Direction.Down)
+                            MoveSnake(Direction.Up);
+                        else if (cki.Key == ConsoleKey.DownArrow && SnakeDirection != Direction.Up)
+                            MoveSnake(Direction.Down);
+                        else if (cki.Key == ConsoleKey.LeftArrow && SnakeDirection != Direction.Right)
+                            MoveSnake(Direction.Left);
+                        else if (cki.Key == ConsoleKey.RightArrow && SnakeDirection != Direction.Left)
+                            MoveSnake(Direction.Right);
+                    }
+                }
+
+                // pause game or move snake if no button was clicked
+                else
+                {
+
+                    // Restart loop if pause game is true
+                    if (State.Pause)
+                        continue;
+
+                    // Continue moving in same direction
+                    MoveSnake(SnakeDirection);
+                }
+
+                Coord headPosition = SnakePosition.ElementAt(0);
+
+                // Game over if head hits border
+                if (headPosition.x == -1
+                    || headPosition.y == -1
+                    || headPosition.x == Board.BoardWidth
+                    || headPosition.y == Board.BoardHeight)
+                    EndGame();
+
+                // Game over if snake head hits body (cannibalism)
+                foreach (Coord snakeElement in SnakePosition)
+                {
+                    if (snakeElement != headPosition
+                        && snakeElement.x == headPosition.x
+                        && snakeElement.y == headPosition.y)
+                        EndGame();
+                }
+
+                // Make snake larger if dollar hit
+                if (headPosition.x == DollarPosition.x &&
+                    headPosition.y == DollarPosition.y)
+                    DollarHit();
+            }
         }
     }
 }

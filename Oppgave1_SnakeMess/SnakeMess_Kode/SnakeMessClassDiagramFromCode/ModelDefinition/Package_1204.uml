@@ -1339,6 +1339,14 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
           </operation>
+          <operation
+            Id="9815749c-5bdc-40cd-9c5c-dc64843cc181"
+            name="PlayGame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -2255,7 +2263,7 @@
     <packageHasNamedElement>
       <class
         Id="64126c34-ca79-4ad5-a2bf-d59d15a1ee25"
-        name="SnakeMess"
+        name="MainSnakeMess"
         visibility="Package"
         isAbstract="false"
         isLeaf="false"
@@ -2379,71 +2387,6 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation
-            Id="6449c3c9-3ae6-44fa-88cf-2aac37eca799"
-            name="SnakeMess"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <referencesInternal>
-              <reference
-                Id="a9840841-80d5-42b8-b0a0-bcf4190afdba"
-                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DSnakeMess Member%3D.ctor"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="e35da1ea-4aa8-4950-b547-9d019b7d30f2"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5a00dfb9-bb35-4ac4-8e28-60a7e12907f9">
-                    <propertyInstance
-                      Id="a6e720a1-ae54-4e68-8c45-0300cd4ba252"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c9dfc32f-dc9a-42fe-a0cb-1abbd6baceeb">
-                    <propertyInstance
-                      Id="4a83d3dd-5969-457d-8470-1a9e070ea6e8"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a5e2c1e6-4934-4c06-b570-6f7aad5747e5">
-                    <propertyInstance
-                      Id="3f896be8-134b-4ca4-8ca9-e06935b00beb"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e86b33d3-8a19-450e-8beb-4b687daa3a99">
-                    <propertyInstance
-                      Id="764e1856-f23f-4ae0-b831-fa85eae9fad5"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d833055f-00c1-453b-805c-48ce6a58c312">
-                    <propertyInstance
-                      Id="888f360e-9420-447f-bcdc-fb4fcbea7770"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="73597a03-d7ea-4558-9a68-709e95c95b7b">
-                    <propertyInstance
-                      Id="a8fd2df9-176e-43d0-98ba-bde079a71c68"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </operation>
           <operation
             Id="b1bfc561-f291-4e8a-9a52-a40928a8d453"
             name="Main"
