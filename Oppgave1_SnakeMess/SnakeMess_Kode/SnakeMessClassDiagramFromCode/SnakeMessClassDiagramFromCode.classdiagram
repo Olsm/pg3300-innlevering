@@ -1,0 +1,1928 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="0171f18c-c1c9-4389-8f85-6e124b300d1b" name="SnakeMessClassDiagramFromCode" linkedPackageId="4bbfa026-4a6d-4d75-99bb-94f0d5c7853f" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="9f4a94f5-f4b2-4200-b6d6-1eecd6a2b226">
+      <profileInstance Id="0080d563-6f96-4419-bd89-38216e01f1ee" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f8542ea4-4851-4418-8cfb-5b7860b54e9d">
+      <profileInstance Id="61a5c394-bcb3-45b6-bc77-6c369ac8bb94" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="24c77a1f-6b2f-494e-8b19-c7a660924a1e">
+      <profileInstance Id="b872ddc6-e4f8-4c99-b1c0-981b59767f86" name="CSharpProfile">
+        <elementDefinition Id="c70c9491-ff25-477e-b563-ead7432d64bc" />
+      </profileInstance>
+      <elementDefinition Id="b4859f4b-d9b5-4946-8c50-865efd0ebd0a" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="aae051c4-0792-478f-a46f-25b9a9d34b3c" name="GameManager" visibility="Package" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="0717bba9-5116-4995-9f81-e271ac6bf8c4" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager" tag="ViewCode">
+            <elementDefinition Id="ba9ead5e-f755-4027-ae98-b81fe82051d0" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="93c50887-6a02-4eef-b4c8-99b5967f1d02" name="class" profile="CSharpProfile">
+            <elementDefinition Id="d776b889-e0eb-42c5-904f-8324a7dbeb99" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="64825647-02cb-48ff-a9c0-7bbbfaf2d1f7">
+                <propertyInstance Id="483fe800-0880-4e52-8dde-eb9833deae64" name="ClrAttributes">
+                  <elementDefinition Id="8e819b54-374e-469b-ae97-21be041c5c4c" />
+                </propertyInstance>
+                <elementDefinition Id="375dbf58-1971-4099-ae5d-250b6e82361f" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="93714a33-be4e-4972-9221-6ba8d7a79176">
+                <propertyInstance Id="39f36a8b-b64a-458e-9b6a-b2e6023509c8" name="IsPartial" value="false">
+                  <elementDefinition Id="b39e2592-205d-4965-956d-e1362c5828d1" />
+                </propertyInstance>
+                <elementDefinition Id="c82f6ce2-b0a0-4f85-b102-d7d60d5e688a" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="930e68f3-0ddb-4ffd-a987-d162cad160a2">
+                <propertyInstance Id="5555fb40-832f-4c9b-afd5-738786b1e83c" name="IsStatic" value="False">
+                  <elementDefinition Id="bccf4e0b-1fd8-4e3f-9d94-b6d4421a9f84" />
+                </propertyInstance>
+                <elementDefinition Id="a43d6f01-0ba0-4813-b21d-66e8b34e5417" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e06ac8f4-6d34-433f-b818-1b7b5f0c696f">
+                <propertyInstance Id="340062d1-88a6-4fbd-94d6-ca170b7be2a9" name="IsUnsafe" value="false">
+                  <elementDefinition Id="c5d91f52-b73c-4168-95ef-77cccf88d6c7" />
+                </propertyInstance>
+                <elementDefinition Id="dca4c394-312e-43f8-8bf4-82d59c6f1bdb" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="f88ed12a-6bcf-41ee-8386-fde60feb21ba">
+                <propertyInstance Id="79bcc8bf-ba62-4777-84c3-da3b9d21885a" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="3734cb29-113b-44c5-8a23-8d1c839a1a89" />
+                </propertyInstance>
+                <elementDefinition Id="f3057d44-43b2-40bc-b0fd-8cedca544038" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="f77e75ec-eaca-49a4-aba8-517c938c0773" />
+        <targetEnds>
+          <association Id="f3a7511a-3b7f-432b-9510-61748df9c2e6" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ba000f2e-2e20-4dbd-9d65-49f7f9ae70ec" LastKnownName="Board" />
+            <description>Property Board references type Board.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="233c64f7-1619-4a62-aa8c-d1be7b7df91b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="a5f9be4d-3b47-4d7b-b172-d2a0278324e6" name="Lower" value="*">
+                      <elementDefinition Id="dffab8f2-b227-42d3-8009-87e1f07a1993" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="c5b4fd07-b53c-4e75-ae40-05b8bf0c594a" name="Upper" value="*">
+                      <elementDefinition Id="401657db-ab66-405d-9ac1-4c51adab6fa6" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="e493290b-3b89-4b14-adba-13a81edaeda7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="113b9fcd-4e3d-4a20-85b4-562c3cd764dc" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="7903b87d-eaaa-441a-b6cc-a12241ab572f" name="Lower" value="1">
+                      <elementDefinition Id="f76a973f-8805-4bc0-a460-a17e2464f6fd" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="7ab00d48-ed5f-49ed-b3fe-298f477f174f" name="Upper" value="1">
+                      <elementDefinition Id="9e74f224-a10d-41e4-899d-2277158df53e" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="090905f3-80a3-4818-8df1-c8d412c97d22" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1bc23824-46fd-4a52-aca2-19b2c5850452" />
+          </association>
+          <association Id="5f13d2c0-e448-48d2-a65d-cc071459665b" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ed51e447-9b23-4749-b091-50032dd4aa0d" LastKnownName="Coord" />
+            <description>Property DollarPosition references type Coord.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="90f1f984-77e0-4a5c-b853-55b8bbffb6d8" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="b81afc68-3baa-4715-b250-485c6ccd12fb" name="Lower" value="*">
+                      <elementDefinition Id="dda1b1b4-de52-4723-bfb5-5734a3fdd403" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="4983bfd7-1d85-4fec-9597-d57977514b18" name="Upper" value="*">
+                      <elementDefinition Id="01638d01-cc3d-4f8f-9572-22d5f7674b92" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="d32dd1ce-3dc0-40b7-8578-1def77d79200" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8561f947-0188-4426-ae9f-47e83cda6ecd" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="a3ad6aa1-0f7f-46d4-a64d-258673a8edb7" name="Lower" value="1">
+                      <elementDefinition Id="7da2772b-c884-47e1-84e2-ccd96e20e113" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="144d9d47-2042-430f-bd14-558c691c5d27" name="Upper" value="1">
+                      <elementDefinition Id="9ad3322a-600d-4c68-9202-43e5ae2f3296" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="20189864-aaeb-4d95-a86f-22a0437fa349" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6e68b425-f69d-4992-8e7d-dbd93103480f" />
+          </association>
+          <association Id="cae52ebf-720e-47a2-98c7-715889705f40" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="048e9028-9427-4812-9beb-7215617383bd" LastKnownName="Direction" />
+            <description>Property SnakeDirection references type Direction.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="63a1e29b-83e0-4161-b7ab-58658f6707c6" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="1d2678ac-1492-483d-a45b-0201c684d22d" name="Lower" value="*">
+                      <elementDefinition Id="fa282ef0-7a57-4865-a6b3-9d3a5567e58b" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1bea74a8-759c-4a9f-9a5e-eaac58dcfe6e" name="Upper" value="*">
+                      <elementDefinition Id="50f37b05-857c-451b-8bae-97558bf0381a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="ced513a5-7a2f-4715-b1e7-581444f4eb43" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="93e7925a-3c36-4b7e-b596-7ba152ab1716" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="c80fbe02-202d-4f60-875f-412e535ef5c9" name="Lower" value="1">
+                      <elementDefinition Id="aed9e08a-7e28-40cb-a5c2-f886ce549fb8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="828ae0e8-a208-4bfd-9703-d2693fa3c59e" name="Upper" value="1">
+                      <elementDefinition Id="6764db29-7611-4557-81b2-f5b5e2f5f9d6" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="8cdd415e-abff-4507-946f-32918eae9e2e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5e3222ce-4f7c-43c4-90c7-edc369f062d2" />
+          </association>
+          <association Id="feb7c3e2-0be2-42f7-9f5f-1128b813da5c" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2f7c4826-26ca-4de7-b9e8-2dbc8d80db08" LastKnownName="GameState" />
+            <description>Property State references type GameState.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0f22e6f5-00c1-43cc-9108-3eef343f1a54" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="b232ca0c-3c05-4f58-9b87-2446fa22f471" name="Lower" value="*">
+                      <elementDefinition Id="18af5dcc-1f05-4a70-8ebc-8777c28e263f" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="f3dd78d2-1377-4600-92ac-915c3db57121" name="Upper" value="*">
+                      <elementDefinition Id="7bf45da3-9aad-4768-baa0-a544ae42eee5" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="cf864ca7-9717-4819-b3f6-6f0cef834d94" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="43005002-8ae7-4887-ad2f-1fdaa3fd7765" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="f0cadae2-dfab-41ab-97e7-eda05ac0c987" name="Lower" value="1">
+                      <elementDefinition Id="55a16195-d066-4a5d-b61d-2217cf183b77" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="c0fae251-c708-4ac4-bb12-46e60e62a660" name="Upper" value="1">
+                      <elementDefinition Id="d9259865-fc25-4943-9011-251bab499244" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="0d871fdf-f87b-4971-9bdb-0fb387c30029" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e36fe4e3-cf5e-4cc6-bce1-06cbfc027413" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="71fa86e4-b01b-4e05-b40d-8d45833804b6" name="Board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="790256cf-491c-4ace-8ea2-80ef0cc39632" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3DBoard" tag="ViewCode">
+                <elementDefinition Id="f66529d1-597e-48d9-bfcf-d72df908c6ee" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="eaeef9dc-bd9b-4093-8492-f4b305bae523" name="property" profile="CSharpProfile">
+                <elementDefinition Id="91e02d8c-60ac-4b3b-abb6-a446acf6077a" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7bd8a65b-2dea-4c62-b232-f077a5e238cb">
+                    <propertyInstance Id="3f145f06-a5e5-4566-8b68-34b18ab91293" name="ClrAttributes">
+                      <elementDefinition Id="44976358-239c-485e-aab1-0b60ca14bd24" />
+                    </propertyInstance>
+                    <elementDefinition Id="33f6977d-a14c-42a9-808c-e9f12a70f1f2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1370d1ea-76b0-433e-a2af-98d2c70b6a19">
+                    <propertyInstance Id="9afbcc44-63f7-4ed1-90b3-9c175997dc0e" name="Get" value="public">
+                      <elementDefinition Id="7b4e19b8-fb31-4cbc-b5ad-b7f5ade5c28b" />
+                    </propertyInstance>
+                    <elementDefinition Id="2e956b23-ff16-4c9d-a788-0eaaeff4f1bb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="418a34c8-4eb3-4cdc-8146-9b160c72e9ba">
+                    <propertyInstance Id="35a3895d-5bf1-4dab-8390-583e722bf9d9" name="HasBody" value="false">
+                      <elementDefinition Id="5eb44c54-8ca8-4759-a36a-3e58fd74cf5c" />
+                    </propertyInstance>
+                    <elementDefinition Id="e65c4e96-83f0-4059-9dd1-eb11ed7c9f9c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0705d8ec-32a1-4f7a-be09-3bd27f6cace1">
+                    <propertyInstance Id="941c3ee6-229d-4cd2-a78f-ef0fd324d2e7" name="IsUnsafe" value="false">
+                      <elementDefinition Id="814c0871-68eb-4124-9b92-3458f8c7d781" />
+                    </propertyInstance>
+                    <elementDefinition Id="f4f29b48-40fd-4343-896c-c5bbfb643557" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9b6b00f5-ed15-4511-a0f2-f3a68ad650d3">
+                    <propertyInstance Id="4d2a1c33-59ee-40fe-a2dc-19339edb70ac" name="Inheritance" value="none">
+                      <elementDefinition Id="3f7705e8-ffb2-489c-a50c-0b0b8b422c2e" />
+                    </propertyInstance>
+                    <elementDefinition Id="133b58b7-1369-4714-9368-9633ba099eef" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3271e854-f518-47c2-b811-4c18a9b79bac">
+                    <propertyInstance Id="2b32631f-4106-4c3f-8874-b381f98be842" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="3e375985-ca5a-4a3d-9721-01e0865e6884" />
+                    </propertyInstance>
+                    <elementDefinition Id="23c67824-f952-40fb-83ee-54ec3a7c6584" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2c0718bb-17dd-4f1b-85fc-397ecfc53fa2">
+                    <propertyInstance Id="2e024065-c6b3-41de-b5b7-1393487a6205" name="Set" value="public">
+                      <elementDefinition Id="e938446d-e2cf-439a-b854-04959ab64a8a" />
+                    </propertyInstance>
+                    <elementDefinition Id="c270ccb6-b64e-4bec-bb07-2fba74ef3870" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="e166d211-1779-425d-842b-faaab055aeea" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80b11ae0-1e1f-4147-9832-e6700f8e82f2" LastKnownName="Board" />
+            </type_NamedElement>
+          </property>
+          <property Id="d7e6a49b-5095-4692-8a1f-421ecf805f3f" name="DollarPosition" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="cf78e8cb-968e-40ae-b644-06640be2672d" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3DDollarPosition" tag="ViewCode">
+                <elementDefinition Id="a1adbaf8-62b9-4c42-80dd-9d8c9d8a127f" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="76bd69ce-a0f0-4f2d-bbe0-26c79fbd2653" name="property" profile="CSharpProfile">
+                <elementDefinition Id="bff9b845-2080-4fda-a443-4be98b944832" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f79a8c97-297b-49de-a4fe-3ff70759b0c7">
+                    <propertyInstance Id="ae1c311b-bba0-4fdd-b658-e9b06afd3047" name="ClrAttributes">
+                      <elementDefinition Id="e7bd778b-b29a-4da6-9282-a71fdaf68460" />
+                    </propertyInstance>
+                    <elementDefinition Id="b76347cd-e95a-4b80-8bb2-eb80f4498540" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="31c3f5fc-4198-4b30-8d3c-6048f3025515">
+                    <propertyInstance Id="9519f87d-c69c-4ed2-b5e4-b4bf18e1c69c" name="Get" value="public">
+                      <elementDefinition Id="dd44e9fc-f95b-44e5-a79f-91795f388348" />
+                    </propertyInstance>
+                    <elementDefinition Id="c30bf5ca-4f9b-4310-9e26-72ff9edd21ec" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c60476ec-2933-40af-a74f-3e75a7049cbd">
+                    <propertyInstance Id="a316bd79-338f-4874-aca8-5dbeb2e4eaec" name="HasBody" value="false">
+                      <elementDefinition Id="6419ad3d-ce13-4154-9593-0f4520cf8ce7" />
+                    </propertyInstance>
+                    <elementDefinition Id="80a51709-00a2-4809-944b-a8772d223988" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8f382071-448e-4723-8511-6bfe524e61da">
+                    <propertyInstance Id="eeb74d25-827c-4d93-868b-62239a8a0400" name="IsUnsafe" value="false">
+                      <elementDefinition Id="40d32fe8-c6e1-4fc5-9a81-7384d36fc399" />
+                    </propertyInstance>
+                    <elementDefinition Id="4b791f0d-2f10-4c41-b421-948eeca1a26e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3d341809-29fc-403c-8840-78977e49b731">
+                    <propertyInstance Id="8537291e-0973-4c52-9c2d-b8a463fb6d43" name="Inheritance" value="none">
+                      <elementDefinition Id="4a83f521-05b8-45c7-8179-3f6a5f306153" />
+                    </propertyInstance>
+                    <elementDefinition Id="f476d823-7a76-4276-b908-e4ed1f6645cf" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="41e60c34-1b3f-4578-97ce-7d991be87064">
+                    <propertyInstance Id="cbcc6953-b4b4-4a8c-a94f-84bfe6698e3a" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="770001a6-5618-43e2-a461-6aaffa378c7d" />
+                    </propertyInstance>
+                    <elementDefinition Id="b86782d3-9fd2-4bd5-a9bd-e9602f765ea0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9a725d79-6cd7-49dd-8748-eb2a16170760">
+                    <propertyInstance Id="0a07a148-1c85-4f1d-9022-c3000be50a9c" name="Set" value="public">
+                      <elementDefinition Id="2bf5634b-a2c2-4223-9688-cb95223d79a3" />
+                    </propertyInstance>
+                    <elementDefinition Id="68744887-9563-46ef-b7bf-c2d13c35d709" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c2a3ac8b-07bd-4b8d-acb3-5ce09920ea1a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6c88bf00-2187-4e9f-a866-5a75c141d170" LastKnownName="Coord" />
+            </type_NamedElement>
+          </property>
+          <property Id="2959d587-640e-4f3e-b78f-523f6aa498f8" name="SnakeDirection" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="9bcb6df9-6cc4-46c0-984d-58668c264780" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3DSnakeDirection" tag="ViewCode">
+                <elementDefinition Id="6749a6c7-c19c-4e7e-ba23-ea67e228a4a2" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="be22f748-0ca7-4548-a594-93590751b597" name="property" profile="CSharpProfile">
+                <elementDefinition Id="a3e13a3f-ed85-40d4-b7b0-041e3b08a034" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cfe1ee66-c79f-4a9c-9625-4c08045be9c3">
+                    <propertyInstance Id="e0b9a385-98e8-4620-9c01-7d198a1b3a80" name="ClrAttributes">
+                      <elementDefinition Id="eccc7543-8db5-4b68-a143-fb908febbb1c" />
+                    </propertyInstance>
+                    <elementDefinition Id="30002b9a-3ef0-4473-926e-783648c2c297" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="04f56078-65d5-4b43-a1e2-d276d896b2fa">
+                    <propertyInstance Id="3d8c1047-13d2-4004-9c8e-1d0261a450db" name="Get" value="public">
+                      <elementDefinition Id="1e47ae47-dfae-42a1-8b39-39a61ca600f2" />
+                    </propertyInstance>
+                    <elementDefinition Id="70ff5d2b-3b0e-4957-9acd-465712250bb9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2089f48d-48f1-43a0-890b-8cb95f734a66">
+                    <propertyInstance Id="7fb619fc-dc16-4b71-b2e4-f8b4a2be1816" name="HasBody" value="false">
+                      <elementDefinition Id="cca2cf06-41b5-4264-8fc3-2a3d04eb710f" />
+                    </propertyInstance>
+                    <elementDefinition Id="65e82c44-29a8-4f68-b889-6fc0f1850b8c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d501dd8f-ff48-447e-80f1-253edf87e682">
+                    <propertyInstance Id="65efcaea-b9c6-4d4b-a633-4127df728fc4" name="IsUnsafe" value="false">
+                      <elementDefinition Id="2aea042f-74fc-42f2-894e-3e16275e84b0" />
+                    </propertyInstance>
+                    <elementDefinition Id="c21be215-4172-48cb-9dda-cd7a20866ff6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="42f960b1-a4cf-473c-a710-aacf200470c1">
+                    <propertyInstance Id="35993e26-4f8d-4d4c-bd7d-923e13c0f8cd" name="Inheritance" value="none">
+                      <elementDefinition Id="4d9f7871-e757-4cef-b662-eac4f96f1d63" />
+                    </propertyInstance>
+                    <elementDefinition Id="e7afbba9-7490-4843-8951-f4c0e5b19676" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8bbc04a4-62a5-4ec3-8c3b-332f8da26656">
+                    <propertyInstance Id="f81e2106-0125-442e-ad90-52337506bdc4" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="7df1914a-2aa0-4d6e-9c1b-5b4d5fcb3916" />
+                    </propertyInstance>
+                    <elementDefinition Id="db9726e0-4bd1-4a13-8007-c5974a9c0271" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ffa93852-2d4c-41c9-8926-83411d497803">
+                    <propertyInstance Id="dcd203ff-f149-4c4f-a5a9-12eda3837906" name="Set" value="public">
+                      <elementDefinition Id="3c45bfd6-30ef-438a-9825-b28a671ec3b0" />
+                    </propertyInstance>
+                    <elementDefinition Id="2108f26b-de40-4361-981a-efa8afd5a6c8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="06fc2d46-4509-4fbf-a8da-779869252284" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="62b1119b-842b-4157-a7fb-6acf1d1864e2" LastKnownName="Direction" />
+            </type_NamedElement>
+          </property>
+          <property Id="e27fcc7b-f569-4de1-a6b8-052648fb8c3c" name="SnakePosition" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="baad5f89-534d-4443-8a21-63470870868d" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3DSnakePosition" tag="ViewCode">
+                <elementDefinition Id="88bfa6f2-4924-41c4-90df-9bb348df9809" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="c5402250-0adf-497a-b03f-da14d16f9a1d" name="property" profile="CSharpProfile">
+                <elementDefinition Id="894fdb55-f315-4604-998a-dddf7114a7fa" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7e6e8636-127e-4e5e-be3f-453068107e33">
+                    <propertyInstance Id="f300a18f-8485-4e99-b071-ebdb4419819e" name="ClrAttributes">
+                      <elementDefinition Id="0b92163c-68dc-4c75-a84c-71b87ff9b0c3" />
+                    </propertyInstance>
+                    <elementDefinition Id="b65fc312-36dd-4602-948c-68b62f4a97fd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="672f1f32-9bad-495a-8373-3e6a55546279">
+                    <propertyInstance Id="6c6661d6-e6e9-4193-9a4c-520c5becd6e3" name="Get" value="public">
+                      <elementDefinition Id="487ba33f-78d1-43ab-9109-bc367b679c5f" />
+                    </propertyInstance>
+                    <elementDefinition Id="afa00203-b69c-4ce7-a9f9-2f4e0ba841ec" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2789b97e-d557-46a6-8807-fcd95afc2d18">
+                    <propertyInstance Id="59e177c6-bf29-4c00-be45-b9ab4c962427" name="HasBody" value="false">
+                      <elementDefinition Id="13a51338-9a2c-41d5-b204-105fe6c35c6c" />
+                    </propertyInstance>
+                    <elementDefinition Id="cbebfb62-05c2-46e7-890a-8093a24b36b4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f5c326d9-3ce9-42d6-81ee-024dcdc94982">
+                    <propertyInstance Id="ab610cbf-6258-452a-b522-15290c2e6089" name="IsUnsafe" value="false">
+                      <elementDefinition Id="40a0c60f-728d-4e15-8650-cd9f366e35e1" />
+                    </propertyInstance>
+                    <elementDefinition Id="98bbee36-24f9-4c61-920a-a8e61e98d131" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="67ef5a01-2cfd-4f77-a9af-a5b7a00db6b2">
+                    <propertyInstance Id="4b512eed-07c4-4bf9-b4ee-f18add58a784" name="Inheritance" value="none">
+                      <elementDefinition Id="f5c8af4c-8e46-4ea5-b1c2-b740eaf692ef" />
+                    </propertyInstance>
+                    <elementDefinition Id="e3e81bb3-0eef-44b6-8cf6-914af0f19589" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="41dae7f2-8a78-4322-b4a5-18ed88e7c694">
+                    <propertyInstance Id="08aa01d2-35ef-41a5-ba1a-f028dccc73c2" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="0d908a8b-12a8-4a92-be78-e6808558e311" />
+                    </propertyInstance>
+                    <elementDefinition Id="e4754ce5-882b-42f7-8d27-cc61c2d67805" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b66c55e4-d539-4bce-b440-3804ab18908d">
+                    <propertyInstance Id="6f0c5246-6942-4b5e-9f5e-e407800f53a7" name="Set" value="public">
+                      <elementDefinition Id="c542a86d-e621-49d2-9e22-069063c1cb53" />
+                    </propertyInstance>
+                    <elementDefinition Id="867b514c-469b-4d0e-aec7-b9bc72a0fc9f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="83b16432-4ddf-40e6-9a9b-1e496c9946c7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="35972ea2-5fe5-482a-bb10-f84e438ce780" LastKnownName="List&lt;Coord‎&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="3de27e53-9c7a-48d5-8675-66d300874ae9" name="State" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="6f4de461-3eb5-4985-95ad-9dbcf1297b40" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3DState" tag="ViewCode">
+                <elementDefinition Id="517e28cf-a8e5-4807-835b-124e748ed592" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="815143d9-7047-49a5-be3b-ec77d4dbcd05" name="property" profile="CSharpProfile">
+                <elementDefinition Id="27a91e8d-ba1d-4a1c-a7e0-99f3be3d99a3" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="72d2a77d-9f35-42cc-8707-8938e2d18580">
+                    <propertyInstance Id="fc037f17-af0e-4b66-b5a1-440ffc139b51" name="ClrAttributes">
+                      <elementDefinition Id="8b7a863d-1b2d-4e4a-94c7-54e70f09ec66" />
+                    </propertyInstance>
+                    <elementDefinition Id="2e2d57ab-f487-4ea1-9338-b6306b56f79a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e21d1cba-0a33-429e-bb6c-d839d5a3a641">
+                    <propertyInstance Id="0cbf7aea-a005-4cf1-822c-df25d9d5c138" name="Get" value="public">
+                      <elementDefinition Id="47232b1e-5578-4c39-a673-4b13ebdfae4f" />
+                    </propertyInstance>
+                    <elementDefinition Id="0a5ac90d-92e2-4290-87f1-6189bbe36f61" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="091b6b25-3f6d-4f34-8446-fab2e85d88bf">
+                    <propertyInstance Id="2d63ed13-16b2-44a3-b89b-09311f71d67b" name="HasBody" value="false">
+                      <elementDefinition Id="7b74849e-4e6e-49c3-a9f3-cde9419de462" />
+                    </propertyInstance>
+                    <elementDefinition Id="5870808c-7258-41e8-aea9-a410bf45c118" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="513799d8-89cd-44ee-9417-b58578762d98">
+                    <propertyInstance Id="ead23fd9-df4c-4a0d-96c3-9e874ae70c18" name="IsUnsafe" value="false">
+                      <elementDefinition Id="896bf27e-918e-47a8-9c43-cc6a22298dd7" />
+                    </propertyInstance>
+                    <elementDefinition Id="ecae1a74-b762-4bdb-9f34-4afd2e52338e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6f0b7a58-0204-4c0c-8ff4-a0a85dccf691">
+                    <propertyInstance Id="617cad59-919b-4d36-a7bb-8765f207d476" name="Inheritance" value="none">
+                      <elementDefinition Id="2c72823c-a0e1-4fd3-b5e0-3e8b0f5c5734" />
+                    </propertyInstance>
+                    <elementDefinition Id="f0b86a97-cc85-4e66-9f1c-66571ae28230" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fa240ed5-12ba-4e5c-aa6a-fa6047a34170">
+                    <propertyInstance Id="9bfa04ea-d6d2-4914-a4f4-39cc38d0feb4" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="7e9dc1e2-a95a-431a-bdec-796b73327523" />
+                    </propertyInstance>
+                    <elementDefinition Id="35f749d6-5851-487a-a915-7b3cba071ca2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2a389313-b146-41f7-b6f7-1d6d1225683f">
+                    <propertyInstance Id="f09493a5-77a8-4c40-99d2-de54c6d3a4bb" name="Set" value="public">
+                      <elementDefinition Id="e70ab9f3-11e5-42a4-9870-ea6382b2ee81" />
+                    </propertyInstance>
+                    <elementDefinition Id="290e060f-cdd8-4e98-a26e-45108673da33" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="e0bcd4c8-a773-42da-b1db-f1bd4ec4190e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0a15e5e3-d89f-4e7b-8ff1-dad6bd7fcb41" LastKnownName="GameState" />
+            </type_NamedElement>
+          </property>
+          <property Id="5fa6175a-639c-424a-99a0-4f259862fab7" name="randomGenerator" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="46822458-8465-4458-859e-c1ea874c7da8" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3DrandomGenerator" tag="ViewCode">
+                <elementDefinition Id="93adcfdf-22b1-4dc7-9efb-067090e0d197" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="20453d79-48af-4974-a68b-4ae8c5239c25" name="field" profile="CSharpProfile">
+                <elementDefinition Id="3af7527d-e91e-429d-813e-c99a94df9126" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b69ecbe0-8cd8-4355-b8b5-fc1e0d9dbdb3">
+                    <propertyInstance Id="acd8897c-c5b3-41e5-8045-f4181f451317" name="ClrAttributes">
+                      <elementDefinition Id="84363c04-084b-45f0-aa12-d3cc3f75c347" />
+                    </propertyInstance>
+                    <elementDefinition Id="65ebc032-6ff8-4d66-a0d8-2ffab49970f6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="292444bf-03e5-4967-a983-ba2a654c4d1b">
+                    <propertyInstance Id="d478b362-2022-441d-ac36-7352fbb9e938" name="IsConst" value="false">
+                      <elementDefinition Id="8dfd7e44-2478-4cda-a3b7-76f8dc77d8eb" />
+                    </propertyInstance>
+                    <elementDefinition Id="3ec8f72c-2124-4831-a859-f697e66892c3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dda3c5ec-3e9b-40f6-80df-fbb839d2806f">
+                    <propertyInstance Id="ecddc115-a5b8-4bdc-b888-69030c45b0fc" name="IsNullable" value="false">
+                      <elementDefinition Id="80a9423f-69ef-472a-b9e6-7ab3d7009ff3" />
+                    </propertyInstance>
+                    <elementDefinition Id="924d025d-5cd9-417e-84d8-63d335e90e1c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2a2e7554-72e7-465d-9bb2-4b1ad53b43f2">
+                    <propertyInstance Id="b8f5dc4c-84aa-464d-a3c0-df889865633c" name="IsVolatile" value="false">
+                      <elementDefinition Id="7fc4b909-f58b-42ff-9699-2c7992a635aa" />
+                    </propertyInstance>
+                    <elementDefinition Id="19f5ea15-b5b6-43b7-8ba4-118b927a3ab0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="91337217-c834-4862-bf56-23031f660b7d">
+                    <propertyInstance Id="ec558bfb-f477-4014-bf35-edcad40c72f1" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="d782d343-bb66-496a-b33e-e94c7b0da3e2" />
+                    </propertyInstance>
+                    <elementDefinition Id="78a73477-0c3d-48d0-ab58-6158e6f19090" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b3a95f3a-ff22-48bb-9b7c-79548bea8547" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a13a0c89-3e1b-484a-85ce-198e122d6b8f" LastKnownName="Random" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="85a4d65c-a085-4faa-bd6f-5d692f012e37" name="GameManager" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="58fe16d8-130c-4dcc-9d3f-df340a63d985" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3D.ctor" tag="ViewCode">
+                <elementDefinition Id="c25c6424-0635-4a26-afa8-fb1611eb3754" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="20c5692b-9ad9-48cc-b394-ffc708ee0577" name="method" profile="CSharpProfile">
+                <elementDefinition Id="e31004a7-8720-43e0-9b91-6d564392b8d6" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c8fc3ba3-f7ea-4697-947b-c68645d590c1">
+                    <propertyInstance Id="9631e430-8794-4546-bbe8-e0e104bba8be" name="ClrAttributes">
+                      <elementDefinition Id="a1dba455-555e-485d-8a60-8a042b7c48af" />
+                    </propertyInstance>
+                    <elementDefinition Id="acd1b82b-21bc-4965-b408-90641b096e9c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="56e631aa-cc87-49f6-9e51-c695b5bf409c">
+                    <propertyInstance Id="304e94d7-863f-427e-9beb-56c7b832e07b" name="IsPartial" value="false">
+                      <elementDefinition Id="dcb347dc-7787-49d2-b268-f653a0aaa059" />
+                    </propertyInstance>
+                    <elementDefinition Id="ee4146a3-e5bc-4756-b511-f2c1e1a4e65a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d432e1c3-b539-428b-b167-87fefcd275bc">
+                    <propertyInstance Id="89a81707-6c08-4d3e-b053-6dbb1e08b706" name="IsUnsafe" value="false">
+                      <elementDefinition Id="7e483936-51f4-4826-b75c-1a95380903a5" />
+                    </propertyInstance>
+                    <elementDefinition Id="ad080101-66bc-4f9b-80df-6e98a8bc8a04" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1dbb4aed-e2be-441f-ba95-df4f38bb6086">
+                    <propertyInstance Id="e57676da-079b-45be-a828-c1d5d9fc911c" name="Inheritance" value="none">
+                      <elementDefinition Id="2e01693f-b960-424d-a5b2-6ac5c239385c" />
+                    </propertyInstance>
+                    <elementDefinition Id="c91b3804-f5c6-41d9-8e08-4930090517da" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="21869371-7171-4e76-883e-3b474dab8cbb">
+                    <propertyInstance Id="efcac0d0-9ffa-4cd8-90e6-4b778aedf560" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="eeae50b8-6437-45f9-b071-1012d5b3f643" />
+                    </propertyInstance>
+                    <elementDefinition Id="b28f8585-1c21-4b81-b46d-778257cf6b9f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="587ecd04-5984-4034-89db-4986b71e1aa7">
+                    <propertyInstance Id="f56feffe-e187-4d12-9bb5-2471b6681948" name="params" value="false">
+                      <elementDefinition Id="50e996f1-391c-49bc-bfe6-7673e75d4d67" />
+                    </propertyInstance>
+                    <elementDefinition Id="8cf6c705-6fea-489d-8ac4-1d69caae19ab" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="3b2866c7-6099-423a-b04f-962fd6b8c969" />
+          </operation>
+          <operation Id="750ad8d7-f1f6-4132-8fe8-18bdbfb93dd9" name="MoveSnake" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="62e97197-05e4-4f6b-92f8-e28d17e68f8f" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3D(Name%3DMoveSnake OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3D(Name%3DDirection ParentType%3DGameManager))])" tag="ViewCode">
+                <elementDefinition Id="869d07f6-fa3f-430a-a67c-d05e4331291c" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="dde9d85d-2df0-4257-abfa-b5307a1b04c0" name="method" profile="CSharpProfile">
+                <elementDefinition Id="64d1e656-a85c-4509-83b4-f57c018bfcae" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4d943d25-7110-48d0-8ee3-678257dd4b7b">
+                    <propertyInstance Id="50044e57-5157-4207-b294-4e96ddf00954" name="ClrAttributes">
+                      <elementDefinition Id="3306a7d1-9cdd-4d70-b9c4-a0b1109bda79" />
+                    </propertyInstance>
+                    <elementDefinition Id="65925cc4-6cf7-4d71-8492-b05f7c021f63" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2ff07a60-1cb7-449d-b75f-f32daf709a09">
+                    <propertyInstance Id="f3825f8e-6978-45cd-9e51-71cf82502528" name="IsPartial" value="false">
+                      <elementDefinition Id="75b5683c-6f25-4295-a3c4-538c465b9dbf" />
+                    </propertyInstance>
+                    <elementDefinition Id="ae7be8a5-9ca9-4c69-ae3b-1ab2db92943a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d94ac5a0-bccd-4f91-b739-2ea187779e77">
+                    <propertyInstance Id="ec7fb893-c18e-43ec-ad2e-6b59e0da24e5" name="IsUnsafe" value="false">
+                      <elementDefinition Id="67050ebf-ee93-4ca5-bd5d-afb13d9b7654" />
+                    </propertyInstance>
+                    <elementDefinition Id="d7f50fa0-bfa3-4293-9b6c-673ae123a3aa" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ff6b508c-088a-492a-9dec-d6b293e00ee9">
+                    <propertyInstance Id="d076fe1c-8ba6-4da7-bfbb-03f19275c925" name="Inheritance" value="none">
+                      <elementDefinition Id="9b5d53f3-2f86-40f9-85ae-f49b826408f7" />
+                    </propertyInstance>
+                    <elementDefinition Id="6eff9b9f-725a-499f-8503-5f9e59fedfd1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c77eacf0-d582-483f-acaa-15ec33c3ca4e">
+                    <propertyInstance Id="9c22a0bc-d6a1-4351-a2e8-285d61c4ffc5" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="4cd65701-c9e6-4c33-b601-327b0709d5be" />
+                    </propertyInstance>
+                    <elementDefinition Id="567859f8-eae8-4165-8015-d1c2da68c02e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8c685596-f130-4103-87f3-63b2aa3779d8">
+                    <propertyInstance Id="310539e2-6828-46a2-b921-95f9ae374aa3" name="params" value="false">
+                      <elementDefinition Id="e4014293-a08e-43cb-bb71-343d8f439636" />
+                    </propertyInstance>
+                    <elementDefinition Id="010efdb7-f55b-4f6c-be24-2f90f03c60d9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="dff6c870-f452-4b2f-9f2a-5a348285054a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d910b813-11e0-46a7-bfb2-867debd3389f" name="direction" direction="In">
+                  <referencesInternal>
+                    <reference Id="1c95683a-7b71-4cc6-a172-a86ed014ed02" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3D(Name%3DMoveSnake OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3D(Name%3DDirection ParentType%3DGameManager))]) ParameterIdentifier%3Ddirection" tag="ViewCode">
+                      <elementDefinition Id="bb0a069b-38a0-491c-aa7d-9a5de9e58986" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="fffc352d-8f19-42d4-8c9b-123f12abb044" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="62b1119b-842b-4157-a7fb-6acf1d1864e2" LastKnownName="Direction" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e1b783d1-4387-4d12-8818-d4fff916a470" name="AddSnakeElement" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="ed41d620-45ab-464d-90d1-8536de735f61" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3DAddSnakeElement" tag="ViewCode">
+                <elementDefinition Id="2bc00055-25f2-4f44-b1ff-f7d559ef6413" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="646d881d-5526-4ea2-833e-38a4a5689997" name="method" profile="CSharpProfile">
+                <elementDefinition Id="40b4540d-a5f6-4697-9536-4a89080e1cb3" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="201ebd54-c3d7-472a-897a-0d12ee673d35">
+                    <propertyInstance Id="ea907867-38f5-4077-ad1a-81b2eb1d57a9" name="ClrAttributes">
+                      <elementDefinition Id="c1120d2d-e1bf-4d5e-af87-57b1a9d3d784" />
+                    </propertyInstance>
+                    <elementDefinition Id="1d2b0486-ec33-427e-ac22-48a55ad6474d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0dacbe7d-d23e-43fb-bc63-5d0ae13018db">
+                    <propertyInstance Id="0b27c2f4-4857-40fa-9f6c-d0d3d3da2934" name="IsPartial" value="false">
+                      <elementDefinition Id="2a317622-851b-4389-b1c9-339275a6ffe6" />
+                    </propertyInstance>
+                    <elementDefinition Id="799212fc-e7f1-46a8-93b0-bffd1262ecc9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cb0f81ae-aee7-4720-9c44-08f252b06d4e">
+                    <propertyInstance Id="357eb5b8-0d80-49d0-a494-941445f0c495" name="IsUnsafe" value="false">
+                      <elementDefinition Id="bd0933d9-a696-4e3c-b5c5-f128e2d7b522" />
+                    </propertyInstance>
+                    <elementDefinition Id="857a8874-7373-4289-819b-c3493f3e603c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d6ff2175-ad0e-40d3-aa3c-43d85c743aa8">
+                    <propertyInstance Id="801eff4d-cbb8-4246-84a9-33f49335f2dd" name="Inheritance" value="none">
+                      <elementDefinition Id="542af2f7-5470-4b76-a0b5-5a5096ada6e9" />
+                    </propertyInstance>
+                    <elementDefinition Id="bac1b9d8-7f01-48fd-9b42-5107da391f88" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="100ab49d-8ca8-410b-b5e7-2de17fbc81b8">
+                    <propertyInstance Id="5cd19fb8-6a38-4790-8f10-6ffce19a994c" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="204220f6-f488-4702-b932-57dd98ff90bc" />
+                    </propertyInstance>
+                    <elementDefinition Id="0bfbeca9-b319-459f-b8a7-5aaa0ae35c7e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="974c2aeb-1ce8-481a-9acd-9461572f5058">
+                    <propertyInstance Id="5678bb56-d61f-4b12-aa51-e65280048314" name="params" value="false">
+                      <elementDefinition Id="71b9462b-568e-4690-bb58-bc11b192a23c" />
+                    </propertyInstance>
+                    <elementDefinition Id="89eaddea-d081-4dee-939f-1f6650f8feec" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="e12e9abb-cd8a-4502-84b9-1a6a491dc3ea" />
+          </operation>
+          <operation Id="e2938a77-75ca-43e9-8323-6fa13c9fde11" name="CreateGame" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="47c8c5de-c5f5-414e-84e4-75d455c4bdbd" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3DCreateGame" tag="ViewCode">
+                <elementDefinition Id="cbfcf3cc-c87c-4b4d-ac96-a70a10976bd4" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="c0e31156-f119-4b2e-b93e-84133f6cc5e6" name="method" profile="CSharpProfile">
+                <elementDefinition Id="6fb39158-dd3c-4831-93c7-474b26d0df21" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2a1db001-8619-4700-a62d-a2cecb7b94d3">
+                    <propertyInstance Id="a119a120-1d32-48d6-9eb1-6a93bd7b2737" name="ClrAttributes">
+                      <elementDefinition Id="23cc5399-caa9-4d03-8bfc-21a9818af79b" />
+                    </propertyInstance>
+                    <elementDefinition Id="46918d67-5f2a-4832-96b6-738a1a1dcdef" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4469229c-31fb-4ed7-a207-0ba98d676f4c">
+                    <propertyInstance Id="efa5a960-0499-4340-8269-2fa540b6896b" name="IsPartial" value="false">
+                      <elementDefinition Id="7481a45a-940e-4c5f-9716-8fc7a08b9d63" />
+                    </propertyInstance>
+                    <elementDefinition Id="74385fb6-6eed-4fe8-9220-2386559f14fc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4d81c883-cd35-4e56-9894-10e3ec1b0b05">
+                    <propertyInstance Id="9a834f1a-7e68-4d5b-b8dd-b6e777e6266f" name="IsUnsafe" value="false">
+                      <elementDefinition Id="484744cd-957d-4100-a264-e2bfdb65d590" />
+                    </propertyInstance>
+                    <elementDefinition Id="e7559544-0ca5-41f3-b802-7c8455f61df9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a679e9ab-c008-4398-ba21-57e205a0e9e1">
+                    <propertyInstance Id="f7adfe19-e12f-4f12-a813-c6122c32e284" name="Inheritance" value="none">
+                      <elementDefinition Id="a8ca2ef3-31db-4713-97cb-bc2645a49a21" />
+                    </propertyInstance>
+                    <elementDefinition Id="c3a77c36-c8d5-4e00-8ba5-29d88dd9cffa" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9015fa5c-25ae-4ccc-9c5f-d5540013b0c1">
+                    <propertyInstance Id="cd61877b-811c-4240-a20e-f8ca8ac68098" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="3e9bd7b6-d6b1-48ed-bfeb-7b0506261505" />
+                    </propertyInstance>
+                    <elementDefinition Id="de95d514-dc72-4ded-9180-3ced0957802b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6af24ae9-e3c4-472f-93d9-7053e9b94ea8">
+                    <propertyInstance Id="0a7d503b-f714-4ad7-9797-8559d062d594" name="params" value="false">
+                      <elementDefinition Id="5be81613-16a3-4d48-84ee-f12c8840f15e" />
+                    </propertyInstance>
+                    <elementDefinition Id="c4133f7d-e86f-46b5-bfae-99cef724f4db" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="01c676a1-6fe5-4b1f-a609-12a36cc9f573" />
+          </operation>
+          <operation Id="638ec95b-c823-4398-98a2-69da2e843eff" name="DollarHit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="b4dac244-b402-412d-9194-f547e9210b29" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3DDollarHit" tag="ViewCode">
+                <elementDefinition Id="36949c56-d010-4ee9-9fba-04d810fd7938" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="babb89ea-f085-4b9c-a406-4a9b733eb57a" name="method" profile="CSharpProfile">
+                <elementDefinition Id="ffd02283-575e-4f79-a330-1b7ff1e31f78" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="26a9ee50-233b-4c50-8e21-3205721ff5a7">
+                    <propertyInstance Id="0b51f123-c9ba-4a46-b530-c3d96ca893d8" name="ClrAttributes">
+                      <elementDefinition Id="13a18f72-8544-426a-86c8-3d0f3ec215d7" />
+                    </propertyInstance>
+                    <elementDefinition Id="af8621cd-da9f-4892-8d32-9fa5f2458373" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e97bc477-dc78-4e8a-ab29-cac0cc307b6a">
+                    <propertyInstance Id="5c313f49-2ee3-41ce-bcc9-6a9ba55a3328" name="IsPartial" value="false">
+                      <elementDefinition Id="42bcf57f-832f-45b7-9c92-23e50a3f5000" />
+                    </propertyInstance>
+                    <elementDefinition Id="a67b3383-1479-48d6-a34e-bdfc5b470c97" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1a8c57c7-a701-4d72-9551-b1d7b56229b9">
+                    <propertyInstance Id="1532b2e6-8013-4eaa-815e-ae8960536bd4" name="IsUnsafe" value="false">
+                      <elementDefinition Id="131d2a6b-4173-4e1e-85c3-36b2e6ab6d50" />
+                    </propertyInstance>
+                    <elementDefinition Id="f7da47c1-b4bc-4840-a422-fb14b2a71145" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="39c00b61-521b-4432-b9d7-26923f1ef25a">
+                    <propertyInstance Id="c3d8eada-5b0d-4eea-8d32-c49f79f20080" name="Inheritance" value="none">
+                      <elementDefinition Id="9ef4558f-7ab1-4a52-a6bf-32607fab9161" />
+                    </propertyInstance>
+                    <elementDefinition Id="b1771e11-c414-4818-b56a-6ef3cfab9206" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7e4bd770-5b98-4ce0-b2d9-556882ee1c12">
+                    <propertyInstance Id="5865e62a-2729-495b-9b3b-ffefece6198c" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="46b69afe-ba5c-4cc1-8b99-db73ee0c2206" />
+                    </propertyInstance>
+                    <elementDefinition Id="b11c16fd-7c2c-4309-8762-aa96d2db7626" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1940b399-af68-4986-8fdd-914bb23efe64">
+                    <propertyInstance Id="2cb0f0f4-e8f4-4d28-8f92-b0a5c415a6e5" name="params" value="false">
+                      <elementDefinition Id="f65be516-ecd8-4e32-883f-fc6a250f8ef7" />
+                    </propertyInstance>
+                    <elementDefinition Id="fd9a06b1-c811-46a1-93b9-264279419202" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="8cd13658-f7c7-4603-8913-6c046cf215cf" />
+          </operation>
+          <operation Id="53d907d5-13c9-4f39-a0d1-2c730e37fb16" name="EndGame" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="cf798564-e645-4b4a-8727-bc552cfd7572" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3DEndGame" tag="ViewCode">
+                <elementDefinition Id="698f55c3-e3cb-4474-b100-7a61a20f3eaa" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="7564ab5a-13b0-4367-821b-6f9f018f1f32" name="method" profile="CSharpProfile">
+                <elementDefinition Id="8cfc5600-3503-4857-9f8c-f29dbce62f42" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="185b8a0f-c965-4b28-bf19-a98d49c97c0f">
+                    <propertyInstance Id="99d5bb59-70ba-4aba-b8a3-5f1f51565d2e" name="ClrAttributes">
+                      <elementDefinition Id="7a346a07-eba0-4898-bae9-c4dbc3679f1e" />
+                    </propertyInstance>
+                    <elementDefinition Id="b5010239-c825-4a50-9f29-332e3ae042f6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5805437f-5fcd-424b-90ad-0c243b1cb051">
+                    <propertyInstance Id="78ec1803-d2b8-42c4-8d54-eab62c0c5f4c" name="IsPartial" value="false">
+                      <elementDefinition Id="77714e19-5776-4291-b85a-c33eb5eef859" />
+                    </propertyInstance>
+                    <elementDefinition Id="0dac225a-0c18-4700-b9f0-63754087bb89" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="199ce14b-f3f7-4ce4-93e2-1679562f829d">
+                    <propertyInstance Id="8b6ba570-4a13-4c48-97cc-5d6b01740fc7" name="IsUnsafe" value="false">
+                      <elementDefinition Id="bc154e70-1803-4566-bc80-2abb54396577" />
+                    </propertyInstance>
+                    <elementDefinition Id="bdd36802-73ae-4554-ab2a-c579ac30f02c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="51015ffe-8b46-4e22-86d0-93826eb7e70a">
+                    <propertyInstance Id="f63883ba-209d-4d0e-ac95-b98884556e26" name="Inheritance" value="none">
+                      <elementDefinition Id="7ceb31ee-3491-4913-9502-2e7eec499af7" />
+                    </propertyInstance>
+                    <elementDefinition Id="544cb96b-3c40-47ed-8d30-e55168524ad0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e5a4fb2b-90f3-47a1-849b-6a667fe58db4">
+                    <propertyInstance Id="330285ec-5787-42f0-8f72-0b4923bbf55e" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="f7728950-4998-48e4-816f-62b32d962ffa" />
+                    </propertyInstance>
+                    <elementDefinition Id="f4617060-56b5-4692-b231-3def95be1048" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dd617dcc-8c8e-47ca-a1cd-8c4a09c42c9b">
+                    <propertyInstance Id="2fce92f6-04d7-46a9-92d2-f60e6c7a9fe2" name="params" value="false">
+                      <elementDefinition Id="8cb5d879-3308-4dfd-bd58-059b900ee940" />
+                    </propertyInstance>
+                    <elementDefinition Id="3477048d-5bee-4caf-9180-86a61f3007f5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="59dbcb85-164b-4908-b0d2-a4a33fdfa39d" />
+          </operation>
+          <operation Id="4f0f54a0-39d7-4a0b-a3c7-4c7abd098298" name="SpawnDollar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="ab39b354-137d-4a05-8077-561a65d5ee77" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3DSpawnDollar" tag="ViewCode">
+                <elementDefinition Id="86ddb5d6-4793-4c1d-ac34-f1df1c822b5c" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="61d79ad2-2eeb-4c44-aaee-237c3754ee66" name="method" profile="CSharpProfile">
+                <elementDefinition Id="25d2d3c4-389d-4b70-ac71-f589bd1f033f" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="75afafdd-6142-4148-a399-9acf9ef435ec">
+                    <propertyInstance Id="e0201c8d-f2e9-4a24-b0d4-5375cb31b043" name="ClrAttributes">
+                      <elementDefinition Id="96c70ce1-fce2-4d65-b6ae-9d2ff8b11267" />
+                    </propertyInstance>
+                    <elementDefinition Id="00e9cdc8-954a-4578-b7dd-392cc49acf71" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6f0484d4-e9e5-4d63-8a52-0e1481713283">
+                    <propertyInstance Id="e5f7bcd6-fd70-4e5f-9c5c-b4b76f2cac54" name="IsPartial" value="false">
+                      <elementDefinition Id="7ed075db-a263-49ab-9f67-cdad09b7d77a" />
+                    </propertyInstance>
+                    <elementDefinition Id="7c3927c0-af8e-4cf5-9e22-af49226166ef" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e9d13d88-3065-452a-a84b-a966125a5704">
+                    <propertyInstance Id="2ac5d784-3cd0-4d83-b588-5d7f1045775c" name="IsUnsafe" value="false">
+                      <elementDefinition Id="d9c50633-3b2f-4774-80ce-f13eea5f054a" />
+                    </propertyInstance>
+                    <elementDefinition Id="db9a3405-3916-45ef-bff6-80129a76f9bc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c218b376-5732-496b-9797-cb294b76dd97">
+                    <propertyInstance Id="a84ae4e7-f1b8-4208-891a-7f01722ae7d6" name="Inheritance" value="none">
+                      <elementDefinition Id="c5903746-597e-4134-bd11-abdde82739cc" />
+                    </propertyInstance>
+                    <elementDefinition Id="98d6530e-077b-4a35-b1e6-a025e626097d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="71bfcb87-b9fd-45d0-95fc-701f810b8af3">
+                    <propertyInstance Id="a01288c5-1c4b-4ed4-aa20-4f16f399b162" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="c5d95cd3-2d4d-490f-86eb-0973e23ea5bd" />
+                    </propertyInstance>
+                    <elementDefinition Id="b9a4347c-29a7-434d-b45b-80dc4a8c0bc8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="97ca123d-2c88-4914-997a-9c6e474673bc">
+                    <propertyInstance Id="77242ed4-37b2-457b-8611-2420e04341a4" name="params" value="false">
+                      <elementDefinition Id="a7351412-f9ce-4f4c-96cb-bb8354d3a2fa" />
+                    </propertyInstance>
+                    <elementDefinition Id="e8638270-f832-48e6-b611-ba6c007d1722" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="ebd2140f-511c-4fd2-b820-6e1be8aff9f7" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="80b11ae0-1e1f-4147-9832-e6700f8e82f2" name="Board" isAbstract="false" isLeaf="false" cachedFullName="SnakeMessClassDiagramFromCode::SnakeMess::Board">
+        <elementDefinition Id="fdfd3fe4-b9a2-4b2b-90fd-21063c17e2c8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6c88bf00-2187-4e9f-a866-5a75c141d170" name="Coord" isAbstract="false" isLeaf="false" cachedFullName="SnakeMessClassDiagramFromCode::SnakeMess::Coord">
+        <elementDefinition Id="86498e38-da0e-4b6e-993c-2dc14994ceb1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="62b1119b-842b-4157-a7fb-6acf1d1864e2" name="Direction" isAbstract="false" isLeaf="false" cachedFullName="SnakeMessClassDiagramFromCode::SnakeMess::Direction">
+        <elementDefinition Id="744a4efe-df27-47b3-bf94-d6b0c1c9f624" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="35972ea2-5fe5-482a-bb10-f84e438ce780" name="List&lt;Coord‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="SnakeMessClassDiagramFromCode::System::Collections::Generic::List&lt;Coord‎&gt;">
+        <elementDefinition Id="82f92c70-4a47-4933-9e0a-3a2184768310" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0a15e5e3-d89f-4e7b-8ff1-dad6bd7fcb41" name="GameState" isAbstract="false" isLeaf="false" cachedFullName="SnakeMessClassDiagramFromCode::SnakeMess::GameState">
+        <elementDefinition Id="4ce640fb-65c2-499c-8334-1cac83a226ee" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a13a0c89-3e1b-484a-85ce-198e122d6b8f" name="Random" isAbstract="false" isLeaf="false" cachedFullName="SnakeMessClassDiagramFromCode::System::Random">
+        <elementDefinition Id="7028dfb1-18d2-407b-a70c-97e4573ebc03" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2f7c4826-26ca-4de7-b9e8-2dbc8d80db08" name="GameState" visibility="Package" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="8efd791e-d7f6-4833-98fc-77dddaceb37f" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameState" tag="ViewCode">
+            <elementDefinition Id="1c212749-78a7-434c-8017-3ebab11b4f0c" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="f9736623-2403-48a0-b39b-bdff986586e8" name="class" profile="CSharpProfile">
+            <elementDefinition Id="3a8fbdc8-e40a-45d5-b1e8-fe702c53be0c" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="47fb575e-5caa-4e81-a2cd-4b7173718861">
+                <propertyInstance Id="1db234b6-dcd9-4cec-af32-045dbf72d868" name="ClrAttributes">
+                  <elementDefinition Id="a8b32f50-c745-4304-8044-cc16fc3bd81d" />
+                </propertyInstance>
+                <elementDefinition Id="79225dbc-886f-49b4-9ece-08ab3127c404" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="4f58a883-79a1-4883-b449-2dff0f8ef2fe">
+                <propertyInstance Id="df9bd7ae-a411-4dfc-ae08-f09a90cf416b" name="IsPartial" value="false">
+                  <elementDefinition Id="c917a7d3-885c-4a4a-82c3-536154e77e41" />
+                </propertyInstance>
+                <elementDefinition Id="7986899d-d2b3-4c60-815f-ae4794dae6a4" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="26b63281-1777-43ee-b836-230a1bd40423">
+                <propertyInstance Id="95e77e4d-46e2-45e4-a271-e13443e86004" name="IsStatic" value="False">
+                  <elementDefinition Id="601395db-5bf9-4fab-8b69-91379334c2e1" />
+                </propertyInstance>
+                <elementDefinition Id="bd971f17-db7e-447a-8d28-79762ab9a9e2" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="daff348a-72cb-49bb-a8e8-e10405de006f">
+                <propertyInstance Id="c2ef3031-cdbf-4ee6-8bc3-77c874910dfd" name="IsUnsafe" value="false">
+                  <elementDefinition Id="f0f5c465-18db-4afc-bfcb-eb2eec422298" />
+                </propertyInstance>
+                <elementDefinition Id="f7b3f63a-4db7-432d-a078-7a3067abd541" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="a4214bd1-6791-43aa-995f-5489cfadc615">
+                <propertyInstance Id="f6abb2c6-214d-45c1-9dbd-7301943f79b6" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="257a8208-b500-42cd-80a2-1b9adcf597e1" />
+                </propertyInstance>
+                <elementDefinition Id="d5e01aa4-0593-436a-9055-ef2902340e11" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="4ce640fb-65c2-499c-8334-1cac83a226ee" />
+        <ownedAttributesInternal>
+          <property Id="341adfd8-4c2e-4c94-96d9-2c9b9cbd79a1" name="Pause" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="72badedc-a56a-4c4f-aaa3-4009bd0fc553" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameState Member%3DPause" tag="ViewCode">
+                <elementDefinition Id="002e8798-e19a-4c79-9786-7d42073d22d8" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="9cb9117f-02b4-4de4-93b5-acfeca137d62" name="property" profile="CSharpProfile">
+                <elementDefinition Id="30dfb7be-fc1e-4b45-9495-8b040ca95572" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="10f3f146-e7e9-4951-8e58-71afb5ce4c9c">
+                    <propertyInstance Id="a38a9baa-edb5-40fd-8880-1e56ce95d15d" name="ClrAttributes">
+                      <elementDefinition Id="7aa3e7ec-5d81-4af2-b3d0-6907255ac865" />
+                    </propertyInstance>
+                    <elementDefinition Id="81112cda-776c-4c33-990d-3e61650d538c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="598234ae-336f-402b-96c7-34ade8700ea0">
+                    <propertyInstance Id="d1fe7b3a-a0a1-4f67-9fea-824081ac387b" name="Get" value="public">
+                      <elementDefinition Id="809e5118-6201-48b7-8d39-e5a00059c2b5" />
+                    </propertyInstance>
+                    <elementDefinition Id="abd4f6cc-3c09-442d-bffd-b658e016fb72" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="55690c63-184c-459d-939a-29475c1fb79d">
+                    <propertyInstance Id="c4aa502b-4037-4e7e-a1af-fb98785b15a8" name="HasBody" value="false">
+                      <elementDefinition Id="ca206731-120c-4177-a7ad-1e12e509539c" />
+                    </propertyInstance>
+                    <elementDefinition Id="58615b4e-1106-40df-9938-831f16e218b4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2996ae23-2adf-458a-bd29-c68b667594b0">
+                    <propertyInstance Id="d065ca79-3883-4ab8-90b2-047d9939a3a4" name="IsUnsafe" value="false">
+                      <elementDefinition Id="132e8f98-64d2-4529-913d-052aec1b537d" />
+                    </propertyInstance>
+                    <elementDefinition Id="59da366f-1b5c-4ef4-a11a-1655e45710d5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9287acde-fa22-4361-b657-a34a10aae74f">
+                    <propertyInstance Id="f8b9ce3c-06bc-4f1c-971a-88788b95f7b4" name="Inheritance" value="none">
+                      <elementDefinition Id="28b8174b-2242-4b7d-a68e-ca1042f477aa" />
+                    </propertyInstance>
+                    <elementDefinition Id="7ea44f23-6fb9-4dfc-9cb7-92473a30106e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="eb20fcd0-61f5-4b67-b164-76c4e7f62d30">
+                    <propertyInstance Id="5c9c91a6-b9bd-4b40-924d-84e973961478" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="741729f2-8506-4416-a054-d2f39a5679e8" />
+                    </propertyInstance>
+                    <elementDefinition Id="ec63c754-7c9e-4504-83b1-4c3b762a42a0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="49937dc7-c972-48df-8d01-6f2f41978f33">
+                    <propertyInstance Id="1f3f2980-8d9e-437e-ad0f-d8556677e4b9" name="Set" value="public">
+                      <elementDefinition Id="18c29558-5031-41ec-bc2c-55fec8f9fff7" />
+                    </propertyInstance>
+                    <elementDefinition Id="fe27fbe4-c7b9-4bfd-90f6-b6fbe82877e2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="8c2ad0a6-deba-4a9e-bd0c-3d7d48776b60" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7bc87ec6-34d1-4851-aa1f-85e295df03e2" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="85fbde57-eca5-47c7-87e2-a77aa40bc010" name="GameState" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="f05a3c30-4bca-4c51-94e5-f94767cd8c27" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameState Member%3D.ctor" tag="ViewCode">
+                <elementDefinition Id="b2fc6b0e-6e43-4f27-91e2-acece0d8ed74" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="46efd5d3-ef19-4053-b181-430ea932be8f" name="method" profile="CSharpProfile">
+                <elementDefinition Id="9e828995-7e15-4527-89f8-eafd5b75cccb" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cb2c898a-61bd-4d59-808e-818d049b243b">
+                    <propertyInstance Id="06570b96-099d-46b2-bd41-2fcf3bbefb29" name="ClrAttributes">
+                      <elementDefinition Id="ad8cf176-278e-41c4-8778-99e2eb8cce34" />
+                    </propertyInstance>
+                    <elementDefinition Id="f3af66be-e3b8-40ff-85ac-87f589270469" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="683c18a4-274a-4423-a71b-268707959ab1">
+                    <propertyInstance Id="1c786ed2-13f5-46b8-8523-464a3c42616c" name="IsPartial" value="false">
+                      <elementDefinition Id="ba16f36e-0a3e-41f5-b980-52d747be4b3f" />
+                    </propertyInstance>
+                    <elementDefinition Id="dc7e3280-b0d2-4ec1-81c6-df4753c29ce1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a230ca58-2184-430c-ac76-be967d1e9821">
+                    <propertyInstance Id="49a2e39c-192c-46da-8942-a8907b2ee9f4" name="IsUnsafe" value="false">
+                      <elementDefinition Id="0b2a9738-2e6b-410d-8ec6-0d117a9d829d" />
+                    </propertyInstance>
+                    <elementDefinition Id="dc6b909e-ac49-42c5-b0e6-cd1d4a9b80a5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8bdfe3b4-a70e-4bf5-93a1-563521d60774">
+                    <propertyInstance Id="698e8913-1671-43f6-8ad1-8791fbb39c9b" name="Inheritance" value="none">
+                      <elementDefinition Id="b5c5a537-6119-46dd-b063-6b298aece9b0" />
+                    </propertyInstance>
+                    <elementDefinition Id="02ded422-0d62-4db9-b464-1350cae2f0e7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="344c1c60-b0ec-4452-ab49-21bfa22f38bd">
+                    <propertyInstance Id="193630eb-3a3e-4e81-aa62-73bd92f05e8d" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="9db8d874-5b1d-460f-a4e1-29282973b408" />
+                    </propertyInstance>
+                    <elementDefinition Id="aafe55b7-1498-41bc-89d7-13f6e0e46ce2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2ffed4c8-6036-4394-9059-62ec1c555582">
+                    <propertyInstance Id="17a2f6c3-b46a-422d-8f1c-6ef0ceb41912" name="params" value="false">
+                      <elementDefinition Id="ab0e3786-21e5-4d3a-b42b-2d0abe085d12" />
+                    </propertyInstance>
+                    <elementDefinition Id="355aee5d-4606-4acf-914c-4cb9c8088e5c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="caba22f7-19fb-475f-bf26-10a47faec36f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="7bc87ec6-34d1-4851-aa1f-85e295df03e2" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="51c43ff7-e62d-472f-b58d-2c0a834d5696" name="SnakeMess" visibility="Package" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="793e9720-31d6-4d8d-94a4-41e671368069" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DSnakeMess" tag="ViewCode">
+            <elementDefinition Id="f4c8cb51-ca6f-4a3f-ad35-c8f277cc69f7" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="84fe79cd-2ead-473d-9bae-b22afcb21193" name="class" profile="CSharpProfile">
+            <elementDefinition Id="f3b163e7-6d0a-4045-a6dc-066f006d669f" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="9e3fcb74-9a20-4aa8-af99-884924fc60eb">
+                <propertyInstance Id="63860501-c906-49b9-9c3c-0ea01114038c" name="ClrAttributes">
+                  <elementDefinition Id="e6b70d18-1727-403b-b800-1c6212c327ac" />
+                </propertyInstance>
+                <elementDefinition Id="60f3e345-3ab2-4b42-86e7-c0b4c8080344" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="c2b34cef-7c10-48b2-a236-1108c664c5c3">
+                <propertyInstance Id="d7b3e1bd-e8cd-48c9-8bed-eecfa453dcca" name="IsPartial" value="false">
+                  <elementDefinition Id="cbbcf54a-3d8f-49dc-926d-234979c504ba" />
+                </propertyInstance>
+                <elementDefinition Id="b33bc945-55d6-4198-b109-7a15597dcdd5" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e196ee6c-ae5a-4f38-b20e-e1870c0d4e49">
+                <propertyInstance Id="6907b4d4-bd39-4ba9-84d4-6b7f1578f0a8" name="IsStatic" value="False">
+                  <elementDefinition Id="baec60fe-d22b-4008-8462-440ccc366f2b" />
+                </propertyInstance>
+                <elementDefinition Id="f7c44ab2-93fd-4d31-b9e0-d15b3bbbf8a6" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="45f91fa4-33d8-4b14-8766-7fafa2ea9e1e">
+                <propertyInstance Id="b1468855-a849-4237-8bff-d1aec0e86669" name="IsUnsafe" value="false">
+                  <elementDefinition Id="de72d000-35f1-4d8c-9665-c382fd92c466" />
+                </propertyInstance>
+                <elementDefinition Id="916b7eb6-d9f2-4c27-8158-7f43ea858c14" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="ad126c5b-5b19-40f3-82c9-f90ad25627c6">
+                <propertyInstance Id="0d747693-9d5c-4265-9cd2-b01ba55ff994" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="ebd63fe9-86a8-44af-bd84-46b68bcca3fb" />
+                </propertyInstance>
+                <elementDefinition Id="5204b85f-c170-41ac-8e0d-d1c26677b05a" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="64126c34-ca79-4ad5-a2bf-d59d15a1ee25" />
+        <ownedAttributesInternal>
+          <property Id="55d1286f-3ad8-4724-a330-685c145b7d39" name="g" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="18e642df-a920-49f2-a0db-2d48f219e324" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DSnakeMess Member%3Dg" tag="ViewCode">
+                <elementDefinition Id="47380be5-93bc-47fe-981f-4c0402d0d4fe" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="2a902a44-2e20-4dc9-86ea-0016e3ac6241" name="field" profile="CSharpProfile">
+                <elementDefinition Id="7f850bb1-001f-4221-ba3a-d1019b5303b6" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ab8adc47-9cb3-4cd5-99f7-70ee099475d8">
+                    <propertyInstance Id="fea8c717-41a6-4f76-bd58-b4bca714ae19" name="ClrAttributes">
+                      <elementDefinition Id="ca6b936f-efe1-44d5-a473-fdd1e796f2ee" />
+                    </propertyInstance>
+                    <elementDefinition Id="e162b693-3e4c-40bb-8e67-bf48e5f07584" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="27e70fb6-6fcc-43e2-9dd6-7f434537e841">
+                    <propertyInstance Id="ec844ab9-1ad3-4e32-a637-e1a71c769b2a" name="IsConst" value="false">
+                      <elementDefinition Id="5ee487d0-d9a3-493e-8702-0a3bc35f1d86" />
+                    </propertyInstance>
+                    <elementDefinition Id="023162b7-58b3-411c-bd62-008e85829165" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1878833a-3c69-4543-accc-d53278c0aae0">
+                    <propertyInstance Id="a0cc1e9c-f067-4b51-ba41-6eb0b72a68de" name="IsNullable" value="false">
+                      <elementDefinition Id="310ac0a4-ce8c-438c-ac54-c8ded2da64df" />
+                    </propertyInstance>
+                    <elementDefinition Id="67c08333-d688-49fd-bf7d-e5c6e333dbd6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f3977158-b39f-423c-9805-05ed5607264b">
+                    <propertyInstance Id="30e94cb9-0ea1-43c8-814f-2d6701c3b326" name="IsVolatile" value="false">
+                      <elementDefinition Id="954d1967-b0d8-4395-928d-84e8df6e82c7" />
+                    </propertyInstance>
+                    <elementDefinition Id="bb460db2-d7ed-4ff8-9775-384f18cfae71" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="210f82e1-7f74-440e-aadd-af8474d38648">
+                    <propertyInstance Id="b1216fc0-bd54-411e-8735-47ae9f43740a" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="ee77e13c-57f7-481d-aace-c325bb93418d" />
+                    </propertyInstance>
+                    <elementDefinition Id="07f9badc-e72f-4238-a069-33f5fccdab3a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="5aaea8a5-e006-46ed-988d-f5befba010f7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e314e371-c877-4715-a5a4-04a9f1d69dc2" LastKnownName="GameManager" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="2fa885ae-7c4a-41fd-8233-c3366a7db948" name="SnakeMess" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="86ff1dd7-0782-4d8f-94c2-44b7d58c7674" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DSnakeMess Member%3D.ctor" tag="ViewCode">
+                <elementDefinition Id="a9840841-80d5-42b8-b0a0-bcf4190afdba" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="34ebe219-beff-4893-9265-59dc02ffa490" name="method" profile="CSharpProfile">
+                <elementDefinition Id="e35da1ea-4aa8-4950-b547-9d019b7d30f2" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="62ce8de8-a266-485d-b54a-93cf8b3fe119">
+                    <propertyInstance Id="5aac8525-b9c2-49a6-852d-015af43f38f1" name="ClrAttributes">
+                      <elementDefinition Id="a6e720a1-ae54-4e68-8c45-0300cd4ba252" />
+                    </propertyInstance>
+                    <elementDefinition Id="5a00dfb9-bb35-4ac4-8e28-60a7e12907f9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9e3b8952-7cd6-4dc8-97bf-4069c72a89c1">
+                    <propertyInstance Id="7d8d158a-7c83-47dd-a7f3-d91a9d692530" name="IsPartial" value="false">
+                      <elementDefinition Id="4a83d3dd-5969-457d-8470-1a9e070ea6e8" />
+                    </propertyInstance>
+                    <elementDefinition Id="c9dfc32f-dc9a-42fe-a0cb-1abbd6baceeb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b781bf57-fc8e-439e-801b-fbc9abb424cf">
+                    <propertyInstance Id="cb5c6f37-d2e7-4aab-a68a-45f451ab4703" name="IsUnsafe" value="false">
+                      <elementDefinition Id="3f896be8-134b-4ca4-8ca9-e06935b00beb" />
+                    </propertyInstance>
+                    <elementDefinition Id="a5e2c1e6-4934-4c06-b570-6f7aad5747e5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3fa9296e-5969-4e36-9b32-a5706164d67d">
+                    <propertyInstance Id="174cfff1-7f77-49c3-bd13-87b64752847e" name="Inheritance" value="none">
+                      <elementDefinition Id="764e1856-f23f-4ae0-b831-fa85eae9fad5" />
+                    </propertyInstance>
+                    <elementDefinition Id="e86b33d3-8a19-450e-8beb-4b687daa3a99" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="28ebd972-2d73-4f40-9ebc-b7db619b2513">
+                    <propertyInstance Id="b9809843-7e38-4f17-afa2-8c6088aeb1d5" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="888f360e-9420-447f-bcdc-fb4fcbea7770" />
+                    </propertyInstance>
+                    <elementDefinition Id="d833055f-00c1-453b-805c-48ce6a58c312" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c9132474-fd80-4495-b0d6-5f5bb9b3d1cf">
+                    <propertyInstance Id="f9ae5491-3a32-486c-8b93-5be3d0d8e12a" name="params" value="false">
+                      <elementDefinition Id="a8fd2df9-176e-43d0-98ba-bde079a71c68" />
+                    </propertyInstance>
+                    <elementDefinition Id="73597a03-d7ea-4558-9a68-709e95c95b7b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="6449c3c9-3ae6-44fa-88cf-2aac37eca799" />
+          </operation>
+          <operation Id="0014c0fc-1a25-4a33-86ef-aacdc271ac3a" name="Main" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="c7ea05a1-6fba-4abc-9d7a-85162fdabd2d" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DSnakeMess Member%3D(Name%3DMain OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))])" tag="ViewCode">
+                <elementDefinition Id="24ba848c-3a1f-43cb-bfa5-5905f73a4261" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="7a9ea645-c6be-4fad-9642-5122e94515ee" name="method" profile="CSharpProfile">
+                <elementDefinition Id="ae225216-ddbc-46d3-8bf4-7d59251f9c68" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b51f887a-c2eb-441c-8016-6a33b67ec1a4">
+                    <propertyInstance Id="5ad0d1aa-3018-43ee-91a8-48e7235830ee" name="ClrAttributes">
+                      <elementDefinition Id="1e9072e4-4e7e-4e20-82ca-13571a99859c" />
+                    </propertyInstance>
+                    <elementDefinition Id="3446b105-1d2f-45c0-8725-8541936caced" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ebad85a4-ecb9-4532-be49-f456f0ec96a2">
+                    <propertyInstance Id="f72a8e53-9e14-47c7-8287-af31c0110cf8" name="IsPartial" value="false">
+                      <elementDefinition Id="4da60357-1abf-4eb2-8d95-b972f3fdf192" />
+                    </propertyInstance>
+                    <elementDefinition Id="b0290024-3d1f-4661-adae-f669e2176807" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dc981669-0f97-4d0d-90b1-6f80d632b7b2">
+                    <propertyInstance Id="6f0e9f74-683d-4194-817f-7764d5b27637" name="IsUnsafe" value="false">
+                      <elementDefinition Id="1ee58c89-2168-4b64-b792-574f57421a31" />
+                    </propertyInstance>
+                    <elementDefinition Id="5c34a56b-03b1-4e37-9362-baeedcdc798f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7df574ca-e539-470e-9693-ad3a979a6382">
+                    <propertyInstance Id="21714ea5-be36-4067-ab31-685b17e7429c" name="Inheritance" value="none">
+                      <elementDefinition Id="948306ac-dff0-4fe9-9501-cf2082535069" />
+                    </propertyInstance>
+                    <elementDefinition Id="058bb2d8-a643-46f2-b959-f24d939fb374" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="47e51b1a-9024-412b-98f0-20cb97f1462f">
+                    <propertyInstance Id="bed60904-d44f-4a7c-b24f-337f65d699e1" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="a561249f-f081-41c1-9790-1da7ebec07bc" />
+                    </propertyInstance>
+                    <elementDefinition Id="764697e9-c635-4666-baf8-55258df65081" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="88ca3c1b-2c50-4e82-88ec-d71c6f19148c">
+                    <propertyInstance Id="4f26da1d-032f-48dd-93bb-70d4e90605b1" name="params" value="false">
+                      <elementDefinition Id="92a8164e-0b33-48a0-8f3e-96b4b5554786" />
+                    </propertyInstance>
+                    <elementDefinition Id="dc5422aa-b163-4d2c-a30f-f354f3ca8105" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b1bfc561-f291-4e8a-9a52-a40928a8d453" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3107fa61-8422-4b12-94f1-a55653e6621a" name="arguments" direction="In" isOrdered="true">
+                  <referencesInternal>
+                    <reference Id="5c03b53b-e16a-4c01-8f00-ebe91dac6438" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DSnakeMess Member%3D(Name%3DMain OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))]) ParameterIdentifier%3Darguments" tag="ViewCode">
+                      <elementDefinition Id="328e83c3-0c7c-4b8b-84fc-0c7018544e8f" />
+                    </reference>
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString Id="011b75d1-52b3-4e88-9a23-4eadf0248368" name="Lower" value="*">
+                      <elementDefinition Id="c50020ae-f57f-4ab3-92bb-75a02892e082" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="f1889b28-8b0f-4080-85c3-43ec183d0be8" name="Upper" value="*">
+                      <elementDefinition Id="bb0d93c0-fde5-4472-8581-6f332f971b6f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="75428507-a385-4c49-b5c3-db3c878cf2e5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="773781a8-619a-4db3-8c44-67ed8b28e6d8" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="e314e371-c877-4715-a5a4-04a9f1d69dc2" name="GameManager" isAbstract="false" isLeaf="false" cachedFullName="SnakeMessClassDiagramFromCode::SnakeMess::GameManager">
+        <elementDefinition Id="f77e75ec-eaca-49a4-aba8-517c938c0773" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="773781a8-619a-4db3-8c44-67ed8b28e6d8" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="048e9028-9427-4812-9beb-7215617383bd" name="Direction" visibility="Package" isAbstract="false" isLeaf="false">
+        <referencesInternal>
+          <reference Id="867e8912-0215-4548-bd3a-7d4137da9b4a" handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3D(Name%3DDirection ParentType%3DGameManager)" tag="ViewCode">
+            <elementDefinition Id="bd8f2897-7ee6-40ed-b90f-a7a887334c18" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="639da2a4-7194-4841-a5f3-690144324545" name="enum" profile="CSharpProfile">
+            <elementDefinition Id="159626eb-28b7-4923-bf46-7dd7c41e107f" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="2ca7bac0-dac6-4885-a615-14d19b7710a8">
+                <propertyInstance Id="f0ccf084-ec41-4296-a199-ce2909b0de5f" name="ClrAttributes">
+                  <elementDefinition Id="26c929c2-30cd-41e5-bea4-0a8ad3fdf21d" />
+                </propertyInstance>
+                <elementDefinition Id="9880070e-75ae-44d2-a14a-518470d5dc89" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="74aa3976-921b-4dc2-b778-1c456a5cf622">
+                <propertyInstance Id="ffd05feb-6172-4b73-8792-d8a55d56a96b" name="BaseType" value="int">
+                  <elementDefinition Id="034f816f-acce-433a-a7d1-bb62d535c5e7" />
+                </propertyInstance>
+                <elementDefinition Id="48e98afd-dcc0-4351-9c7e-f3b41c8741af" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="cdbdf6f4-1e8a-4b95-a14a-a43023da378d">
+                <propertyInstance Id="917224fb-d801-40ed-a42f-ed2448fda211" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="15c52fbc-8391-43d3-98f7-f7e407d2ddd6" />
+                </propertyInstance>
+                <elementDefinition Id="f228410e-6384-43ba-9f71-eaefd9e50c1d" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="744a4efe-df27-47b3-bf94-d6b0c1c9f624" />
+        <ownedLiterals>
+          <enumerationLiteral Id="576a6011-0b80-42b9-ad14-b149b0f9c39b" name="Down">
+            <referencesInternal>
+              <reference Id="469fadec-2e0b-403d-8d3d-632593d8547b" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3D(Name%3DDirection ParentType%3DGameManager) Member%3DDown" tag="ViewCode">
+                <elementDefinition Id="a4642510-2606-4ebc-923d-1bcca6bbf4b4" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="713bf11c-a528-49db-982d-963f9fd19113" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="47af3252-ca8b-4eb5-a7e6-d4ec65097446" name="Left">
+            <referencesInternal>
+              <reference Id="fd41e5b9-fde6-40ba-bf36-3b8eec4a206f" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3D(Name%3DDirection ParentType%3DGameManager) Member%3DLeft" tag="ViewCode">
+                <elementDefinition Id="1daf6f48-79f3-4ce2-97c8-db3b2c4843b2" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="283e9a48-93ad-42c4-8b83-beb11b6d04c4" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="fd8eb9f5-961e-4cf8-9018-c37a20578a67" name="Right">
+            <referencesInternal>
+              <reference Id="f739063c-1ff3-4de4-adb1-edaffb9e17e5" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3D(Name%3DDirection ParentType%3DGameManager) Member%3DRight" tag="ViewCode">
+                <elementDefinition Id="24be33c2-dfa1-489e-95a2-3f49e3f76748" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="e66b8a93-03ff-4b5d-bfc6-c0d51a99c21c" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="30dcc9f7-afbd-4aed-bf3c-fb93d0e5aa6f" name="Up">
+            <referencesInternal>
+              <reference Id="28ce16a7-9053-4794-bb70-894b5d47fa3f" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3D(Name%3DDirection ParentType%3DGameManager) Member%3DUp" tag="ViewCode">
+                <elementDefinition Id="3073b3c8-2bb4-477f-94e7-2866020908f8" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="d8e859e1-8288-4420-a5b7-47902610dd74" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ba000f2e-2e20-4dbd-9d65-49f7f9ae70ec" name="Board" visibility="Package" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="b299b6e5-07d1-4f05-84a5-71631d618661" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DBoard" tag="ViewCode">
+            <elementDefinition Id="209bf92f-6727-4fde-abdd-42311e3bcac0" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="473b4c29-09af-4b24-ad8b-5c3084e6ee57" name="class" profile="CSharpProfile">
+            <elementDefinition Id="4a2d99ff-9bca-4781-a9be-37e92a485669" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="07734011-cfee-4ad5-92e0-05d5e0f33acb">
+                <propertyInstance Id="4b8f78a7-4129-4254-bb45-bc806a19b3ff" name="ClrAttributes">
+                  <elementDefinition Id="f7459f6d-e1ab-4f84-99e6-5d1e00ecaca0" />
+                </propertyInstance>
+                <elementDefinition Id="5df3699e-d193-42a3-9518-9fec96abb649" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="14cf0097-4deb-49a3-a983-ac8c435efa18">
+                <propertyInstance Id="417ee68b-0c4c-485a-af73-12e61e411015" name="IsPartial" value="false">
+                  <elementDefinition Id="d61b0516-4cbb-4fcc-9f09-314614cabcd1" />
+                </propertyInstance>
+                <elementDefinition Id="d0c143bb-c97e-45bd-b59a-07c95df405d1" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e203e459-9184-4e14-855a-0b407e31fec7">
+                <propertyInstance Id="0c894738-41e8-4c98-9d69-746a660333be" name="IsStatic" value="False">
+                  <elementDefinition Id="007af010-188b-4bcc-9547-0cbb1dc21440" />
+                </propertyInstance>
+                <elementDefinition Id="8e0d6a33-4d5b-4d0f-ab56-30428848f434" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="483fee4f-21ba-4d57-aff2-07272c5ed273">
+                <propertyInstance Id="64976401-5fd3-4622-bc06-8abc9f719731" name="IsUnsafe" value="false">
+                  <elementDefinition Id="c8e4b63d-1f1e-43c0-b2ae-8e718eb33be8" />
+                </propertyInstance>
+                <elementDefinition Id="ecf4b8bb-d249-463c-a7b6-4b5715a59adf" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="a46e802b-5f04-403d-8023-b472c73d9274">
+                <propertyInstance Id="c88a2b0c-6c26-4433-8f66-b7585d3db572" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="cdb7091b-e281-4110-b1f1-12b39e417fea" />
+                </propertyInstance>
+                <elementDefinition Id="90ba2244-93da-45d2-81b1-7e154f23c6e2" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="fdfd3fe4-b9a2-4b2b-90fd-21063c17e2c8" />
+        <ownedAttributesInternal>
+          <property Id="ebaf36fe-9d12-4b8d-819b-2b4795c32609" name="BoardHeight" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="3d1f64c9-12af-4a66-b9c4-722ac4d09efe" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DBoard Member%3DBoardHeight" tag="ViewCode">
+                <elementDefinition Id="2d88913a-7dc7-4133-b2b3-6cc3a1c8a3eb" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="9b217850-d0a1-4709-936c-69a719099824" name="property" profile="CSharpProfile">
+                <elementDefinition Id="973b1685-02e8-4761-bde9-e3a372082b99" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="77db3c4b-2da4-4843-b360-8e671989f033">
+                    <propertyInstance Id="e1aaeef5-abb1-442b-b1f1-a0bf9bc5e1ea" name="ClrAttributes">
+                      <elementDefinition Id="336b74c7-da88-4900-bae2-cc4660750b87" />
+                    </propertyInstance>
+                    <elementDefinition Id="5047f7f8-117a-4c5b-b9cb-9c6c12b7fe62" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a2910e59-422b-43b1-af83-9f89af051128">
+                    <propertyInstance Id="ad67ae36-e1a8-4c4f-a33d-ea7d250a651e" name="Get" value="public">
+                      <elementDefinition Id="02db2882-0e10-46c4-8941-74c678edb13b" />
+                    </propertyInstance>
+                    <elementDefinition Id="993d5cca-afac-4d5c-bb21-97e0dfa32dd6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dc7d81a2-ca06-4ea3-a83a-8c741613e302">
+                    <propertyInstance Id="766d193e-f15f-49de-8210-cc0955ce34ce" name="HasBody" value="false">
+                      <elementDefinition Id="eaaf0ca6-35e4-4f99-a4ce-b2ae91de565f" />
+                    </propertyInstance>
+                    <elementDefinition Id="b2fe6eb4-027f-43be-b459-7f9ab93f7b37" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="998910fa-6910-4e1f-8cbc-7ba9f743b6ff">
+                    <propertyInstance Id="ab31f608-38a6-469c-8b70-a7683fc51ba2" name="IsUnsafe" value="false">
+                      <elementDefinition Id="ceaad9b3-d026-470b-b423-9f0f7d1890fb" />
+                    </propertyInstance>
+                    <elementDefinition Id="8d1e8081-a67f-4b57-861a-fda43c45761b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cb666d87-1333-405b-83a4-0d300db25f67">
+                    <propertyInstance Id="1d4468a1-f530-403e-9dd6-66cdd0215939" name="Inheritance" value="none">
+                      <elementDefinition Id="18657a5b-1cab-4e56-9aac-10c764b9ef63" />
+                    </propertyInstance>
+                    <elementDefinition Id="4383184b-7c21-4270-92de-5d88f1e75752" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dffc7b3f-813e-4bff-8a68-7ae6d8df4440">
+                    <propertyInstance Id="5c644818-9892-43f5-a4fe-7df81caf09b7" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="36e45c5c-18d3-4a37-bc79-53079c79907b" />
+                    </propertyInstance>
+                    <elementDefinition Id="ba17b87a-8feb-4bf0-a335-93045bec722d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8dc38138-a63b-457a-871f-557ab7f9ef78">
+                    <propertyInstance Id="ebc7f2b7-4d2d-4541-aeec-db9dfe7cd8c4" name="Set" value="public">
+                      <elementDefinition Id="f20ee0cf-e3f0-411b-aca4-4c32f59fb2e6" />
+                    </propertyInstance>
+                    <elementDefinition Id="6bd73cd9-b35f-4b02-b8ff-0b7c85f1e8c8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="332e5912-427f-48d9-90e7-499066766204" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ac5d45b9-4b0e-4c35-b195-b3185c77fde9" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="8656ffc1-73e2-4012-95b5-dfbc3de8fe45" name="BoardWidth" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="b26728cc-5f8b-4865-9f1a-88dfb421f48a" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DBoard Member%3DBoardWidth" tag="ViewCode">
+                <elementDefinition Id="bfb0c6c1-81b9-4b4a-b4f6-ecf9bcecead8" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="411e5033-f31a-411d-bc1b-397e155d81c1" name="property" profile="CSharpProfile">
+                <elementDefinition Id="9be691cc-63a8-4f96-8c08-f3303f5fbe0f" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="835b29f1-6819-488c-9463-7997b950525c">
+                    <propertyInstance Id="d0fd759b-f255-48b2-b834-64d99e0fa9f6" name="ClrAttributes">
+                      <elementDefinition Id="9520996a-71e6-46c2-b727-ab0e87eb9991" />
+                    </propertyInstance>
+                    <elementDefinition Id="e886c0d7-58fb-4a97-86b1-33c606926c39" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="be275aae-ba5e-4af0-bfdd-426dfb280afc">
+                    <propertyInstance Id="88360260-61f4-4234-8e8a-2fe2c926707c" name="Get" value="public">
+                      <elementDefinition Id="9c3bff47-daf7-46bc-a565-aa7f7df23977" />
+                    </propertyInstance>
+                    <elementDefinition Id="b60606a8-afbe-479d-8d37-aa8fc49a8009" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9d7fd556-af5d-4986-a9fc-c5645f2fed94">
+                    <propertyInstance Id="5d1463c2-63df-4d7f-b201-10ced04d31d7" name="HasBody" value="false">
+                      <elementDefinition Id="7443685f-577d-43b0-a0d3-eecdbcf147d8" />
+                    </propertyInstance>
+                    <elementDefinition Id="b1e6a7ec-c6b7-4f42-b128-5324661ae6e2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="24cadf11-dba7-49fb-96f7-df8b7be0893e">
+                    <propertyInstance Id="37ac8747-eb7c-4ddd-8f27-7f4bb761e4a2" name="IsUnsafe" value="false">
+                      <elementDefinition Id="586d0a0b-5ea5-4052-9326-f3105bb6bc63" />
+                    </propertyInstance>
+                    <elementDefinition Id="21d70cb7-17fa-4498-a4f2-693753d7db70" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fdbc04ad-a755-4dbf-9f4f-922f661184a2">
+                    <propertyInstance Id="f43b7b76-6624-4819-98a2-fbb300e5c0c6" name="Inheritance" value="none">
+                      <elementDefinition Id="f665e05d-cfce-4ee0-aa97-566a2d5a84f1" />
+                    </propertyInstance>
+                    <elementDefinition Id="bf3b7853-781b-4a55-bbeb-3801d0172de5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fb86fb15-0d2b-4aed-8db1-1959282f14d2">
+                    <propertyInstance Id="9fcf7feb-dc7e-4ccc-b7cd-cc444e649519" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="089451fc-5f44-4ac1-9962-a2de36f6cea8" />
+                    </propertyInstance>
+                    <elementDefinition Id="51dd70d2-4efb-4937-83bc-b6d23b5e69c1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9fcc8d4b-f963-41a7-ab08-fd06afdc37e0">
+                    <propertyInstance Id="de4dddf9-92cf-4783-bc41-1169eee2bbdd" name="Set" value="public">
+                      <elementDefinition Id="2f732cb7-707b-40c4-b2ea-a6e6f84c6c46" />
+                    </propertyInstance>
+                    <elementDefinition Id="1d6b1fe4-2312-4891-8863-fa5ba89f2406" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="7b493d2c-5a3c-49a1-8095-a061f666323d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ac5d45b9-4b0e-4c35-b195-b3185c77fde9" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="33fb4336-2989-452a-a888-9a525ebfd9e0" name="Board" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="132e9622-9567-4697-8458-9cf0861f9f9d" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DBoard Member%3D.ctor" tag="ViewCode">
+                <elementDefinition Id="5ee845b7-1bae-409f-9d0e-d7ee161682a3" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="31440c89-31d6-484c-a39b-3b22daa12ae3" name="method" profile="CSharpProfile">
+                <elementDefinition Id="87bbd4ab-706c-45c8-8313-f051926afff2" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="476a4feb-0835-4d17-91de-711d12150247">
+                    <propertyInstance Id="0de30ff7-bdd3-4a6b-a9fd-e2bf9ebee9d4" name="ClrAttributes">
+                      <elementDefinition Id="998a4822-37b3-4f38-9067-e1da534594be" />
+                    </propertyInstance>
+                    <elementDefinition Id="24952623-d473-470b-a2d1-e75336b96fc2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9fcdba10-6451-4b3d-baeb-5e4f7d6f7ec1">
+                    <propertyInstance Id="d6dc9174-8152-42d3-9225-5d18a86a670b" name="IsPartial" value="false">
+                      <elementDefinition Id="bf313c82-f696-4bc3-9a5b-5b76335e80fc" />
+                    </propertyInstance>
+                    <elementDefinition Id="b28c1b20-fdb4-4f17-88eb-4b3bc220bc55" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e70290a8-9b7a-4ecb-a8ad-f30d56a1f25f">
+                    <propertyInstance Id="fb1e8076-6797-479c-be51-2451382cdd22" name="IsUnsafe" value="false">
+                      <elementDefinition Id="3a17bd51-2bda-4733-bf2d-739ff3ba492f" />
+                    </propertyInstance>
+                    <elementDefinition Id="ff7b9663-3423-4b18-adbd-2f188a62cdc8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="efcd19bf-fd2e-45d0-8001-73f80ba31aee">
+                    <propertyInstance Id="d61d5f33-89cb-4a8e-ae5e-f3da27305e1d" name="Inheritance" value="none">
+                      <elementDefinition Id="88d9cf9b-8086-4448-bfcd-a8154ce49c4f" />
+                    </propertyInstance>
+                    <elementDefinition Id="29fbca72-6d48-4c14-afc1-16e2833ec836" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c09a0e20-001b-45b7-8eae-5f4bf7cdbfcf">
+                    <propertyInstance Id="6bb3487c-4497-4ae2-941b-77df8b928868" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="229ff08f-8617-4986-a231-9370888833a2" />
+                    </propertyInstance>
+                    <elementDefinition Id="7c3988f8-17de-48be-8ca1-054e67c79644" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b79d5db6-544b-4df9-97b5-a308321afa5f">
+                    <propertyInstance Id="fff5f330-2ad4-42cb-8a22-31d45e916a37" name="params" value="false">
+                      <elementDefinition Id="f82098d2-d753-403f-8771-6e2150973d5c" />
+                    </propertyInstance>
+                    <elementDefinition Id="98ed934f-31e8-49aa-8932-d317a35b30f6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="8f283710-cace-433b-b8cd-ddbd7894c68e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="ac5d45b9-4b0e-4c35-b195-b3185c77fde9" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ed51e447-9b23-4749-b091-50032dd4aa0d" name="Coord" visibility="Package" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="411cf078-af8f-4cb0-8ecb-3c043e7a4f08" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DCoord" tag="ViewCode">
+            <elementDefinition Id="f32f9b81-af5a-465f-ab1f-8d0cb39895ff" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="0091e56a-28f1-4b26-ab75-4388c671783c" name="class" profile="CSharpProfile">
+            <elementDefinition Id="8c62a310-9c29-4ec8-b120-07442d2303b3" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="78483a01-7963-400f-8caf-acb0739c8a59">
+                <propertyInstance Id="7ada2c5e-78f9-440b-8b72-cc30872996b3" name="ClrAttributes">
+                  <elementDefinition Id="87c82b91-5cdb-4870-b2fe-26ff32d02080" />
+                </propertyInstance>
+                <elementDefinition Id="b72aeb33-a8ce-466a-8304-0c8c643a9837" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="bed13972-83f7-45f2-85e2-ef0c42c3af48">
+                <propertyInstance Id="a720f8aa-dd30-4fd9-a532-644f2e9fa810" name="IsPartial" value="false">
+                  <elementDefinition Id="2352d1af-19d6-440a-ac50-a26fb70880cb" />
+                </propertyInstance>
+                <elementDefinition Id="6fe6a8af-cd03-4eb3-8294-598eff0cc6aa" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="605ff24d-c053-4c73-94eb-07cfa3485084">
+                <propertyInstance Id="45718611-2953-4d0c-8f6d-b2fe991e8372" name="IsStatic" value="False">
+                  <elementDefinition Id="387a35e7-9be8-4f6b-8dd8-e93e7f6abc9a" />
+                </propertyInstance>
+                <elementDefinition Id="b81c7242-a365-4775-b8ae-71678c789df9" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3a2238fc-06b3-4cd3-99f8-70db09bec24d">
+                <propertyInstance Id="657b207b-763b-4f65-8429-3a103b1907aa" name="IsUnsafe" value="false">
+                  <elementDefinition Id="0efc3e15-09bf-4cbe-b556-eecefe49974b" />
+                </propertyInstance>
+                <elementDefinition Id="3963315d-8ad0-42d1-b11f-bee96c41fc84" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="74ba95a4-0683-407f-823c-bfd660a7c516">
+                <propertyInstance Id="e6bf6331-ea30-4f88-a483-42b401b4d1dd" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="83c69fbe-78f5-4dcc-a3b0-2d5ab43a8d61" />
+                </propertyInstance>
+                <elementDefinition Id="2124476a-1ae7-4d19-83a5-0b5776bef4e5" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="86498e38-da0e-4b6e-993c-2dc14994ceb1" />
+        <ownedAttributesInternal>
+          <property Id="25cff821-1046-4f2d-a5a0-156149ff8d83" name="x" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="5b7ff22f-c80b-42d6-89c0-8795efd39539" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DCoord Member%3Dx" tag="ViewCode">
+                <elementDefinition Id="632a4d14-b022-4ad1-a7b2-f9d5dd0a2750" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="3a760f40-d173-42ed-9cff-d1ca8ed9f63e" name="property" profile="CSharpProfile">
+                <elementDefinition Id="8d8b0064-59fa-414c-8df1-6566c3478b7e" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="44f885bd-baf6-4b82-b438-13cdba49c427">
+                    <propertyInstance Id="77613a32-ad21-4ccd-828d-80571053e723" name="ClrAttributes">
+                      <elementDefinition Id="1bff2ff4-5b4e-4f21-87a5-13b025182a7a" />
+                    </propertyInstance>
+                    <elementDefinition Id="9397c6b5-32c1-44ca-bfff-3269597283f6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3db88e4e-afc0-4618-bf6d-12cd9d1c9827">
+                    <propertyInstance Id="32e77414-ff9c-4fda-8ee1-87170043613b" name="Get" value="public">
+                      <elementDefinition Id="7fa83acf-0437-4a4f-9b9f-2698bec7e48c" />
+                    </propertyInstance>
+                    <elementDefinition Id="d4400c6c-d872-4e10-aab6-6b3017f811b7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7e4a18bd-d0d8-4936-8213-b6d72a66d9c1">
+                    <propertyInstance Id="e7d17033-5170-4900-87f9-bce7c9e896b6" name="HasBody" value="false">
+                      <elementDefinition Id="3e57b1ad-4ea4-428d-b4fa-c25060f99e1d" />
+                    </propertyInstance>
+                    <elementDefinition Id="c2176906-3e96-4215-9835-5bacffdd341e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3870016b-bd83-4e4d-b41c-609cd66cda88">
+                    <propertyInstance Id="bf27f40d-ee77-4135-9f34-a1234184809d" name="IsUnsafe" value="false">
+                      <elementDefinition Id="4da7aeff-19d7-429d-8385-afda0c238e39" />
+                    </propertyInstance>
+                    <elementDefinition Id="c68dcfa3-8259-43a6-a0ff-856b96415dca" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0c5e68ba-f67e-4878-a745-63f46a5bff69">
+                    <propertyInstance Id="529bba26-c284-4b08-8538-43e6e5a79835" name="Inheritance" value="none">
+                      <elementDefinition Id="4711aee3-9b3d-4021-b69c-1f8b3f2ba258" />
+                    </propertyInstance>
+                    <elementDefinition Id="3497260d-9fd2-4c07-8631-fa43664b597f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b975b0a2-e45b-4278-83f8-e03dd32e2ecc">
+                    <propertyInstance Id="8db1b96c-34e8-4fea-a590-78a98dda7216" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="f371d50d-da8d-429f-8117-cb8fe3d57606" />
+                    </propertyInstance>
+                    <elementDefinition Id="bc971de5-230f-4e04-9da1-22c00dddc7a7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="41371b55-62e5-475a-9107-80943eba3eec">
+                    <propertyInstance Id="2adca6a7-ffea-477a-a65c-8a4e02827c76" name="Set" value="public">
+                      <elementDefinition Id="ad11e349-59ab-4c10-8c00-bef839e6093f" />
+                    </propertyInstance>
+                    <elementDefinition Id="bba07f15-5180-431c-aff9-99279322cd46" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="01feb459-6653-46ce-997f-41ce411fdc04" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ac5d45b9-4b0e-4c35-b195-b3185c77fde9" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="cd747cca-91dc-4b96-a91f-b0b972c344d7" name="y" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="5b4545ed-0b62-4eae-b5e0-672f67e2d741" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DCoord Member%3Dy" tag="ViewCode">
+                <elementDefinition Id="070f9326-7e44-47e9-a1ec-1cd229600f98" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="10babaca-2e51-4dc4-981b-1cbaa9a8ca33" name="property" profile="CSharpProfile">
+                <elementDefinition Id="5687537a-8de0-4822-859b-fe0a6bf43afd" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c405b790-e05c-432e-93b1-4511768a3ad6">
+                    <propertyInstance Id="2113aacb-a42b-48d2-a6e7-703c44602149" name="ClrAttributes">
+                      <elementDefinition Id="1c07309d-793c-449a-8ece-6e6fefd73c45" />
+                    </propertyInstance>
+                    <elementDefinition Id="6c40f28d-b310-4ede-a2a7-b5e7e398ded7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3c734656-faa9-485a-8509-baee1215491d">
+                    <propertyInstance Id="6ac41227-3213-40bd-af9f-605620c3d965" name="Get" value="public">
+                      <elementDefinition Id="b85aa87a-2e37-4a18-860c-a442095d9e46" />
+                    </propertyInstance>
+                    <elementDefinition Id="1226fe31-9928-4bc0-9c17-40ab06deb56c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b6942ed9-cd02-481f-b883-36bce849e8fb">
+                    <propertyInstance Id="edf71345-75a0-414d-85f0-36287ad4f5e4" name="HasBody" value="false">
+                      <elementDefinition Id="6e2ca8cc-aece-4c88-af99-379c69738c4a" />
+                    </propertyInstance>
+                    <elementDefinition Id="b96b9578-d2bd-43d0-98a1-d4fa5a2b6811" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0ecb88b5-1ae4-4c02-b048-0a300a0b93df">
+                    <propertyInstance Id="b726fa3a-58e5-4b91-ac66-8e978770b64a" name="IsUnsafe" value="false">
+                      <elementDefinition Id="59decabf-d8e7-45bb-a16e-d6dddb05ed0d" />
+                    </propertyInstance>
+                    <elementDefinition Id="b188866a-f413-458c-8c42-51795065ca96" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d48327e4-66ba-4134-ac0a-42369ae40711">
+                    <propertyInstance Id="a6de15e0-518f-4cdf-a3f5-6563c798f60c" name="Inheritance" value="none">
+                      <elementDefinition Id="879bf533-cdc2-492d-91d5-80db78940933" />
+                    </propertyInstance>
+                    <elementDefinition Id="79371d17-7b82-440e-bccb-5d1c9420174d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="15c6c1eb-b67f-4c6e-8084-62591cf064dd">
+                    <propertyInstance Id="83246eac-9b31-40cf-ab6e-f076c50b7f88" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="2ca66e33-f871-4157-87b3-26685c4e0ab8" />
+                    </propertyInstance>
+                    <elementDefinition Id="a9b3d7c3-3feb-4762-a7f9-44ad1d2b8791" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6d417168-77ca-4639-b112-f52f0c1d434d">
+                    <propertyInstance Id="4dfc579e-b064-45eb-a769-ad38917b1524" name="Set" value="public">
+                      <elementDefinition Id="1bae88e6-f9f8-4e22-b056-3ce41d362749" />
+                    </propertyInstance>
+                    <elementDefinition Id="4c5b8514-7dbc-4367-90b4-91826d4e9f43" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="6e4588fe-e147-48a1-afc4-487e9edb8ef6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ac5d45b9-4b0e-4c35-b195-b3185c77fde9" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="59466d1f-a2af-44e7-b06c-83d20805f79a" name="Coord" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="ab11c720-0bd4-4624-8c08-92f836f261ae" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DCoord Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])" tag="ViewCode">
+                <elementDefinition Id="69027103-a131-476c-905f-4cd5636cc445" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="eb375467-1d0e-47e5-b3bf-62ae6d8c2b5e" name="method" profile="CSharpProfile">
+                <elementDefinition Id="472e1e41-af65-49b7-87d3-4e50d2d90d31" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bb796bb1-1bd1-497b-9794-5addca98a2ce">
+                    <propertyInstance Id="e7d05de1-7d5a-4f61-8883-9d6fa6562456" name="ClrAttributes">
+                      <elementDefinition Id="1993e636-2c96-41d5-a68d-33f1aada42fa" />
+                    </propertyInstance>
+                    <elementDefinition Id="d21b1c1b-e66d-4e4c-a682-36b4c0ce1401" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="856f8743-44c7-4e2e-b92e-10591a49dd73">
+                    <propertyInstance Id="31903b72-4cf5-4d11-bec1-82c81b922614" name="IsPartial" value="false">
+                      <elementDefinition Id="59fa5d2d-342a-4d3f-943c-85e08c191603" />
+                    </propertyInstance>
+                    <elementDefinition Id="11161e6b-5aee-4bca-b519-6a0e6083f778" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="56f0e0cf-671e-4300-83ad-fd0368003bd4">
+                    <propertyInstance Id="042b267e-7e03-420e-a85c-ce98ff0967ca" name="IsUnsafe" value="false">
+                      <elementDefinition Id="7863ef2f-51d2-4039-a6c6-a0117ab9c412" />
+                    </propertyInstance>
+                    <elementDefinition Id="e914f9c6-0be7-42a9-bf37-f2dfd0106590" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="add0675b-6d61-4418-94b1-84cf2c6ebdd9">
+                    <propertyInstance Id="c317ad6c-812c-4240-b75d-fcb659ea66df" name="Inheritance" value="none">
+                      <elementDefinition Id="5d8b0815-d84a-4bac-b7c6-f563edc47e77" />
+                    </propertyInstance>
+                    <elementDefinition Id="153019c7-8afd-4b2d-ac41-c79f8dc0cb2c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0aae063a-abad-4fec-837b-4ca4c8e63391">
+                    <propertyInstance Id="57e4b3b5-49df-4cbf-b003-6bd202abb0cd" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="990d58f0-3c24-455b-aaea-33240732e951" />
+                    </propertyInstance>
+                    <elementDefinition Id="f2d1a3ef-ed13-4a9f-85e5-1c43e539f150" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8bd3d6df-d142-4e35-9bc5-fc3460ab898e">
+                    <propertyInstance Id="aa0a0689-478b-4802-a5d7-a96140aad034" name="params" value="false">
+                      <elementDefinition Id="056bc8ac-084b-4b00-a9c9-a0ea5c9bca68" />
+                    </propertyInstance>
+                    <elementDefinition Id="4637c971-47f0-470e-9096-c364ade37dcd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="d4a97f58-d821-49c8-ac33-8543ee199063" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a000691a-41ee-4581-8bd5-de5b460a4a6f" name="x" direction="In">
+                  <referencesInternal>
+                    <reference Id="5dbe7fb2-9a45-4981-9450-d2e0b7167b7f" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DCoord Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dx" tag="ViewCode">
+                      <elementDefinition Id="c525a3d6-c7fe-4b2b-b9b3-7d7cc0ef9d17" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="70336e89-6d51-40c0-8d52-8ec5536775a3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ac5d45b9-4b0e-4c35-b195-b3185c77fde9" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="866adc0c-7a03-4d77-964c-182327055bbb" name="y" direction="In">
+                  <referencesInternal>
+                    <reference Id="35cf944c-5ccf-4fc4-a8ba-274e6f895fc3" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DCoord Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dy" tag="ViewCode">
+                      <elementDefinition Id="b29ffbdd-53a2-439b-8c09-b15c9bff31ef" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="94d1dfe8-49a3-44d2-b04f-579a2dc3217a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ac5d45b9-4b0e-4c35-b195-b3185c77fde9" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="4bbfa026-4a6d-4d75-99bb-94f0d5c7853f" name="SnakeMessClassDiagramFromCode">
+    <elementDefinition Id="be739eb1-7790-467a-8b1b-1e9efd99d2d2" />
+  </package>
+</logicalClassDesignerModel>
