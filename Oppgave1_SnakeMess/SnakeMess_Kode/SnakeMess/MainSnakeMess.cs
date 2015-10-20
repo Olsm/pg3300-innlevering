@@ -9,7 +9,7 @@
         {
             g.CreateGame();
             g.SnakeDirection = GameManager.Direction.Down;
-            g.PlayGame();
+            g.StartGame();
         }
 	}
 }
