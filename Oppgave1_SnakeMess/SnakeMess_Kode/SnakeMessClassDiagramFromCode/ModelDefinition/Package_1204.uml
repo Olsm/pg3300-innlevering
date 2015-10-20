@@ -70,198 +70,6 @@
         </appliedStereotypesInternal>
         <targetEnds>
           <association
-            Id="1bc23824-46fd-4a52-aca2-19b2c5850452"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="fdfd3fe4-b9a2-4b2b-90fd-21063c17e2c8"
-              LastKnownName="Board"
-              LastKnownLocation="Package_1204.uml" />
-            <description>Property Board references type Board.</description>
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="e493290b-3b89-4b14-adba-13a81edaeda7"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="dffab8f2-b227-42d3-8009-87e1f07a1993"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="401657db-ab66-405d-9ac1-4c51adab6fa6"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="090905f3-80a3-4818-8df1-c8d412c97d22"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="f76a973f-8805-4bc0-a460-a17e2464f6fd"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="9e74f224-a10d-41e4-899d-2277158df53e"
-                      name="Upper"
-                      value="1" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="6e68b425-f69d-4992-8e7d-dbd93103480f"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="86498e38-da0e-4b6e-993c-2dc14994ceb1"
-              LastKnownName="Coord"
-              LastKnownLocation="Package_1204.uml" />
-            <description>Property DollarPosition references type Coord.</description>
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="d32dd1ce-3dc0-40b7-8578-1def77d79200"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="dda1b1b4-de52-4723-bfb5-5734a3fdd403"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="01638d01-cc3d-4f8f-9572-22d5f7674b92"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="20189864-aaeb-4d95-a86f-22a0437fa349"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="7da2772b-c884-47e1-84e2-ccd96e20e113"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="9ad3322a-600d-4c68-9202-43e5ae2f3296"
-                      name="Upper"
-                      value="1" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="5e3222ce-4f7c-43c4-90c7-edc369f062d2"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <enumerationMoniker
-              Id="744a4efe-df27-47b3-bf94-d6b0c1c9f624"
-              LastKnownName="Direction"
-              LastKnownLocation="Package_1204.uml" />
-            <description>Property SnakeDirection references type Direction.</description>
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="ced513a5-7a2f-4715-b1e7-581444f4eb43"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="fa282ef0-7a57-4865-a6b3-9d3a5567e58b"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="50f37b05-857c-451b-8bae-97558bf0381a"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="8cdd415e-abff-4507-946f-32918eae9e2e"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="aed9e08a-7e28-40cb-a5c2-f886ce549fb8"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="6764db29-7611-4557-81b2-f5b5e2f5f9d6"
-                      name="Upper"
-                      value="1" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="884abbbc-d571-4192-ab45-d7156ad351e5"
             isDerived="false"
             sourceEndRoleName="GameManager"
@@ -328,7 +136,263 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="e36fe4e3-cf5e-4cc6-bce1-06cbfc027413"
+            Id="3eb0caa4-b7a4-44bd-a1de-c4a4d7738bf6"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="fdfd3fe4-b9a2-4b2b-90fd-21063c17e2c8"
+              LastKnownName="Board"
+              LastKnownLocation="Package_1204.uml" />
+            <description>Property Board references type Board.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="adba1a99-fe94-4388-83e0-eef9a0f0e3f5"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="34509779-ed3d-49bc-959e-e1c45f0d3dbb"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a686cb65-2425-4e67-9a41-bb17b74e84ea"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c670c0a5-7acc-4d1f-8421-7fa930378b3a"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ad4c7315-ee22-4626-8fcf-d1a00f81a93b"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7e2d4379-7ec1-4346-8887-8a467b8fac37"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f4a09ca4-b50e-4989-bf3d-c36a4362e298"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="86498e38-da0e-4b6e-993c-2dc14994ceb1"
+              LastKnownName="Coord"
+              LastKnownLocation="Package_1204.uml" />
+            <description>Property DollarPosition references type Coord.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3fc3a3b8-5784-4f51-ab66-061f8d6aa9a2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e55efd10-a61c-43f8-9e9b-10da707e4bcd"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9b161bd2-2e32-44f2-ab7b-da9339826ffc"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2fdfe726-3c25-4d54-8d32-9534f349dab2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d3044bf3-b833-41ab-af58-245d336d7126"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2b968bfe-afc1-4333-8845-c5d34f508367"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c3f8d37b-1b1c-407e-8bbd-d2889d1698ca"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f77e75ec-eaca-49a4-aba8-517c938c0773"
+              LastKnownName="GameManager"
+              LastKnownLocation="Package_1204.uml" />
+            <description>Property Instance references type GameManager.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b315a54f-6a79-45e1-8f68-7a0251eb88cd"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="78b15953-1ba0-4055-bdf1-fe031b1673f3"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="78b72e5c-645b-48bd-afc0-49d160731505"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2389c4c2-779a-40f1-9119-e391d812801e"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b891e808-de3d-410a-8ad4-4db1b9992758"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="cc9dd17b-007a-442c-853e-a1ec655b2f26"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="48066e86-f979-4b35-9864-1ddb52031b6f"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="744a4efe-df27-47b3-bf94-d6b0c1c9f624"
+              LastKnownName="Direction"
+              LastKnownLocation="Package_1204.uml" />
+            <description>Property SnakeDirection references type Direction.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="00c4b3e2-2afe-49c5-9eee-a4540856e65f"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="bc3a9439-000b-4ab0-966e-2f499ed244b4"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="77ff8b3d-b4e9-4225-a369-a6f68c9d7a87"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0e2baf2c-7e77-4570-9c51-79980b54f490"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d880fb2e-84db-4891-bf20-c46de96468a6"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="95029879-dd0e-42ab-8a09-bae8dabc3eaa"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6bf099d7-352d-4764-942c-fb6cd1c04344"
             isDerived="false"
             sourceEndRoleName=""
             targetEndRoleName=""
@@ -342,7 +406,7 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="cf864ca7-9717-4819-b3f6-6f0cef834d94"
+                  Id="971c9170-d9f6-4ab8-933a-d6809f9e7688"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -353,13 +417,13 @@
                   isNavigableOwned="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="18af5dcc-1f05-4a70-8ebc-8777c28e263f"
+                      Id="d80a1b63-9ea0-4d5c-bb9b-5ef007d50e88"
                       name="Lower"
                       value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="7bf45da3-9aad-4768-baa0-a544ae42eee5"
+                      Id="06416e24-30f1-4288-8a0d-5848ab950c37"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -367,7 +431,7 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="0d871fdf-f87b-4971-9bdb-0fb387c30029"
+                  Id="baa0fda1-e2f3-44d0-a76b-73f4e83091c0"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -377,13 +441,13 @@
                   isComposite="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="55a16195-d066-4a5d-b61d-2217cf183b77"
+                      Id="cbf6bc14-868b-4d23-9ee5-9d73705ec44a"
                       name="Lower"
                       value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="d9259865-fc25-4943-9011-251bab499244"
+                      Id="4e222dbd-137c-4198-acc5-0f46bb6b24fe"
                       name="Upper"
                       value="1" />
                   </upperValueInternal>
@@ -860,73 +924,155 @@
                 LastKnownLocation="Package1_1204.uml" />
             </type_NamedElement>
           </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="3b2866c7-6099-423a-b04f-962fd6b8c969"
-            name="GameManager"
+          <property
+            Id="658629af-f1d5-4f5a-bff3-06648c6e6997"
+            name="Instance"
             isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
+            isStatic="true"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
             <referencesInternal>
               <reference
-                Id="c25c6424-0635-4a26-afa8-fb1611eb3754"
-                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3D.ctor"
+                Id="38c256a1-d123-46c1-99ea-d0340b495542"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3DInstance"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="e31004a7-8720-43e0-9b91-6d564392b8d6"
-                name="method"
+                Id="f1fb5906-24a6-4a24-91fe-e5494a2f6af8"
+                name="property"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="acd1b82b-21bc-4965-b408-90641b096e9c">
+                    Id="588ad678-729b-4758-8eb3-5b9ff27b1ea1">
                     <propertyInstance
-                      Id="a1dba455-555e-485d-8a60-8a042b7c48af"
+                      Id="a064857d-d2b7-4103-9d44-05e692ccbc02"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="ee4146a3-e5bc-4756-b511-f2c1e1a4e65a">
+                    Id="bed362f8-d0bf-44f7-a1a7-ff51414fd677">
                     <propertyInstance
-                      Id="dcb347dc-7787-49d2-b268-f653a0aaa059"
-                      name="IsPartial"
+                      Id="e37dd3cf-7e28-4c96-aae9-7f075ec1e177"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3c5ebb6-e2db-4bd4-ae6d-9010bd0423ce">
+                    <propertyInstance
+                      Id="714fd22d-b94d-42fb-bb19-1e558e18747a"
+                      name="HasBody"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="ad080101-66bc-4f9b-80df-6e98a8bc8a04">
+                    Id="64102642-b775-4ced-89b4-afacd4f74d7c">
                     <propertyInstance
-                      Id="7e483936-51f4-4826-b75c-1a95380903a5"
+                      Id="7067402f-0e4c-406b-9f8d-4c6d1e801418"
                       name="IsUnsafe"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="c91b3804-f5c6-41d9-8e08-4930090517da">
+                    Id="91647bb7-36a6-4b1a-919d-df490db4183e">
                     <propertyInstance
-                      Id="2e01693f-b960-424d-a5b2-6ac5c239385c"
+                      Id="d9443b2d-e61f-46dc-9021-a18bc175cc2c"
                       name="Inheritance"
                       value="none" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="b28f8585-1c21-4b81-b46d-778257cf6b9f">
+                    Id="ab86ba47-f2b3-42ae-a4fa-d2e03b1f2147">
                     <propertyInstance
-                      Id="eeae50b8-6437-45f9-b071-1012d5b3f643"
+                      Id="0f62c85b-46c2-4af7-8c02-d3d482019743"
                       name="PackageVisibility"
                       value="internal" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="8cf6c705-6fea-489d-8ac4-1d69caae19ab">
+                    Id="b92ad6cd-4c24-428d-aae7-6649c18e0bf8">
                     <propertyInstance
-                      Id="50e996f1-391c-49bc-bfe6-7673e75d4d67"
-                      name="params"
-                      value="false" />
+                      Id="ccec82b3-4818-48ca-b723-c340d34bfd83"
+                      name="Set"
+                      value="none" />
                   </stereotypeInstanceHasPropertyInstances>
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
-          </operation>
+            <type_NamedElement>
+              <classMoniker
+                Id="f77e75ec-eaca-49a4-aba8-517c938c0773"
+                LastKnownName="GameManager"
+                LastKnownLocation="Package_1204.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d4fe0e53-97e8-49e0-8525-8f6570fabe76"
+            name="instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4745a65e-c045-4e0e-94c9-df585c450082"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3Dinstance"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="79cfeefd-3c7b-453b-9b3e-d8fade5e4f91"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a30c4b45-7a43-4b27-8407-736c191b9368">
+                    <propertyInstance
+                      Id="156eef00-99cc-4f3e-a793-870704910fe2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8872a299-e518-4a86-849c-fa5ab0a1822c">
+                    <propertyInstance
+                      Id="49d09e42-4d72-4050-a3d9-9cf459709108"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54ce4bf1-103c-4b1f-811a-92c33fe125c9">
+                    <propertyInstance
+                      Id="eb0ab209-d5c4-48be-a1f3-fe0ba9ae1c0c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40745998-699b-40d0-9ca8-92f29e738429">
+                    <propertyInstance
+                      Id="964ab448-e1cb-4e2d-b4a4-0182f8bce992"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c92380da-cb7d-4ac1-8b46-82414b366de5">
+                    <propertyInstance
+                      Id="898825f0-967a-4b53-b9bf-bf30a7e4044c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="e213d1e1-c00f-47f5-b25f-627be20376c3"
+                LastKnownName="Lazy&lt;GameManager‎&gt;"
+                LastKnownLocation="Package1_1204.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
           <operation
             Id="dff6c870-f452-4b2f-9f2a-5a348285054a"
             name="MoveSnake"
@@ -1340,13 +1486,136 @@
             </appliedStereotypesInternal>
           </operation>
           <operation
-            Id="9815749c-5bdc-40cd-9c5c-dc64843cc181"
-            name="PlayGame"
+            Id="56611757-0bf0-4d22-aa30-be45edcdb0c9"
+            name="GameManager"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="59cbe208-2634-476b-b62f-9de70a855914"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="afd22b20-bc14-4b94-be4a-c8fb7275b200"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="14003a92-6ef8-4cba-bc9b-abac162e6e05">
+                    <propertyInstance
+                      Id="0b1d4b65-2b9a-4c09-8820-0cda82fefef2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02b47c60-eab6-497f-aefe-757d411d8287">
+                    <propertyInstance
+                      Id="54b9589f-c9d3-4255-a861-e6137b81ddc8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c1b4722-a1b4-41d7-84b5-b8400bdab60c">
+                    <propertyInstance
+                      Id="e2e3802a-80a1-45fb-9f36-6f9c29963de6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18f5f917-6768-4a15-bb87-bcefc2c6ef35">
+                    <propertyInstance
+                      Id="e582f4ec-0505-42d5-9ec8-4cf99aac3107"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd273a0f-8af5-44a4-a741-29e003eb8168">
+                    <propertyInstance
+                      Id="a7a08ad6-f527-425e-835a-2ba577ddf4bb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="794da64d-0da8-4a48-85c5-624b4ca15ad3">
+                    <propertyInstance
+                      Id="fab510d8-db30-4c5f-a7b4-3f8781ea582f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="5b166f85-e906-40f6-a970-c490cf26b550"
+            name="StartGame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9c93b4a3-16f9-409f-8e13-a7afe815640e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameManager Member%3DStartGame"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="684a44fa-8ced-42d5-8943-1f0c1b808d33"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c79ea898-df66-4caf-8704-5ee9797c5e44">
+                    <propertyInstance
+                      Id="c1e4c924-eefe-4cfa-b711-cacf390667e4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4acb714a-5326-436c-ab29-7f03be93eebf">
+                    <propertyInstance
+                      Id="731838c8-7676-40b8-88b7-7ab06fb070a8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70250381-1215-42a9-ae4a-c0b65ae2a4c0">
+                    <propertyInstance
+                      Id="02d85313-af7c-4508-8190-fbb7bef8920d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e779151-b25d-47d9-b817-8d9217e7e0ca">
+                    <propertyInstance
+                      Id="cee8e420-6310-4be8-8877-457abffb9e37"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="846f55ac-5797-41ac-a1e6-41a821858a6a">
+                    <propertyInstance
+                      Id="a6675216-5811-4bca-bf31-281fcd03aec2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ca6874c-51c3-44b5-a017-9eb4bf73ab0d">
+                    <propertyInstance
+                      Id="c038fe51-ff65-46c6-b4e0-057ef375df35"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -1657,7 +1926,7 @@
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="8f283710-cace-433b-b8cd-ddbd7894c68e"
+            Id="545e25a0-0937-4515-bee1-fb9a307622bb"
             name="Board"
             isLeaf="false"
             isStatic="false"
@@ -1666,54 +1935,54 @@
             isQuery="false">
             <referencesInternal>
               <reference
-                Id="5ee845b7-1bae-409f-9d0e-d7ee161682a3"
+                Id="2b56f819-e8fe-4992-b856-009a09949241"
                 handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DBoard Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="87bbd4ab-706c-45c8-8313-f051926afff2"
+                Id="b21a811a-1fe7-4523-b86e-20f6c4964d7a"
                 name="method"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="24952623-d473-470b-a2d1-e75336b96fc2">
+                    Id="767ef8e6-61a4-4d95-81e5-0b76691dfadd">
                     <propertyInstance
-                      Id="998a4822-37b3-4f38-9067-e1da534594be"
+                      Id="dcf6236c-0350-4fd2-a695-24085de2fc77"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="b28c1b20-fdb4-4f17-88eb-4b3bc220bc55">
+                    Id="00672c28-06a4-49e5-8e57-2cb49d9dc9e6">
                     <propertyInstance
-                      Id="bf313c82-f696-4bc3-9a5b-5b76335e80fc"
+                      Id="10a80c7d-0cbf-45a3-8a42-38f3444575ae"
                       name="IsPartial"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="ff7b9663-3423-4b18-adbd-2f188a62cdc8">
+                    Id="c5c7ef35-8da6-4dff-913a-16ea0a4f7273">
                     <propertyInstance
-                      Id="3a17bd51-2bda-4733-bf2d-739ff3ba492f"
+                      Id="5bf102fc-f4b4-46dc-91eb-953988193660"
                       name="IsUnsafe"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="29fbca72-6d48-4c14-afc1-16e2833ec836">
+                    Id="cd1c68ff-0795-4887-ba0e-d9eb715613ec">
                     <propertyInstance
-                      Id="88d9cf9b-8086-4448-bfcd-a8154ce49c4f"
+                      Id="30f44c18-41ef-47df-9bd4-4b32b1fcf372"
                       name="Inheritance"
                       value="none" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="7c3988f8-17de-48be-8ca1-054e67c79644">
+                    Id="13ceef6b-eebc-4505-baa3-8089f1fa0b8b">
                     <propertyInstance
-                      Id="229ff08f-8617-4986-a231-9370888833a2"
+                      Id="31d29e5f-61ac-417d-949e-4eba7a5d0455"
                       name="PackageVisibility"
                       value="internal" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="98ed934f-31e8-49aa-8932-d317a35b30f6">
+                    Id="35084a6c-6885-47dd-b661-7bd94855db88">
                     <propertyInstance
-                      Id="f82098d2-d753-403f-8771-6e2150973d5c"
+                      Id="6a4bf2b7-c426-4d45-a06f-09f87ca08842"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
@@ -2193,7 +2462,7 @@
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="caba22f7-19fb-475f-bf26-10a47faec36f"
+            Id="eb4a7e98-fbf3-4657-a53a-b1ddbf709828"
             name="GameState"
             isLeaf="false"
             isStatic="false"
@@ -2202,54 +2471,54 @@
             isQuery="false">
             <referencesInternal>
               <reference
-                Id="b2fc6b0e-6e43-4f27-91e2-acece0d8ed74"
+                Id="0fcb0d82-b0ca-4ba0-a399-c2763299af8b"
                 handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameState Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="9e828995-7e15-4527-89f8-eafd5b75cccb"
+                Id="3114079b-9f4d-473a-ba90-82255ee01770"
                 name="method"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="f3af66be-e3b8-40ff-85ac-87f589270469">
+                    Id="03a6613e-458e-4fd5-9bbf-8ae5e6e18f39">
                     <propertyInstance
-                      Id="ad8cf176-278e-41c4-8778-99e2eb8cce34"
+                      Id="8c5131f4-172c-4212-8041-7c2528e5cbee"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="dc7e3280-b0d2-4ec1-81c6-df4753c29ce1">
+                    Id="6215b33f-3384-410c-bb99-df87b2aa5017">
                     <propertyInstance
-                      Id="ba16f36e-0a3e-41f5-b980-52d747be4b3f"
+                      Id="c105b2f7-7b09-4c20-aa70-e65d580cc67c"
                       name="IsPartial"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="dc6b909e-ac49-42c5-b0e6-cd1d4a9b80a5">
+                    Id="979df944-eda3-4b9a-b1a7-842af2403d58">
                     <propertyInstance
-                      Id="0b2a9738-2e6b-410d-8ec6-0d117a9d829d"
+                      Id="e62524b4-502b-4fdc-9e5e-c5a74f115b90"
                       name="IsUnsafe"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="02ded422-0d62-4db9-b464-1350cae2f0e7">
+                    Id="a569e528-9853-4113-94e5-b5a369e8b30a">
                     <propertyInstance
-                      Id="b5c5a537-6119-46dd-b063-6b298aece9b0"
+                      Id="4bac9b91-165a-462e-bbde-47c14f0cfceb"
                       name="Inheritance"
                       value="none" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="aafe55b7-1498-41bc-89d7-13f6e0e46ce2">
+                    Id="02824903-cd93-42ee-adb8-b7a707f41827">
                     <propertyInstance
-                      Id="9db8d874-5b1d-460f-a4e1-29282973b408"
+                      Id="102e7de6-3293-47f1-b181-6f634f09de52"
                       name="PackageVisibility"
                       value="internal" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="355aee5d-4606-4acf-914c-4cb9c8088e5c">
+                    Id="22838362-b470-4682-af25-5939b1ca6fca">
                     <propertyInstance
-                      Id="ab0e3786-21e5-4d3a-b42b-2d0abe085d12"
+                      Id="81fda240-ba80-442d-b3d2-8170babf67b7"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
@@ -2271,7 +2540,7 @@
         <referencesInternal>
           <reference
             Id="f4c8cb51-ca6f-4a3f-ad35-c8f277cc69f7"
-            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DSnakeMess"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DMainSnakeMess"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -2298,7 +2567,7 @@
                 <propertyInstance
                   Id="baec60fe-d22b-4008-8462-440ccc366f2b"
                   name="IsStatic"
-                  value="False" />
+                  value="True" />
               </stereotypeInstanceHasPropertyInstances>
               <stereotypeInstanceHasPropertyInstances
                 Id="916b7eb6-d9f2-4c27-8158-7f43ea858c14">
@@ -2332,7 +2601,7 @@
             <referencesInternal>
               <reference
                 Id="47380be5-93bc-47fe-981f-4c0402d0d4fe"
-                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DSnakeMess Member%3Dg"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DMainSnakeMess Member%3Dg"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -2398,7 +2667,7 @@
             <referencesInternal>
               <reference
                 Id="24ba848c-3a1f-43cb-bfa5-5905f73a4261"
-                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DSnakeMess Member%3D(Name%3DMain OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))])"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DMainSnakeMess Member%3D(Name%3DMain OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))])"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -2461,7 +2730,7 @@
                   <referencesInternal>
                     <reference
                       Id="328e83c3-0c7c-4b8b-84fc-0c7018544e8f"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DSnakeMess Member%3D(Name%3DMain OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))]) ParameterIdentifier%3Darguments"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DMainSnakeMess Member%3D(Name%3DMain OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))]) ParameterIdentifier%3Darguments"
                       tag="ViewCode" />
                   </referencesInternal>
                   <lowerValueInternal>
@@ -2485,6 +2754,266 @@
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="084605ca-6fe4-45d5-bbee-cd91c0b47f8a"
+        name="GameController"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="85417e7a-499b-4d66-aee0-97b053016020"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameController"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="45a3c9c9-764f-4701-a3ec-c159a1ccac4c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="607b334a-77fc-4a64-a7f7-3423990b7e53">
+                <propertyInstance
+                  Id="72680cfd-4a76-413b-a306-b06dc6d539fd"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6c8d1c33-2327-4a59-959a-786b16e258ae">
+                <propertyInstance
+                  Id="b7ad7402-6201-41bb-9b9b-0388e8fb8f81"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b8bbf48f-1978-4dd2-a913-3f25a86bd52b">
+                <propertyInstance
+                  Id="bf842964-f2c5-4cfd-b423-ada724c1282a"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="646bbe41-6425-40a0-9929-8f5d4ef88e0c">
+                <propertyInstance
+                  Id="1061308b-59fb-484e-a110-6cbb219f9171"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8a495873-cc53-4a20-a2ca-e68fc6e2ed18">
+                <propertyInstance
+                  Id="92872764-46ee-49f6-b51c-c9ed65c00628"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="072dda81-8f43-4907-af79-ff4b2347c120"
+            name="g"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d2006d42-e1da-4454-9fd6-2b79aa51c5e3"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameController Member%3Dg"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a6074071-4f72-415c-b239-54811dd689e8"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="964143bc-efc8-49c3-b9b0-6eb078478f30">
+                    <propertyInstance
+                      Id="03d0fb09-bf38-4130-88d2-5506a616d39e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6bb19ae9-fa7d-4ad0-9b8b-f57d85241354">
+                    <propertyInstance
+                      Id="09c083b8-3adc-453b-9654-c80939817ec1"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88eec967-e517-48db-9276-db6ee70658b4">
+                    <propertyInstance
+                      Id="feb24327-95ca-4e76-8173-1d846b7d0793"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a6f31cf-4d9c-4188-bf59-bdec4308713b">
+                    <propertyInstance
+                      Id="2d7666df-c467-4a06-9950-4303badf3c13"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71963463-587e-4783-b856-f01bb7d4177f">
+                    <propertyInstance
+                      Id="8a11817b-6d64-481d-a7a1-8fb2b90954fc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f77e75ec-eaca-49a4-aba8-517c938c0773"
+                LastKnownName="GameManager"
+                LastKnownLocation="Package_1204.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1da69798-5337-474f-a37f-a83476adc4a1"
+            name="GameController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="63a71e35-2936-443e-a726-cff64fc01996"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameController Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d2772ce1-968e-41ab-967f-13ad1c279eed"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67ede769-bac9-4e81-bf23-2e10c688c095">
+                    <propertyInstance
+                      Id="a645445d-8834-48da-a6b2-0865fd751494"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8d3118c-b1d7-4e10-8943-760262131ee2">
+                    <propertyInstance
+                      Id="2a3cabaa-13e2-4c4a-9aad-21c6d7aebd5c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21b75e27-efff-4a43-92dc-4a6be6c3ff8d">
+                    <propertyInstance
+                      Id="0a9fdcb7-b742-459a-86a9-24af466d3925"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b041327-74ea-4e09-8ded-110ac44ad915">
+                    <propertyInstance
+                      Id="f3ca6d16-c2e5-43e2-bbfe-b947fe710678"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="386d64de-047d-4537-913b-915b8cd3f3b2">
+                    <propertyInstance
+                      Id="68b992a9-fbca-4f3e-8e4e-5b8645e99b4e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d5d75e6-ef6f-4e92-bf60-59b94577dc90">
+                    <propertyInstance
+                      Id="4f462c62-07f6-4c56-8e4b-3b414c5b7cc0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="129fe55a-7d5a-4aff-b4b4-079a2c3f5683"
+            name="PlayGame"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4d09874a-5b5c-456a-933e-1f542cc45eca"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FValmir%2FDocuments%2Fpg3300-innlevering%2FOppgave1_SnakeMess%2FSnakeMess_Kode%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe Namespace%3DSnakeMess Type%3DGameController Member%3DPlayGame"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8db7a01a-cdda-46f1-90ef-08ab816b0a3e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3549b09d-d5e9-47b9-bb5e-55df39cb4b0d">
+                    <propertyInstance
+                      Id="318b0677-5304-4bcd-9e21-9168d72c3077"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4e5801e-1e82-4569-8239-4151c49af5bb">
+                    <propertyInstance
+                      Id="89a9489b-a3e2-4036-a86b-01d178847f8b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="95ff88f1-7ae8-43cb-945f-d2acab22aaf8">
+                    <propertyInstance
+                      Id="60490033-2909-4905-b16a-0d9010a4537b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5746d56-3ec1-4074-9e7e-b3d93962eadf">
+                    <propertyInstance
+                      Id="d5ac2309-e70d-442d-868e-a9b02310eef6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c0a3799-279d-4049-8585-01fb8449410c">
+                    <propertyInstance
+                      Id="4426e112-5e37-452d-b2fc-68b1a1c3efca"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e106f5d-c37e-43b7-9c5d-f424e2b4456e">
+                    <propertyInstance
+                      Id="44b89d47-a321-44bf-9d9b-4d1722c45913"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
           </operation>
         </ownedOperationsInternal>
       </class>

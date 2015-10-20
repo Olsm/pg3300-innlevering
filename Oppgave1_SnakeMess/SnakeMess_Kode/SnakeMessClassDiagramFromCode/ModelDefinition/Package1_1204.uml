@@ -75,5 +75,168 @@
         </appliedStereotypesInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e213d1e1-c00f-47f5-b25f-627be20376c3"
+        name="Lazy&lt;GameManager‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7901e06e-a40d-47a3-9492-a33bd1590472"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2de748e6-2269-4cd5-bfc9-e46d66ba23c3">
+                <propertyInstance
+                  Id="fbde9f36-44b3-41ea-9e8d-f5f24f3266f9"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1109c75c-4009-4ad5-8c16-8ff2b3e4c34b">
+                <propertyInstance
+                  Id="448d5248-08a2-4a3b-b014-31d82a8e5277"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="304d9bbb-199c-4046-a517-a4d7f937fd2d">
+                <propertyInstance
+                  Id="75d3cd29-4b44-4789-9264-97ff4eac9d22"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="52a69f93-2493-41a3-9b92-216015823f6c">
+                <propertyInstance
+                  Id="3001479f-ae69-41d5-b4ed-6251c2c4fee5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3fc5872d-5599-4f53-a50f-fe9894e8e32c">
+                <propertyInstance
+                  Id="7cb76137-f3c0-4ba6-9cfb-8b6d299ab083"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="400fcd6b-9444-4b3a-aa13-9d68bcf0f2dd">
+            <redefinableTemplateSignatureMoniker
+              Id="24a13e98-09e4-41ef-9b44-184737601af7"
+              LastKnownLocation="Package1_1204.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="50ef6090-03b9-49e8-8c99-58ec0b6f851a">
+                  <actuals>
+                    <classMoniker
+                      Id="f77e75ec-eaca-49a4-aba8-517c938c0773"
+                      LastKnownName="GameManager"
+                      LastKnownLocation="Package_1204.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="fb58373f-c588-4860-a6a0-1fab5a756fac"
+                      LastKnownLocation="Package1_1204.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="107fb80b-fece-4b92-bd60-942c6cbfb1b5"
+        name="Lazy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="698cd132-240a-4e15-b1ae-665cae60aad9"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DLazy GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f22dec3f-d3bb-4cdc-a573-5c1fb3c2354c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="998f29c6-071f-416d-ac8e-a826501ac567">
+                <propertyInstance
+                  Id="87d24fd2-04d9-4893-8de6-fdff742d7b54"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="99b5aedd-6d9b-4710-ae07-c2f2163498c9">
+                <propertyInstance
+                  Id="09017880-a570-48d8-8a57-ae1018d08d24"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f5d5794c-8299-425c-b082-72fd6b98cff0">
+                <propertyInstance
+                  Id="79f9d439-dd82-4300-aab6-fa9870fb79e1"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c944af15-4356-41e8-a6f5-a813c0f75e51">
+                <propertyInstance
+                  Id="cce52442-2450-40b3-9cfa-d9d2357f838c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3c410f89-aa21-420b-b301-12518f352dec">
+                <propertyInstance
+                  Id="bf07db68-25e5-422e-92bd-e85a4262568a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="24a13e98-09e4-41ef-9b44-184737601af7"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="fb58373f-c588-4860-a6a0-1fab5a756fac">
+                <referencesInternal>
+                  <reference
+                    Id="c5338a14-6ae2-4bf0-8726-3e29e1238c9f"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DLazy GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="a6345533-f4a9-4fe6-b060-88a531c62e70"
+                    name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
 </package>
