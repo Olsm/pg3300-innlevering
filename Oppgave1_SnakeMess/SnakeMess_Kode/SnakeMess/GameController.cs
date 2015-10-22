@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace SnakeMess
 {
-    class GameController
+    abstract class GameController
     {
         private static GameManager g = GameManager.Instance;
 
