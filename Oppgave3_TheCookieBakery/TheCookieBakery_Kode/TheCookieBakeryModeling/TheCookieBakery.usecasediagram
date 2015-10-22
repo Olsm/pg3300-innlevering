@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="df106898-86dc-4da8-846f-6f073d8f417c" name="TheCookieBakery" linkedPackageId="5f65948b-a876-4feb-8f9c-2dba5c8f9912" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="6d4d4279-12a4-4108-8b2c-9ef038cdf9a1">
+      <profileInstance Id="76d95d1c-192e-4e9d-a289-53572a145409" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="03da3045-02dc-4704-aa17-3f1e91f7d34b">
+      <profileInstance Id="b6a9c508-ca04-42f4-98f3-2ed97ec45904" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d0961cf2-6486-4e23-bdfe-05ffe9fe21f1" name="Create cookie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d2fddc3a-7cbd-4a40-a0e7-c8be60285d15" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5ac403aa-23c0-4989-a801-201ee0930197" name="Buy cookie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="de03b348-ba04-4584-a17f-94c0817098e0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="24acd430-5c76-456b-83dd-1775b21d8356" name="Customer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f7589796-0c9b-40e4-9165-d3c189cb97d5" />
+        <targetEnds>
+          <association Id="7238a66a-1065-4d24-b956-ff7c44abe057" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Buy cookie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5ac403aa-23c0-4989-a801-201ee0930197" LastKnownName="Buy cookie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="09348e9d-8f2a-470f-961e-61be4fecce25" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="73382e41-b0c7-4923-9aa7-1ecd2d8a7e9e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bda1a1bc-1e17-4578-9c4f-d30d074444bb" name="Buy cookie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7d1cb04f-352a-417f-9ea9-af914cad9a79" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e9e09230-7f90-428f-9a8f-0a63f97f3a3d" />
+          </association>
+          <association Id="e95328ef-7925-4e09-af47-10a2c0a0b594" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Look for cookie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e9ed20e6-b3a5-4bcd-9edf-3af4d879e788" LastKnownName="Look for cookie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a0c00c08-da79-4c46-8086-5871ff7d1785" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c8d5d308-0315-4186-a2b8-b2f7848769ee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5f084b70-74f0-4241-a843-97ca71e63eda" name="Look for cookie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="deb6b6d6-751f-4865-93bf-35b3ef6dc927" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a8387e51-32f5-4329-9a01-053b61a6dccc" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="a9d9f445-d77d-47a8-9920-ba5a9109f549" name="Bakery" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9b23159f-9c3a-4ebc-9942-577449caa1e4" />
+        <targetEnds>
+          <association Id="55dbe76e-9862-435a-82e6-dd9055aa7fa1" isDerived="false" sourceEndRoleName="Bakery" targetEndRoleName="Create cookie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d0961cf2-6486-4e23-bdfe-05ffe9fe21f1" LastKnownName="Create cookie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cc537eb8-c07d-4ea9-95b5-1fd3b4486cd6" name="Bakery" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3965812b-f899-464f-a93d-b202992c673e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0b3a6965-0b46-496c-85cf-6bd51e0d49bf" name="Create cookie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f7ce3c8c-44a7-4989-921b-8f7be4c22acc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8f89054d-c39c-4da1-af73-a13fcddb6991" />
+          </association>
+          <association Id="187ec359-adf5-42d0-811c-ffb941465bd1" isDerived="false" sourceEndRoleName="Bakery" targetEndRoleName="Put cookie in basket" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="34499233-669c-4ede-a85b-b5174b08405a" LastKnownName="Put cookie in basket" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d347627e-fa70-4429-b08e-24cf9bf99007" name="Bakery" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e66ea42c-9f37-4a7a-9e77-7d8fc2871c94" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="24aeb865-81e3-41d0-84c7-add0cb72fd06" name="Put cookie in basket" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="968f8e05-4a58-4c3f-a678-27668cd6d25c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="11d1136e-db5a-4821-b8f4-8a3cfead2e94" />
+          </association>
+          <association Id="09082c52-f1f1-4df5-a37a-57709b2b6d54" isDerived="false" sourceEndRoleName="Bakery" targetEndRoleName="Close bakery" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="27a94b50-729c-4e87-b3df-cdc4b5752c08" LastKnownName="Close bakery" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f070efc7-577c-44e1-afa1-d33726f4d8c1" name="Bakery" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="560ea5aa-9eb4-4fab-a07d-935c61a33aee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b7a82b3b-a77c-4e89-9837-83817b2f5299" name="Close bakery" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0b0224e5-e385-488a-9174-9b621b738e6b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="95368ea1-d16e-45d0-9fcf-728e6d413d31" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e9ed20e6-b3a5-4bcd-9edf-3af4d879e788" name="Look for cookie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4389a054-d713-489b-8b60-2e3e589ca2f8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="34499233-669c-4ede-a85b-b5174b08405a" name="Put cookie in basket" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f1e92c95-7149-48e4-83cc-06d19475e044" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="27a94b50-729c-4e87-b3df-cdc4b5752c08" name="Close bakery" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="26cafaa8-c121-4da2-b61c-e32e317d84b3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="5f65948b-a876-4feb-8f9c-2dba5c8f9912" name="TheCookieBakeryModeling">
+    <elementDefinition Id="614fc329-1533-4d71-85ac-83518456746b" />
+  </package>
+</useCaseModelRoot>
