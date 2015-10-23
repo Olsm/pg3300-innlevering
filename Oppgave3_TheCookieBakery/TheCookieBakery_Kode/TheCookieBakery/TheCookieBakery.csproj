@@ -58,8 +58,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bakery.cs" />
+    <Compile Include="BaseCookie.cs" />
+    <Compile Include="ChocolateDecorator.cs" />
+    <Compile Include="CookieDecorator.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="IFood.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaisinDecorator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
