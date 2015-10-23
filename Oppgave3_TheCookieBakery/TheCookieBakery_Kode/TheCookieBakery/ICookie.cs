@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TheCookieBakery
 {
-    interface IFood
+    interface ICookie
     {
         string GetDescription();
     }

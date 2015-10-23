@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TheCookieBakery
 {
-    class BaseCookie : IFood
+    class BaseCookie : ICookie
     {
         public string GetDescription()
         {

@@ -8,13 +8,14 @@ namespace TheCookieBakery
 {
     class Program
     {
+        Bakery bakery = new Bakery();
+
         static void Main (string[] args)
         {
-            var cookie = new ChocolateDecorator(new BaseCookie());
-            Console.WriteLine(cookie.GetDescription());
-
-            var cookie2 = new RaisinDecorator(cookie);
-            Console.WriteLine(cookie2.GetDescription());
+            Bakery.CreateCookie();
+            
+            for (int i = 0; i < 12; i++)
+                Console.WriteLine(Bakery.cookies[i].GetDescription());
 
             Console.ReadKey();
         }

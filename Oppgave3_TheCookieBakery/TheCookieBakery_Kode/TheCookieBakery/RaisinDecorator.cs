@@ -2,7 +2,7 @@
 {
     class RaisinDecorator : CookieDecorator
     {
-        public RaisinDecorator(IFood original) : base(original){ }
+        public RaisinDecorator(ICookie original) : base(original){ }
 
         public override string GetDescription()
         {

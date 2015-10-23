@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace TheCookieBakery
 {
-    class CookieDecorator : IFood
+    class CookieDecorator : ICookie
     {
-        private IFood original;
+        private ICookie original;
 
-        public CookieDecorator(IFood original)
+        public CookieDecorator(ICookie original)
         {
             this.original = original;
         }
