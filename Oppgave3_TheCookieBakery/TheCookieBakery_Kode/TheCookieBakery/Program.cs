@@ -11,10 +11,21 @@ namespace TheCookieBakery
         static void Main (string[] args)
         {
             var bakery = new Bakery ();
-            var fred = new Customer ("Fred", bakery);
-            var ted = new Customer ("Ted", bakery);
-            var greg = new Customer ("Greg", bakery);
             
+            Customer[] customers = new Customer[3];
+            customers[0] = new Customer ("Fred", bakery);
+            customers[1] = new Customer ("Ted", bakery);
+            customers[2] = new Customer ("Greg", bakery);
+
+            Thread[] threads = new Thread[3];
+            for (int i = 0; i < 3; i++) {
+                threads[i] = new Thread (new ThreadStart (customers[i].BuyCookies));
+            }
+
+            for (int i = 0; i < 3; i++) {
+                threads[i].Start ();
+            }
+
             bakery.BakeCookies();
 
             Console.ReadKey();

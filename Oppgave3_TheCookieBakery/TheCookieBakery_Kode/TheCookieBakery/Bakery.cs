@@ -19,9 +19,9 @@ namespace TheCookieBakery
 
         public void BakeCookies() {
             for (int i = 0; i < 12; i++) {
-                Thread.Sleep (700);
+                Thread.Sleep (667);
                 cookies[i] = CreateCookie ();
-                Console.WriteLine ("Bakery made " + cookies[i].GetDescription () + " #" + i);
+                Console.WriteLine ("Bakery made " + cookies[i].GetDescription () + " #" + (i + 1));
             }
             CloseBakery ();
         }
@@ -30,8 +30,8 @@ namespace TheCookieBakery
             lock (lockObject) {
                 for (int i = 0; i < 12; i++) {
                     if (cookies[i] != null) {
-                        Console.WriteLine ("                                 " +
-                            customer.name + " recieved " + cookies[i].GetDescription () + " " + i);
+                        Console.WriteLine ("                                        " 
+                            + customer.name + " recieved " + cookies[i].GetDescription () + " #" + (i + 1));
                         cookies[i] = null;
                     }
                 }
@@ -40,23 +40,21 @@ namespace TheCookieBakery
 
         private ICookie CreateCookie()
         {
-            
-            //private static Random randomGenerator = new Random ();
-            //private int randomType = randomGenerator.Next (1, 4);
-            /*
-            for (int i = 0; i < 4; i++) {
-                cookies[i] = new BaseCookie ();
-            }
-            for (int i = 4; i < 8; i++) {
-                cookies[i] = new ChocolateDecorator(new BaseCookie());
-            }
-                
-            for (int i = 8; i < 12; i++) {
-                cookies[i] = new RaisinDecorator(new BaseCookie());
-            }
-            */
-               
-            return new BaseCookie ();
+            ICookie cookie;
+
+            Random randomGenerator = new Random ();
+            int randomType = randomGenerator.Next (1, 4);
+
+            cookie = new BaseCookie();
+
+            if (randomType == 2)
+                cookie = new ChocolateDecorator (cookie);
+            else if (randomType == 3)
+                cookie = new RaisinDecorator (cookie);
+            else if (randomType == 4)
+                new ChocolateDecorator (new RaisinDecorator(cookie));
+
+            return cookie;
         }
 
         public void CloseBakery () {

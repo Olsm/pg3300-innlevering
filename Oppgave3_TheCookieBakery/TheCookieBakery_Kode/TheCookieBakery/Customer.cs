@@ -12,10 +12,8 @@ namespace TheCookieBakery
         Bakery bakery;
 
         public Customer(String name, Bakery bakery) {
-            Thread thread = new Thread (new ThreadStart(BuyCookies));
             this.name = name;
             this.bakery = bakery;
-            thread.Start ();
         }
 
         public void BuyCookies() {
