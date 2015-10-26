@@ -8,16 +8,17 @@ namespace TheCookieBakery
 {
     class Program
     {
-        Bakery bakery = new Bakery();
-
-        static void Main (string[] args)
+        static void Main(string[] args)
         {
-            Bakery.CreateCookie();
-            
-            for (int i = 0; i < 12; i++)
-                Console.WriteLine(Bakery.cookies[i].GetDescription());
+            CreateCookieType cookieChocolate = new CookieWithChocolate();
+            CreateCookieType cookieRaisins = new CookieWithRaisins();
+            CreateCookieType cookieAll = new CookieWithAll();
 
+            Console.WriteLine(cookieChocolate.getCookieType());
+            Console.WriteLine(cookieRaisins.getCookieType());
+            Console.WriteLine(cookieAll.getCookieType());
             Console.ReadKey();
+
         }
     }
 }
