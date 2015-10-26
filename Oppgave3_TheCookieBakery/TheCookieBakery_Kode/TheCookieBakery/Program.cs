@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace TheCookieBakery
 {
     class Program
     {
-        Bakery bakery = new Bakery();
-
         static void Main (string[] args)
         {
-            Bakery.CreateCookie();
+            var bakery = new Bakery ();
+            var fred = new Customer ("Fred", bakery);
+            var ted = new Customer ("Ted", bakery);
+            var greg = new Customer ("Greg", bakery);
             
-            for (int i = 0; i < 12; i++)
-                Console.WriteLine(Bakery.cookies[i].GetDescription());
+            bakery.BakeCookies();
 
             Console.ReadKey();
         }
