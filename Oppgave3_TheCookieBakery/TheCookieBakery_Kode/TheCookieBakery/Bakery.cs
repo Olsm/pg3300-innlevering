@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 
 namespace TheCookieBakery
@@ -10,15 +7,18 @@ namespace TheCookieBakery
     {
         public ICookie[] cookies = new ICookie[12];
         public bool bakeryOpen;
-        Object lockObject = new Object ();
+        readonly Object _lockObject = new Object ();
+        private int totalCookies;
 
         public Bakery()
         {
             bakeryOpen = true;
+            totalCookies = 12;
         }
 
+        // Bakes 12 cookies
         public void BakeCookies() {
-            for (int i = 0; i < 12; i++) {
+            for (int i = 0; i < totalCookies; i++) {
                 Thread.Sleep (667);
                 cookies[i] = CreateCookie ();
                 Console.WriteLine ("Bakery made " + cookies[i].GetDescription () + " #" + (i + 1));
@@ -27,8 +27,8 @@ namespace TheCookieBakery
         }
         
         public void SellToCustomer(Customer customer) {
-            lock (lockObject) {
-                for (int i = 0; i < 12; i++) {
+            lock (_lockObject) {
+                for (int i = 0; i < totalCookies; i++) {
                     if (cookies[i] != null) {
                         Console.WriteLine ("                                                   " 
                             + customer.name + " recieved " + cookies[i].GetDescription () + " #" + (i + 1));
