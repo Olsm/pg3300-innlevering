@@ -30,7 +30,7 @@ namespace TheCookieBakery
             lock (lockObject) {
                 for (int i = 0; i < 12; i++) {
                     if (cookies[i] != null) {
-                        Console.WriteLine ("                                        " 
+                        Console.WriteLine ("                                                   " 
                             + customer.name + " recieved " + cookies[i].GetDescription () + " #" + (i + 1));
                         cookies[i] = null;
                     }
@@ -40,19 +40,28 @@ namespace TheCookieBakery
 
         private ICookie CreateCookie()
         {
-            ICookie cookie;
+            ICookie cookie = new BaseCookie ();
 
             Random randomGenerator = new Random ();
-            int randomType = randomGenerator.Next (1, 4);
+            int randomType = randomGenerator.Next (0, 4);
 
-            cookie = new BaseCookie();
-
-            if (randomType == 2)
-                cookie = new ChocolateDecorator (cookie);
-            else if (randomType == 3)
-                cookie = new RaisinDecorator (cookie);
-            else if (randomType == 4)
-                new ChocolateDecorator (new RaisinDecorator(cookie));
+            /* add random filling to cookie 
+            * 0 = no filling
+            * 1 = Cookie with chocolate
+            * 2 = cookie with raisin
+            * 3 = cookie with chocolate and raisin */
+            switch (randomType) {
+                case 1:
+                    cookie = new ChocolateDecorator (cookie);
+                    break;
+                case 2:
+                    cookie = new RaisinDecorator (cookie);
+                    break;
+                case 3:
+                    cookie = new ChocolateDecorator (
+                        new RaisinDecorator(cookie));
+                    break;
+            }
 
             return cookie;
         }
