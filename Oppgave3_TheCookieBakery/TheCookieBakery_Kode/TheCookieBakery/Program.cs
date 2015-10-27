@@ -10,6 +10,8 @@ namespace TheCookieBakery
     {
         static void Main (string[] args)
         {
+            Console.SetWindowSize(Console.LargestWindowWidth/2, Console.LargestWindowHeight/2);
+
             var bakery = new Bakery ();
             
             Customer[] customers = new Customer[3];
