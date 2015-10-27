@@ -6,7 +6,7 @@ using System.Threading;
 
 namespace TheCookieBakery
 {
-    class Program
+    class MainCookieBakery
     {
         static void Main (string[] args)
         {
