@@ -30,8 +30,6 @@ namespace TheCookieBakery
                 Console.WriteLine("Bakery made " + newCookie.GetDescription() + " #" + (i + 1));
                 cookies[i] = newCookie;
             }
-
-            CloseBakery ();
         }
         
         // Sell cookie to customer by writing description to console and removing cookie from basket
@@ -49,6 +47,8 @@ namespace TheCookieBakery
 
                     if (cookieIndex < cookies.Length - 1)
                         cookieIndex++;
+                    else
+                        CloseBakery();  // Close bakery when all cookies have been sold
                 }
             }
         }
