@@ -8,7 +8,8 @@ namespace TheCookieBakery
         public ICookie[] cookies;
         public bool bakeryOpen;
         private int totalCookies;
-        readonly Object _lockObject = new Object ();    // Create an object for using lock in multithreading
+        private int cookieIndex;
+        internal readonly Object LockObject = new Object ();    // Create an object for using lock in multithreading
 
         // Open bakery, create basket and chose number of cookies to make
         public Bakery()
@@ -18,13 +19,16 @@ namespace TheCookieBakery
             totalCookies = cookies.Length;
         }
 
-        // Bakes cookies, once per 667 milliseconds
+        // Bake cookies, once per 667 milliseconds and write description to console
         public void BakeCookies()
         {
+            ICookie newCookie;
+
             for (int i = 0; i < totalCookies; i++) {
                 Thread.Sleep (667);
-                cookies[i] = BakeCookie ();
-                Console.WriteLine ("Bakery made " + cookies[i].GetDescription () + " #" + (i + 1));
+                newCookie = BakeCookie();
+                Console.WriteLine("Bakery made " + newCookie.GetDescription() + " #" + (i + 1));
+                cookies[i] = newCookie;
             }
 
             CloseBakery ();
@@ -34,16 +38,17 @@ namespace TheCookieBakery
         public void SellToCustomer(Customer customer)
         {
             // Use lock to prevent race condition for multi threading
-            lock (_lockObject)
+            lock (LockObject)
             {
-                // Find the first available cookie in basket
-                for (int i = 0; i < totalCookies; i++) {
-                    if (cookies[i] != null) {
-                        // Write description to console and remove cookie from basket
-                        Console.WriteLine ("                                                   " 
-                            + customer.Name + " recieved " + cookies[i].GetDescription () + " #" + (i + 1));
-                        cookies[i] = null;
-                    }
+                // Make sure cookieIndex in array is there
+                if (cookies[cookieIndex] != null) {
+                    // Write description to console and remove cookie from basket
+                    Console.WriteLine ("                                                   " 
+                        + customer.Name + " recieved " + cookies[cookieIndex].GetDescription () + " #" + (cookieIndex + 1));
+                    cookies[cookieIndex] = null;
+
+                    if (cookieIndex < cookies.Length - 1)
+                        cookieIndex++;
                 }
             }
         }
