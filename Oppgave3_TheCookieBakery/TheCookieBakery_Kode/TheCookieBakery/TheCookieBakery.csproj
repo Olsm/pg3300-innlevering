@@ -64,7 +64,7 @@
     <Compile Include="CookieDecorator.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="ICookie.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="MainCookieBakery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RaisinDecorator.cs" />
   </ItemGroup>

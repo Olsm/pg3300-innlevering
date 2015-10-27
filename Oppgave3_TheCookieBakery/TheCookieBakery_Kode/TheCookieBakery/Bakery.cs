@@ -5,40 +5,51 @@ namespace TheCookieBakery
 {
     class Bakery
     {
-        public ICookie[] cookies = new ICookie[12];
+        public ICookie[] cookies;
         public bool bakeryOpen;
-        readonly Object _lockObject = new Object ();
         private int totalCookies;
+        readonly Object _lockObject = new Object ();    // Create an object for using lock in multithreading
 
+        // Open bakery, create basket and chose number of cookies to make
         public Bakery()
         {
             bakeryOpen = true;
-            totalCookies = 12;
+            cookies = new ICookie[12];
+            totalCookies = cookies.Length;
         }
 
-        // Bakes 12 cookies
-        public void BakeCookies() {
+        // Bakes cookies, once per 667 milliseconds
+        public void BakeCookies()
+        {
             for (int i = 0; i < totalCookies; i++) {
                 Thread.Sleep (667);
-                cookies[i] = CreateCookie ();
+                cookies[i] = BakeCookie ();
                 Console.WriteLine ("Bakery made " + cookies[i].GetDescription () + " #" + (i + 1));
             }
+
             CloseBakery ();
         }
         
-        public void SellToCustomer(Customer customer) {
-            lock (_lockObject) {
+        // Sell cookie to customer by writing description to console and removing cookie from basket
+        public void SellToCustomer(Customer customer)
+        {
+            // Use lock to prevent race condition for multi threading
+            lock (_lockObject)
+            {
+                // Find the first available cookie in basket
                 for (int i = 0; i < totalCookies; i++) {
                     if (cookies[i] != null) {
+                        // Write description to console and remove cookie from basket
                         Console.WriteLine ("                                                   " 
-                            + customer.name + " recieved " + cookies[i].GetDescription () + " #" + (i + 1));
+                            + customer.Name + " recieved " + cookies[i].GetDescription () + " #" + (i + 1));
                         cookies[i] = null;
                     }
                 }
             }
         }
 
-        private ICookie CreateCookie()
+        // Bakes and returns a cookie with random filling
+        private ICookie BakeCookie()
         {
             ICookie cookie = new BaseCookie ();
 
@@ -50,7 +61,8 @@ namespace TheCookieBakery
             * 1 = Cookie with chocolate
             * 2 = cookie with raisin
             * 3 = cookie with chocolate and raisin */
-            switch (randomType) {
+            switch (randomType)
+            {
                 case 1:
                     cookie = new ChocolateDecorator (cookie);
                     break;
@@ -66,7 +78,9 @@ namespace TheCookieBakery
             return cookie;
         }
 
-        public void CloseBakery () {
+        // Close the bakery so that threads will stop looking for cookies
+        public void CloseBakery ()
+        {
             bakeryOpen = false;
         }
     }

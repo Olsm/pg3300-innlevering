@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TheCookieBakery
+﻿namespace TheCookieBakery
 {
-    class CookieDecorator : ICookie
+    abstract class CookieDecorator : ICookie
     {
         private ICookie original;
 
-        public CookieDecorator(ICookie original)
+        protected CookieDecorator(ICookie original)
         {
             this.original = original;
         }
