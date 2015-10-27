@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading;
 
 namespace TheCookieBakery
@@ -18,9 +19,15 @@ namespace TheCookieBakery
         public void BuyCookies() {
             while (_bakery.bakeryOpen) {
             Thread.Sleep (1000);
-                //Console.WriteLine(_bakery.cookies.Count(i => i != null));
-                if (_bakery.cookies.Length > 0) {
-                    _bakery.SellToCustomer (this);
+
+                // Use lock to prevent race condition for multi threading
+                lock (_bakery.LockObject)
+                {
+                    // Count cookies in basket and buy one if there is 1 or more available
+                    if (_bakery.cookies.Count(cookie => cookie != null) > 0)
+                    {
+                        _bakery.SellToCustomer(this);
+                    }
                 }
             }
         }
