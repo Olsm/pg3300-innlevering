@@ -31,9 +31,8 @@ namespace TheCookieBakery
                     // Add cookie to the customer cookie list if he got one, find index and write to console
                     if (cookie != null) {
                         cookies.Add (cookie);
-                        int cookieIndex = _bakery.cookieIndex;
-                        Console.WriteLine ("                                                   "
-                            + Name + " recieved " + cookie.GetDescription () + " #" + _bakery.cookieIndex);
+                        int cookieIndex = cookie.GetID();
+                        
                     }
                 }
             }

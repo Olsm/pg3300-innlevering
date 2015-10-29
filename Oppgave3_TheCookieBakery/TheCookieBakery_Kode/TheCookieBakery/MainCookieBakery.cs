@@ -20,14 +20,16 @@ namespace TheCookieBakery
         // Setup bakery, customers and console
         private static void CreateGame ()
         {
-            bakery = new Bakery();
+            Random randomGenerator = new Random ();
+            int cookiesToBake = randomGenerator.Next (12, 21);
+            bakery = new Bakery(cookiesToBake);
             totalCustomers = 3;
 
             CreateCustomers();
             CreateThreads();
 
             // Set console width and height to show all text
-            Console.SetWindowSize(110, 30);
+            Console.SetWindowSize(110, Console.LargestWindowHeight);
             Console.Title = "The Cookie Bakery";
         }
 

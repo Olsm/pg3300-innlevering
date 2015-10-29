@@ -3,5 +3,6 @@
     interface ICookie
     {
         string GetDescription();
+        int GetID ();
     }
 }

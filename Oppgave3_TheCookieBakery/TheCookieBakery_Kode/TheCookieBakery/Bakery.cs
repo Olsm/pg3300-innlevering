@@ -10,13 +10,15 @@ namespace TheCookieBakery
         private int totalCookies;
         public int cookieIndex { get; private set; }
         internal readonly Object LockObject = new Object ();    // Create an object for using lock in multithreading
+        private int nextCookieID;
 
         // Open bakery, create basket and chose number of cookies to make
-        public Bakery()
+        public Bakery(int totalCookies = 12)
         {
             bakeryOpen = true;
-            cookies = new ICookie[12];
-            totalCookies = cookies.Length;
+            this.totalCookies = totalCookies;
+            cookies = new ICookie[totalCookies];
+            nextCookieID = 1;
         }
 
         // Bake cookies, once per 667 milliseconds and write description to console
@@ -44,7 +46,10 @@ namespace TheCookieBakery
                     ICookie cookie = cookies[cookieIndex];
                     cookies[cookieIndex] = null;
 
-                    if (cookieIndex < cookies.Length - 1)
+                    Console.WriteLine ("                                                   "
+                            + customer.Name + " bought " + cookie.GetDescription () + " #" + cookie.GetID());
+
+                    if (cookieIndex < totalCookies - 1)
                         cookieIndex++;
                     else
                         CloseBakery();  // Close bakery when all cookies have been sold
@@ -58,7 +63,7 @@ namespace TheCookieBakery
         // Bakes and returns a cookie with random filling
         private ICookie BakeCookie()
         {
-            ICookie cookie = new BaseCookie ();
+            ICookie cookie = new BaseCookie (nextCookieID);
 
             Random randomGenerator = new Random ();
             int randomType = randomGenerator.Next (0, 4);
@@ -82,6 +87,7 @@ namespace TheCookieBakery
                     break;
             }
 
+            nextCookieID++;
             return cookie;
         }
 
