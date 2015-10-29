@@ -7,7 +7,7 @@
       <relativeChildShapes />
     </useCaseShape>
     <useCaseShape Id="67ae6d74-3f25-43dc-9d7c-6d4501ca9b38" absoluteBounds="1.75, 3, 1.125, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="5ac403aa-23c0-4989-a801-201ee0930197" LastKnownName="Buy cookie" />
+      <useCaseMoniker Id="5ac403aa-23c0-4989-a801-201ee0930197" LastKnownName="Buy and sell cookie" />
       <relativeChildShapes />
     </useCaseShape>
     <actorShape Id="7a4171ce-ac99-4d15-949b-4a22678eb1a1" absoluteBounds="3.625, 2.5, 0.5, 0.5" isReference="false" heightOffset="0">
@@ -34,11 +34,19 @@
         <useCaseShapeMoniker Id="f5914dac-b918-4199-8b97-d60545abdd3b" />
       </nodes>
     </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(1 : 2.725); (1.89439704273597 : 3.08275881709439)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="1f49fe71-3ded-4176-a374-cd39044e675e" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1c7388f9-25c9-4c7f-ae85-237d36cda61a" />
+        <useCaseShapeMoniker Id="67ae6d74-3f25-43dc-9d7c-6d4501ca9b38" />
+      </nodes>
+    </useCaseAssociationConnector>
     <useCaseShape Id="147a119a-12c3-4a21-97ef-04c1a74f17e1" absoluteBounds="1.75, 2.375, 1.125, 0.5" customColor="238, 237, 131" heightOffset="0">
       <useCaseMoniker Id="e9ed20e6-b3a5-4bcd-9edf-3af4d879e788" LastKnownName="Look for cookie" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseAssociationConnector edgePoints="[(3.625 : 2.73); (2.8661031197352 : 2.66928824957882)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(3.625 : 2.73); (2.8661031197352 : 2.66928824957882)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="e95328ef-7925-4e09-af47-10a2c0a0b594" />
       <relativeChildShapes />
       <nodes>

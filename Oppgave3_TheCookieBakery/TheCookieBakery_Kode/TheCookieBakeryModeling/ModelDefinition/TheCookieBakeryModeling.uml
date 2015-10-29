@@ -28,7 +28,7 @@
     <packageHasNamedElement>
       <useCase
         Id="de03b348-ba04-4584-a17f-94c0817098e0"
-        name="Buy cookie"
+        name="Buy and sell cookie"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
@@ -62,7 +62,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="de03b348-ba04-4584-a17f-94c0817098e0"
-              LastKnownName="Buy cookie"
+              LastKnownName="Buy and sell cookie"
               LastKnownLocation="TheCookieBakeryModeling.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -287,6 +287,45 @@
                 <memberEnd
                   Id="0b0224e5-e385-488a-9174-9b621b738e6b"
                   name="Close bakery"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6962b553-93a6-44ee-8fcb-c648e19be03d"
+            isDerived="false"
+            sourceEndRoleName="Bakery"
+            targetEndRoleName="Buy and sell cookie"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="de03b348-ba04-4584-a17f-94c0817098e0"
+              LastKnownName="Buy and sell cookie"
+              LastKnownLocation="TheCookieBakeryModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="77bc74e0-1128-47ad-9f8f-a7770c714182"
+                  name="Bakery"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="83aa115b-d7b7-4028-97c9-5a169a7a86da"
+                  name="Buy and sell cookie"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
