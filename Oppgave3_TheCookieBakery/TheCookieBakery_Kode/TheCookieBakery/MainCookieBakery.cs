@@ -22,15 +22,16 @@ namespace TheCookieBakery
         {
             Random randomGenerator = new Random ();
             int cookiesToBake = randomGenerator.Next (12, 21);
+
+            // Set console width and height to show all text
+            Console.SetWindowSize(100, cookiesToBake * 2 + 1);
+            Console.Title = "The Cookie Bakery";
+
             bakery = new Bakery(cookiesToBake);
             totalCustomers = 3;
 
             CreateCustomers();
             CreateThreads();
-
-            // Set console width and height to show all text
-            Console.SetWindowSize(110, Console.LargestWindowHeight);
-            Console.Title = "The Cookie Bakery";
         }
 
         // Create some customers
