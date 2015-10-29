@@ -8,7 +8,7 @@ namespace TheCookieBakery
         public ICookie[] cookies;
         public bool bakeryOpen;
         private int totalCookies;
-        private int cookieIndex;
+        public int cookieIndex { get; private set; }
         internal readonly Object LockObject = new Object ();    // Create an object for using lock in multithreading
 
         // Open bakery, create basket and chose number of cookies to make
@@ -33,23 +33,25 @@ namespace TheCookieBakery
         }
         
         // Sell cookie to customer by writing description to console and removing cookie from basket
-        public void SellToCustomer(Customer customer)
+        public ICookie SellToCustomer(Customer customer)
         {
             // Use lock to prevent race condition for multi threading
             lock (LockObject)
             {
                 // Make sure cookieIndex in array is there
                 if (cookies[cookieIndex] != null) {
-                    // Write description to console and remove cookie from basket
-                    Console.WriteLine ("                                                   " 
-                        + customer.Name + " recieved " + cookies[cookieIndex].GetDescription () + " #" + (cookieIndex + 1));
+                    // Remove cookie from basket and give to customer
+                    ICookie cookie = cookies[cookieIndex];
                     cookies[cookieIndex] = null;
 
                     if (cookieIndex < cookies.Length - 1)
                         cookieIndex++;
                     else
                         CloseBakery();  // Close bakery when all cookies have been sold
+                    return cookie;
                 }
+
+                return null;
             }
         }
 
