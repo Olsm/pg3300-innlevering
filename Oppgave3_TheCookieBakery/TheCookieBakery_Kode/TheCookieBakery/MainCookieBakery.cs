@@ -26,8 +26,8 @@ namespace TheCookieBakery
             CreateCustomers();
             CreateThreads();
 
-            // Set console width and height to half screen size to show all text
-            Console.SetWindowSize(Console.LargestWindowWidth / 2, Console.LargestWindowHeight / 2);
+            // Set console width and height to show all text
+            Console.SetWindowSize(110, 30);
             Console.Title = "The Cookie Bakery";
         }
 
