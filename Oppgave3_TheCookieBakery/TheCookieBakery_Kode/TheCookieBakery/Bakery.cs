@@ -5,12 +5,12 @@ namespace TheCookieBakery
 {
     class Bakery
     {
-        public ICookie[] cookies;
-        public bool bakeryOpen;
+        public ICookie[] cookies { get; private set; }
+        public bool bakeryOpen { get; private set; }
         private int totalCookies;
-        public int cookieIndex { get; private set; }
-        internal readonly Object LockObject = new Object ();    // Create an object for using lock in multithreading
+        private int cookieIndex;
         private int nextCookieID;
+        internal readonly Object LockObject = new Object ();    // Create an object for using lock in multithreading
 
         // Open bakery, create basket and chose number of cookies to make
         public Bakery(int totalCookies = 12)
@@ -33,7 +33,36 @@ namespace TheCookieBakery
                 cookies[i] = newCookie;
             }
         }
-        
+
+        // Bakes and returns a cookie with random filling
+        private ICookie BakeCookie () {
+            ICookie cookie = new BaseCookie (nextCookieID);
+
+            Random randomGenerator = new Random ();
+            int randomType = randomGenerator.Next (0, 4);
+
+            /* add random filling to cookie 
+            * 0 = no filling
+            * 1 = Cookie with chocolate
+            * 2 = cookie with raisin
+            * 3 = cookie with chocolate and raisin */
+            switch (randomType) {
+                case 1:
+                    cookie = new ChocolateDecorator (cookie);
+                    break;
+                case 2:
+                    cookie = new RaisinDecorator (cookie);
+                    break;
+                case 3:
+                    cookie = new ChocolateDecorator (
+                        new RaisinDecorator (cookie));
+                    break;
+            }
+
+            nextCookieID++;
+            return cookie;
+        }
+
         // Sell cookie to customer by writing description to console and removing cookie from basket
         public ICookie SellToCustomer(Customer customer)
         {
@@ -60,39 +89,8 @@ namespace TheCookieBakery
             }
         }
 
-        // Bakes and returns a cookie with random filling
-        private ICookie BakeCookie()
-        {
-            ICookie cookie = new BaseCookie (nextCookieID);
-
-            Random randomGenerator = new Random ();
-            int randomType = randomGenerator.Next (0, 4);
-
-            /* add random filling to cookie 
-            * 0 = no filling
-            * 1 = Cookie with chocolate
-            * 2 = cookie with raisin
-            * 3 = cookie with chocolate and raisin */
-            switch (randomType)
-            {
-                case 1:
-                    cookie = new ChocolateDecorator (cookie);
-                    break;
-                case 2:
-                    cookie = new RaisinDecorator (cookie);
-                    break;
-                case 3:
-                    cookie = new ChocolateDecorator (
-                        new RaisinDecorator(cookie));
-                    break;
-            }
-
-            nextCookieID++;
-            return cookie;
-        }
-
         // Close the bakery so that threads will stop looking for cookies
-        public void CloseBakery ()
+        private void CloseBakery ()
         {
             bakeryOpen = false;
         }
