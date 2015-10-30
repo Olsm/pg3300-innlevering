@@ -9,7 +9,7 @@ namespace TheCookieBakery
     {
         public string Name { get; set; }
         private readonly Bakery _bakery;
-        private List<ICookie> cookies;
+        public List<ICookie> cookies { get; private set; }
 
         // Set the customer name and bakery
         public Customer(String name, Bakery bakery) {
