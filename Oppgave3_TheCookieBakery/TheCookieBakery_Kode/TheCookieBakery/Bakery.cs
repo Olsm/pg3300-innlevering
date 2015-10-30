@@ -5,8 +5,8 @@ namespace TheCookieBakery
 {
     class Bakery
     {
-        public ICookie[] cookies { get; private set; }
-        public bool bakeryOpen { get; private set; }
+        public ICookie[] Cookies { get; private set; }
+        public bool BakeryOpen { get; private set; }
         private int totalCookies;
         private int cookieIndex;
         private int nextCookieID;
@@ -15,9 +15,9 @@ namespace TheCookieBakery
         // Open bakery, create basket and chose number of cookies to make
         public Bakery(int totalCookies = 12)
         {
-            bakeryOpen = true;
+            BakeryOpen = true;
             this.totalCookies = totalCookies;
-            cookies = new ICookie[totalCookies];
+            Cookies = new ICookie[totalCookies];
             nextCookieID = 1;
         }
 
@@ -30,7 +30,7 @@ namespace TheCookieBakery
                 Thread.Sleep (667);
                 newCookie = BakeCookie();
                 Console.WriteLine("Bakery made " + newCookie.GetDescription() + " #" + (i + 1));
-                cookies[i] = newCookie;
+                Cookies[i] = newCookie;
             }
         }
 
@@ -70,10 +70,10 @@ namespace TheCookieBakery
             lock (LockObject)
             {
                 // Make sure cookieIndex in array is there
-                if (cookies[cookieIndex] != null) {
+                if (Cookies[cookieIndex] != null) {
                     // Remove cookie from basket and give to customer
-                    ICookie cookie = cookies[cookieIndex];
-                    cookies[cookieIndex] = null;
+                    ICookie cookie = Cookies[cookieIndex];
+                    Cookies[cookieIndex] = null;
 
                     Console.WriteLine ("                                                   "
                             + customer.Name + " bought " + cookie.GetDescription () + " #" + cookie.GetID());
@@ -92,7 +92,7 @@ namespace TheCookieBakery
         // Close the bakery so that threads will stop looking for cookies
         private void CloseBakery ()
         {
-            bakeryOpen = false;
+            BakeryOpen = false;
         }
     }
 }

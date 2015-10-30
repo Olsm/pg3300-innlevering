@@ -16,7 +16,7 @@ namespace TheCookieBakery
             StartGame();
 
             // Wait for bakery to close
-            while (bakery.bakeryOpen) {
+            while (bakery.BakeryOpen) {
                 Thread.Sleep (1000);
             }
 
@@ -24,7 +24,7 @@ namespace TheCookieBakery
             Console.WriteLine ();
             Console.WriteLine ("Bakery has closed, customer results:");
             foreach (Customer customer in customers) {
-                Console.WriteLine (customer.Name + " got " + customer.cookies.Count + " cookie(s)");
+                Console.WriteLine (customer.Name + " got " + customer.Cookies.Count + " cookie(s)");
             }
 
             Console.ReadKey ();
