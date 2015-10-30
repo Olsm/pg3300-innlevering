@@ -14,7 +14,20 @@ namespace TheCookieBakery
         {
             CreateGame();
             StartGame();
-            Console.ReadKey();
+
+            // Wait for bakery to close
+            while (bakery.bakeryOpen) {
+                Thread.Sleep (1000);
+            }
+
+            // Print how many cookies the customers got, when bakery has closed
+            Console.WriteLine ();
+            Console.WriteLine ("Bakery has closed, customer results:");
+            foreach (Customer customer in customers) {
+                Console.WriteLine (customer.Name + " got " + customer.cookies.Count + " cookie(s)");
+            }
+
+            Console.ReadKey ();
         }
 
         // Setup bakery, customers and console
@@ -23,8 +36,14 @@ namespace TheCookieBakery
             Random randomGenerator = new Random ();
             int cookiesToBake = randomGenerator.Next (12, 21);
 
-            // Set console width and height to show all text
-            Console.SetWindowSize(100, cookiesToBake * 2 + 1);
+            // Set console width and height to try and show all text
+            int consoleColumns = 100;
+            int consoleRows = cookiesToBake * 2 + 6;
+            if (consoleRows > Console.LargestWindowHeight - 1)
+                consoleRows = Console.LargestWindowHeight - 1;
+            if (consoleColumns > Console.LargestWindowWidth)
+                consoleColumns = Console.LargestWindowWidth;
+            Console.SetWindowSize(consoleColumns, consoleRows);
             Console.Title = "The Cookie Bakery";
 
             bakery = new Bakery(cookiesToBake);
