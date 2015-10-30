@@ -16,7 +16,9 @@
 
         public virtual string GetDescription()
         {
-            return original.GetDescription();
+            if (original.GetDescription ().Contains ("with"))
+                return original.GetDescription () + " and ";
+            return original.GetDescription () + " with ";
         }
     }
 }
