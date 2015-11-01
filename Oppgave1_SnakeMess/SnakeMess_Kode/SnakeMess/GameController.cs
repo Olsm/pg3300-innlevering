@@ -10,14 +10,14 @@ namespace SnakeMess
 
         public static void PlayGame()
         {
-            GameManager.Direction snakeDirection = g.SnakeDirection;
+            GameManager.Direction nextSnakeDirection = g.SnakeDirection;
             Stopwatch timer = new Stopwatch();
             timer.Start();
 
             while (true)
             {
-                // Do stuff when key has been clicked
-                if (Console.KeyAvailable)
+                // Do stuff when key has been clicked and snake has moved one step since last direction change
+                if (Console.KeyAvailable && nextSnakeDirection == g.SnakeDirection)
                 {
                     ConsoleKey key = Console.ReadKey(true).Key;
 
@@ -32,13 +32,13 @@ namespace SnakeMess
                     {
                         // Only allow going up if not going down, and left if not going right etc...
                         if (key == ConsoleKey.UpArrow && g.SnakeDirection != GameManager.Direction.Down)
-                            snakeDirection = GameManager.Direction.Up;
+                            nextSnakeDirection = GameManager.Direction.Up;
                         else if (key == ConsoleKey.DownArrow && g.SnakeDirection != GameManager.Direction.Up)
-                            snakeDirection = GameManager.Direction.Down;
+                            nextSnakeDirection = GameManager.Direction.Down;
                         else if (key == ConsoleKey.LeftArrow && g.SnakeDirection != GameManager.Direction.Right)
-                            snakeDirection = GameManager.Direction.Left;
+                            nextSnakeDirection = GameManager.Direction.Left;
                         else if (key == ConsoleKey.RightArrow && g.SnakeDirection != GameManager.Direction.Left)
-                            snakeDirection = GameManager.Direction.Right;
+                            nextSnakeDirection = GameManager.Direction.Right;
                     }
                 }
 
@@ -52,7 +52,7 @@ namespace SnakeMess
                     continue;
 
                 // Continue moving in current direction
-                g.MoveSnake(snakeDirection);
+                g.MoveSnake(nextSnakeDirection);
 
                 Coord headPosition = g.SnakePosition.ElementAt(0);
 
