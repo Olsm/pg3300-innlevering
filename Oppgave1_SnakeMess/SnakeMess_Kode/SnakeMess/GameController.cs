@@ -18,25 +18,25 @@ namespace SnakeMess
                 // Do stuff when key has been clicked
                 if (Console.KeyAvailable)
                 {
-                    ConsoleKeyInfo cki = Console.ReadKey(true);
+                    ConsoleKey key = Console.ReadKey(true).Key;
 
                     // End or pause game if escape / space clicked
-                    if (cki.Key == ConsoleKey.Escape)
+                    if (key == ConsoleKey.Escape)
                         g.EndGame();
-                    else if (cki.Key == ConsoleKey.Spacebar)
+                    else if (key == ConsoleKey.Spacebar)
                         g.State.Pause = !g.State.Pause;
 
                     // Only change direction if game is not paused
                     if (!g.State.Pause)
                     {
                         // Only allow going up if not going down, and left if not going right etc...
-                        if (cki.Key == ConsoleKey.UpArrow && g.SnakeDirection != GameManager.Direction.Down)
+                        if (key == ConsoleKey.UpArrow && g.SnakeDirection != GameManager.Direction.Down)
                             g.SnakeDirection = GameManager.Direction.Up;
-                        else if (cki.Key == ConsoleKey.DownArrow && g.SnakeDirection != GameManager.Direction.Up)
+                        else if (key == ConsoleKey.DownArrow && g.SnakeDirection != GameManager.Direction.Up)
                             g.SnakeDirection = GameManager.Direction.Down;
-                        else if (cki.Key == ConsoleKey.LeftArrow && g.SnakeDirection != GameManager.Direction.Right)
+                        else if (key == ConsoleKey.LeftArrow && g.SnakeDirection != GameManager.Direction.Right)
                             g.SnakeDirection = GameManager.Direction.Left;
-                        else if (cki.Key == ConsoleKey.RightArrow && g.SnakeDirection != GameManager.Direction.Left)
+                        else if (key == ConsoleKey.RightArrow && g.SnakeDirection != GameManager.Direction.Left)
                             g.SnakeDirection = GameManager.Direction.Right;
                     }
                 }
