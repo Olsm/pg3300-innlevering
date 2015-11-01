@@ -42,14 +42,10 @@ namespace SnakeMess
                     }
                 }
 
-                // Each round should take minimum 100 ms
-                if (timer.ElapsedMilliseconds < 100)
+                // Restart loop if game paused or there is less than 100 ms since last round
+                if (g.State.Pause || timer.ElapsedMilliseconds < 100)
                     continue;
                 timer.Restart();
-
-                // Restart loop if game is paused
-                if (g.State.Pause)
-                    continue;
 
                 // Continue moving in current direction
                 g.MoveSnake(nextSnakeDirection);
