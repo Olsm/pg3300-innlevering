@@ -29,7 +29,7 @@ namespace TheCookieBakery
             for (int i = 0; i < totalCookies; i++) {
                 Thread.Sleep (667);
                 newCookie = BakeCookie();
-                Console.WriteLine("Bakery made " + newCookie.GetDescription() + " #" + (i + 1));
+                Console.WriteLine("Bakery made " + newCookie.GetDescription() + " #" + newCookie.GetID());
                 Cookies[i] = newCookie;
             }
         }
