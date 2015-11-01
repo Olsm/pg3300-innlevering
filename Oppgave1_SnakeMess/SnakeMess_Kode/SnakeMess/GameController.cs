@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 
@@ -10,11 +11,11 @@ namespace SnakeMess
 
         public static void PlayGame()
         {
+            Stopwatch timer = new Stopwatch();
+            timer.Start();
+
             while (true)
             {
-                // Each round should take minimum 100 ms
-                Thread.Sleep(100);
-
                 // Do stuff when key has been clicked
                 if (Console.KeyAvailable)
                 {
@@ -40,6 +41,11 @@ namespace SnakeMess
                             g.SnakeDirection = GameManager.Direction.Right;
                     }
                 }
+
+                // Each round should take minimum 100 ms
+                if (timer.ElapsedMilliseconds < 100)
+                    continue;
+                timer.Restart();
 
                 // Restart loop if game is paused
                 if (g.State.Pause)
