@@ -22,17 +22,15 @@ namespace TheCookieBakery
         // Do not use lock so customers try to buy the same cookie
         public void BuyCookies() {
             while (_bakery.BakeryOpen) {
-            Thread.Sleep (1000);
+                Thread.Sleep (1000);
                 
                 // Count cookies in basket and try to buy one if there is 1 or more available
                 if (_bakery.Cookies.Count(cookie => cookie != null) > 0) {
                     ICookie cookie = _bakery.SellToCustomer (this);
 
-                    // Add cookie to the customer cookie list if he got one, find index and write to console
+                    // Add cookie to the customer cookie list if he got one
                     if (cookie != null) {
                         Cookies.Add (cookie);
-                        int cookieIndex = cookie.GetID();
-                        
                     }
                 }
             }
