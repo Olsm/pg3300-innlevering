@@ -31,27 +31,22 @@ namespace SnakeMess
                     {
                         // Only allow going up if not going down, and left if not going right etc...
                         if (cki.Key == ConsoleKey.UpArrow && g.SnakeDirection != GameManager.Direction.Down)
-                            g.MoveSnake(GameManager.Direction.Up);
+                            g.SnakeDirection = GameManager.Direction.Up;
                         else if (cki.Key == ConsoleKey.DownArrow && g.SnakeDirection != GameManager.Direction.Up)
-                            g.MoveSnake(GameManager.Direction.Down);
+                            g.SnakeDirection = GameManager.Direction.Down;
                         else if (cki.Key == ConsoleKey.LeftArrow && g.SnakeDirection != GameManager.Direction.Right)
-                            g.MoveSnake(GameManager.Direction.Left);
+                            g.SnakeDirection = GameManager.Direction.Left;
                         else if (cki.Key == ConsoleKey.RightArrow && g.SnakeDirection != GameManager.Direction.Left)
-                            g.MoveSnake(GameManager.Direction.Right);
+                            g.SnakeDirection = GameManager.Direction.Right;
                     }
                 }
 
-                // pause game or move snake if no button was clicked
-                else
-                {
+                // Restart loop if game is paused
+                if (g.State.Pause)
+                    continue;
 
-                    // Restart loop if pause game is true
-                    if (g.State.Pause)
-                        continue;
-
-                    // Continue moving in same direction
-                    g.MoveSnake(g.SnakeDirection);
-                }
+                // Continue moving in current direction
+                g.MoveSnake(g.SnakeDirection);
 
                 Coord headPosition = g.SnakePosition.ElementAt(0);
 
