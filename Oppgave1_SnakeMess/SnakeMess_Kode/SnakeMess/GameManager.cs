@@ -111,6 +111,35 @@ namespace SnakeMess
                 Console.SetCursorPosition(bodyX, bodyY);
                 Console.Write("0");
             }
+
+            CheckIfSnakeHitElements();
+        }
+
+        // Check if snake has hit any elements after moving
+        private void CheckIfSnakeHitElements ()
+        {
+            Coord headPosition = SnakePosition.ElementAt(0);
+            
+            // Make snake larger if dollar hit
+            if (headPosition.x == DollarPosition.x &&
+                headPosition.y == DollarPosition.y)
+                DollarHit();
+
+            // Game over if head hits border
+            if (headPosition.x == -1
+                || headPosition.y == -1
+                || headPosition.x == Board.BoardWidth
+                || headPosition.y == Board.BoardHeight)
+                EndGame();
+
+            // Game over if snake hit body (cannibalism)
+            foreach (Coord snakeElement in SnakePosition)
+            {
+                if (snakeElement != headPosition
+                    && snakeElement.x == headPosition.x
+                    && snakeElement.y == headPosition.y)
+                    EndGame();
+            }
         }
 
         public void SpawnDollar()

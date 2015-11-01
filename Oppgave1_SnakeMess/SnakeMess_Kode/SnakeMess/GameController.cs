@@ -49,29 +49,6 @@ namespace SnakeMess
 
                 // Continue moving in current direction
                 g.MoveSnake(nextSnakeDirection);
-
-                Coord headPosition = g.SnakePosition.ElementAt(0);
-
-                // Game over if head hits border
-                if (headPosition.x == -1
-                    || headPosition.y == -1
-                    || headPosition.x == g.Board.BoardWidth
-                    || headPosition.y == g.Board.BoardHeight)
-                    g.EndGame();
-
-                // Game over if snake head hits body (cannibalism)
-                foreach (Coord snakeElement in g.SnakePosition)
-                {
-                    if (snakeElement != headPosition
-                        && snakeElement.x == headPosition.x
-                        && snakeElement.y == headPosition.y)
-                        g.EndGame();
-                }
-
-                // Make snake larger if dollar hit
-                if (headPosition.x == g.DollarPosition.x &&
-                    headPosition.y == g.DollarPosition.y)
-                    g.DollarHit();
             }
         }
     }
